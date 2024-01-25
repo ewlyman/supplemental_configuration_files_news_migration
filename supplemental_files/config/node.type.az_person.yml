@@ -1,0 +1,20 @@
+uuid: 76617ce7-852d-4782-885c-614e366597d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: CGrNSMYHykavrkdUlA7BBMBhQZk5GYPSyJkRyjDmfTs
+name: Person
+type: az_person
+description: 'Use this content type to add a person profile to your site'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

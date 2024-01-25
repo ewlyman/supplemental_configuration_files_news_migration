@@ -1,0 +1,10 @@
+uuid: 8e6d67d4-7f1c-4597-9d9e-9cecd9331f19
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.news_for_employees
+label: 'News for employees'
+targetEntityType: node
+cache: true

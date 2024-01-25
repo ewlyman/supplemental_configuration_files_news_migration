@@ -1,0 +1,14 @@
+uuid: ecb2312e-50dc-4653-a45e-06aec598fb52
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.az_html_admin
+  module:
+    - user
+id: user_add_role_action.az_html_admin
+label: 'Add the HTML administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: az_html_admin

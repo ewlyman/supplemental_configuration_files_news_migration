@@ -1,0 +1,19 @@
+uuid: 62a5b24f-8614-47fd-99e0-560de6082599
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_when
+    - node.type.az_news
+id: node.az_news.field_legacy_news_when
+field_name: field_legacy_news_when
+entity_type: node
+bundle: az_news
+label: When
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

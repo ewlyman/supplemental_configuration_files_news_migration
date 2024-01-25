@@ -1,0 +1,15 @@
+uuid: d7df9453-e517-4ef9-999f-3dccdce76d5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.feature_on_news_front_page
+  module:
+    - flag
+id: flag_action.feature_on_news_front_page_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:feature_on_news_front_page_unflag'
+configuration:
+  flag_id: feature_on_news_front_page
+  flag_action: unflag

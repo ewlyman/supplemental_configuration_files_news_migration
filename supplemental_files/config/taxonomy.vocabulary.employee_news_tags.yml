@@ -1,0 +1,8 @@
+uuid: 1a08d11f-64db-4eca-a2c5-3f27d7e278a0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Employee News Tags'
+vid: employee_news_tags
+description: 'Tags for UA@Work-LQP News Stories'
+weight: 0

@@ -1,0 +1,18 @@
+uuid: 2c9c1ec2-4881-418e-86e9-91eeb1b65231
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'News Gallery (legacy)'
+type: news_gallery
+description: 'Migration target content type for news galleries'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

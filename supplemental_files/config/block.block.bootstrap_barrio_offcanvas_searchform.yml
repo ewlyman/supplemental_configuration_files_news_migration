@@ -1,0 +1,23 @@
+uuid: ad614fcb-7f70-4740-89b4-d7cf3a93f9e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: rtAhqxeYucCLs048RrYMbUvUFvIKu1EC5Swj5diE4-s
+id: bootstrap_barrio_offcanvas_searchform
+theme: bootstrap_barrio
+region: top_header
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

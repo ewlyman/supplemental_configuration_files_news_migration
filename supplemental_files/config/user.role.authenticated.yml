@@ -1,0 +1,26 @@
+uuid: f606b837-1691-452a-a5f8-110d24c4d1cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - exclude_node_title
+    - file
+    - honeypot
+    - media
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: hy1MQ5WFktI650R3tcqXRE4ZAZ1OZkF9ASVAgBMrOJI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'bypass honeypot protection'
+  - 'delete own files'
+  - 'search content'
+  - 'use exclude node title'
+  - 'view media'

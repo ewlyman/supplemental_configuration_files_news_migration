@@ -1,0 +1,12 @@
+uuid: c79c1970-f9ce-4ade-9d37-cfc9f5064017
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 5Fz-FGveKSMBvL2xGvOUCIRiIEITiocjLAsqcCusrqE
+id: node.az_medium_media_list
+label: 'Medium Media List'
+targetEntityType: node
+cache: true

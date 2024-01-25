@@ -1,0 +1,21 @@
+uuid: 4095b56d-f35f-42db-9d25-6866411416e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_degrees
+    - node.type.az_person
+_core:
+  default_config_hash: D8w5aHtvIuw4b2szz_--BbEypklGKAz8p7mINH9eojI
+id: node.az_person.field_az_degrees
+field_name: field_az_degrees
+entity_type: node
+bundle: az_person
+label: Degree(s)
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

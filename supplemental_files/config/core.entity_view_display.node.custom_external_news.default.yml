@@ -1,0 +1,72 @@
+uuid: 6e700016-0797-492d-9dc5-49620d474cd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.custom_external_news.field_az_link
+    - field.field.node.custom_external_news.field_az_news_tags
+    - field.field.node.custom_external_news.field_az_published
+    - field.field.node.custom_external_news.field_az_short_title
+    - field.field.node.custom_external_news.field_custom_external_news_org
+    - field.field.node.custom_external_news.field_custom_news_categories
+    - field.field.node.custom_external_news.field_legacy_news_summary
+    - node.type.custom_external_news
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_text_muted:
+      children:
+        - field_az_published
+      label: 'Text Muted'
+      parent_name: ''
+      region: hidden
+      weight: 7
+      format_type: html_element
+      format_settings:
+        classes: text-muted
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_default_link_to_content:
+      children:
+        - field_custom_external_news_org
+      label: 'Default Link to Content'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: link
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        target: field_az_link
+        custom_uri: ''
+        target_attribute: _blank
+id: node.custom_external_news.default
+targetEntityType: node
+bundle: custom_external_news
+mode: default
+content:
+  field_custom_external_news_org:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_az_link: true
+  field_az_news_tags: true
+  field_az_published: true
+  field_az_short_title: true
+  field_custom_news_categories: true
+  field_legacy_news_summary: true
+  links: true

@@ -1,0 +1,89 @@
+uuid: 5893450e-e0cd-4c03-bdcd-cc7fce7bb888
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_gallery.field_az_link
+    - field.field.node.news_gallery.field_az_main_content
+    - field.field.node.news_gallery.field_az_news_tags
+    - field.field.node.news_gallery.field_az_photos
+    - field.field.node.news_gallery.field_az_short_title
+    - field.field.node.news_gallery.field_custom_news_categories
+    - field.field.node.news_gallery.field_legacy_news_summary
+    - node.type.news_gallery
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+    - user
+id: node.news_gallery.default
+targetEntityType: node
+bundle: news_gallery
+mode: default
+content:
+  field_az_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_az_main_content:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_az_news_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_az_photos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_az_short_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_custom_news_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_legacy_news_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

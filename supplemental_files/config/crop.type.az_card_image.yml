@@ -1,0 +1,14 @@
+uuid: d495f3bd-e6b3-454c-bf09-3ad6d5b35c0d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: GKYpFM75OuXRmaURWL-s0gZ_6y2yh3QbTP7-FCVVqpA
+id: az_card_image
+label: 'Card Image'
+description: 'This cropping style is used where card images are displayed.'
+aspect_ratio: '4:3'
+soft_limit_width: 568
+soft_limit_height: 426
+hard_limit_width: null
+hard_limit_height: null

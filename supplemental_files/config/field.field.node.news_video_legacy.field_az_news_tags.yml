@@ -1,0 +1,29 @@
+uuid: 0044858a-48e2-4e40-a28c-9704dfa79342
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_news_tags
+    - node.type.news_video_legacy
+    - taxonomy.vocabulary.az_news_tags
+id: node.news_video_legacy.field_az_news_tags
+field_name: field_az_news_tags
+entity_type: node
+bundle: news_video_legacy
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      az_news_tags: az_news_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

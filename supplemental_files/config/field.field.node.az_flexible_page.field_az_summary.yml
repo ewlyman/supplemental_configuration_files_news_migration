@@ -1,0 +1,26 @@
+uuid: d08fb073-deca-4038-a5ab-046317f08d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_summary
+    - filter.format.plain_text
+    - node.type.az_flexible_page
+  module:
+    - text
+_core:
+  default_config_hash: Xk8mBZQTx5y8pAmdBXKpon7-32QeCS6LSQP47wfzWx4
+id: node.az_flexible_page.field_az_summary
+field_name: field_az_summary
+entity_type: node
+bundle: az_flexible_page
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text_long

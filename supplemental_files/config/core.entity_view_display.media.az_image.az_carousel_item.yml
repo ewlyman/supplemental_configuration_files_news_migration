@@ -1,0 +1,38 @@
+uuid: d104502f-d9bc-417d-9aef-dd626b1071af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.az_carousel_item
+    - field.field.media.az_image.field_az_caption
+    - field.field.media.az_image.field_az_credit
+    - field.field.media.az_image.field_media_az_image
+    - image.style.az_carousel_item
+    - media.type.az_image
+  module:
+    - image
+_core:
+  default_config_hash: ca8g9IDWFsM9W85DRfbkxn7HfbWfeVqbrEnQiGvehMk
+id: media.az_image.az_carousel_item
+targetEntityType: media
+bundle: az_image
+mode: az_carousel_item
+content:
+  field_media_az_image:
+    label: visually_hidden
+    settings:
+      image_style: az_carousel_item
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_az_caption: true
+  field_az_credit: true
+  name: true
+  thumbnail: true
+  uid: true

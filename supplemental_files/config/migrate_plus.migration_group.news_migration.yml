@@ -1,0 +1,26 @@
+uuid: e319d447-ab26-41b1-8dde-c8b2aab085c5
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - news_migration
+      - migrate_drupal
+      - migrate_tools
+_core:
+  default_config_hash: dzHsa77ngBW-6ZkgZktGN8U6ix9k7rkL7ZlPzety83M
+id: news_migration
+label: 'UArizona News Migrations'
+description: 'Common configuration for simple migrations.'
+source_type: 'Drupal 7 Site (news.arizona.edu)'
+module: null
+shared_configuration:
+  source:
+    key: migrate
+    constants:
+      ENTERPRISE_ATTRIBUTES:
+        - 'External Media'
+      PATHAUTO_DISABLED_STRING: '0'
+      PATHAUTO_ENABLED_INT: 1
+      OLD_FILES_PATH: news.arizona.edu
+      SOURCE_BASE_PATH: sites/default/files

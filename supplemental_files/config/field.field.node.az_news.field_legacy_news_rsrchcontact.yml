@@ -1,0 +1,52 @@
+uuid: b1f70eb6-60c6-420e-a036-100e92e25913
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_rsrchcontact
+    - node.type.az_news
+    - paragraphs.paragraphs_type.az_contact
+  module:
+    - entity_reference_revisions
+id: node.az_news.field_legacy_news_rsrchcontact
+field_name: field_legacy_news_rsrchcontact
+entity_type: node
+bundle: az_news
+label: 'Researcher Contact(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      az_contact: az_contact
+    negate: 0
+    target_bundles_drag_drop:
+      az_accordion:
+        weight: 9
+        enabled: false
+      az_cards:
+        weight: 10
+        enabled: false
+      az_contact:
+        weight: 11
+        enabled: true
+      az_photo_gallery:
+        weight: 12
+        enabled: false
+      az_text:
+        weight: 13
+        enabled: false
+      az_text_background:
+        weight: 14
+        enabled: false
+      az_text_media:
+        weight: 15
+        enabled: false
+      az_view_reference:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

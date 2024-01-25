@@ -1,0 +1,22 @@
+uuid: 7c9f9c64-0845-4362-9675-1cf748ca167a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news_video_legacy
+id: node.news_video_legacy.promote
+field_name: promote
+entity_type: node
+bundle: news_video_legacy
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

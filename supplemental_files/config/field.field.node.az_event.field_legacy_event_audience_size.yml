@@ -1,0 +1,21 @@
+uuid: 0eeaf59c-e64a-4768-a47b-e52f34fd3534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_event_audience_size
+    - node.type.az_event
+  module:
+    - options
+id: node.az_event.field_legacy_event_audience_size
+field_name: field_legacy_event_audience_size
+entity_type: node
+bundle: az_event
+label: 'Audience size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

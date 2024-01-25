@@ -1,0 +1,27 @@
+uuid: 9212429f-bf03-43ac-b6be-832233f93b9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - az_barrio
+_core:
+  default_config_hash: s5Zb9L3wQGEDw2PtD5KMm_dKDr-mU51mq--kErqaxds
+id: az_barrio_page_title
+theme: az_barrio
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/person/*\r\n/news/*\r\n/employee-news/*\r\n/uannounce/*\r\n/external-news/*"

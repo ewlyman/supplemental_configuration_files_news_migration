@@ -1,0 +1,10 @@
+uuid: d2e6c0b7-1c1a-403c-a8a3-130b2b82b753
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.super_feature
+label: 'Super Feature'
+targetEntityType: node
+cache: true

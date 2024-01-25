@@ -1,0 +1,12 @@
+uuid: 520cc05c-0f3d-4ec3-aace-33204d0ebb63
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: P2MKmwrCVjamSbPYxlhJakbCQNNp8Q_ir1idgsPbHrE
+id: media.az_modal_image
+label: 'Modal Image'
+targetEntityType: media
+cache: true

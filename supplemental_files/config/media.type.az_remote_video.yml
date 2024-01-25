@@ -1,0 +1,25 @@
+uuid: c1cf0c23-83b7-403e-891f-4f33e7b84dd1
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+third_party_settings:
+  crop:
+    image_field: _none
+_core:
+  default_config_hash: INZuFw99AMcDv3MMqaycrY0Dnc680F3sEVtMEHsPd_g
+id: az_remote_video
+label: 'Remote video'
+description: 'A remotely hosted video from YouTube or Vimeo.'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_az_oembed_video
+  thumbnails_directory: 'private://oembed_thumbnails'
+  providers:
+    - YouTube
+    - Vimeo
+field_map:
+  title: name

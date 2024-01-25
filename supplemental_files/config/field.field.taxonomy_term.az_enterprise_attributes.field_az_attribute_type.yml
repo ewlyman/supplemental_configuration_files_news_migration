@@ -1,0 +1,21 @@
+uuid: 4d174948-549f-49b7-b6b6-d9f018b450a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_az_attribute_type
+    - taxonomy.vocabulary.az_enterprise_attributes
+_core:
+  default_config_hash: 0bo6gzwfz_YjsdJofdqil22eRMD6B9gki1-J5OE0Rcw
+id: taxonomy_term.az_enterprise_attributes.field_az_attribute_type
+field_name: field_az_attribute_type
+entity_type: taxonomy_term
+bundle: az_enterprise_attributes
+label: 'Attribute Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

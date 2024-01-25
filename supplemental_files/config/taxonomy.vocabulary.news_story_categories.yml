@@ -1,0 +1,8 @@
+uuid: 4749cb87-ed83-4530-8b96-b22680df0e58
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Story Categories'
+vid: news_story_categories
+description: 'Taxonomy for AZ News Stories'
+weight: 0

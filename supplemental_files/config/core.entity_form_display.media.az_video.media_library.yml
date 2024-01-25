@@ -1,0 +1,23 @@
+uuid: 1d354da2-a02d-4acb-b17d-b4ffd9638b8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.az_video.field_media_az_video_file
+    - media.type.az_video
+_core:
+  default_config_hash: iThdwk_-i8Ke-JazPraTxbrzW1Bl5UD7fNL4Wf8uFlU
+id: media.az_video.media_library
+targetEntityType: media
+bundle: az_video
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_az_video_file: true
+  name: true
+  path: true
+  replace_file: true
+  status: true
+  uid: true

@@ -1,0 +1,29 @@
+uuid: 63c19ec8-c436-46cf-aef0-6576cc468c8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.az_photo_gallery.field_az_photos
+    - paragraphs.paragraphs_type.az_photo_gallery
+  module:
+    - media_library
+    - media_library_edit
+_core:
+  default_config_hash: TiZAs1VVn7SmJDXWHB0aYoXJNKDpqy-594SGVZUClc0
+id: paragraph.az_photo_gallery.default
+targetEntityType: paragraph
+bundle: az_photo_gallery
+mode: default
+content:
+  field_az_photos:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+    region: content
+hidden:
+  created: true
+  status: true

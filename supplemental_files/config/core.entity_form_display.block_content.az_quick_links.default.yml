@@ -1,0 +1,42 @@
+uuid: 768fca16-0111-4b30-bd96-e0e1ee0587ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.az_quick_links
+    - field.field.block_content.az_quick_links.field_az_links
+    - field.field.block_content.az_quick_links.field_az_short_title
+  module:
+    - link
+_core:
+  default_config_hash: '-vLCDfzrQVchhiA5QI4OIJvDpwC54rkW7_4zD77o6Zc'
+id: block_content.az_quick_links.default
+targetEntityType: block_content
+bundle: az_quick_links
+mode: default
+content:
+  field_az_links:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_az_short_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,14 @@
+uuid: a6aab4b2-54c1-4995-97bc-dd3d9f40da24
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6gdl-iIpBserOByhlxnzAIgxl7sbxPLzU-rzSMtro_8
+label: 'Square Aspect Ratio'
+id: az_square_aspect_ratio
+description: 'Square crop type for use with any square image styles.'
+aspect_ratio: '1:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

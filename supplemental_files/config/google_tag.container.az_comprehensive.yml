@@ -1,0 +1,70 @@
+uuid: a88fb54a-bafc-436a-a2ec-05616b20af35
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+_core:
+  default_config_hash: 7-sRm7ez6oys2x5udL_q7ODRFMgnguSKcUrWRZTySwI
+id: az_comprehensive
+label: 'AZ Comprehensive'
+weight: 0
+tag_container_ids:
+  - GTM-ML2BZB
+advanced_settings:
+  gtm:
+    data_layer: dataLayer
+    include_classes: false
+    allowlist_classes: |-
+      google
+      nonGooglePixels
+      nonGoogleScripts
+      nonGoogleIframes
+    blocklist_classes: |-
+      customScripts
+      customPixels
+    include_environment: false
+    environment_id: ''
+    environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  request_path:
+    id: request_path
+    negate: true
+    pages: |-
+      /admin*
+      batch*
+      block/add/*
+      /block/*/edit
+      file/add
+      file/*/edit
+      /node/add*
+      /node/*/edit
+      /node/*/delete
+      /user/*/edit*
+      /user/*/cancel*
+      taxonomy/term/*/edit
+  response_code:
+    id: response_code
+    negate: true
+    response_codes: |-
+      403
+      404
+  user_role:
+    id: user_role
+    negate: true
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  search: {  }
+  login:
+    method: CMS
+  generate_lead:
+    value: ''
+    currency: ''
+  sign_up:
+    method: CMS
+  custom: {  }

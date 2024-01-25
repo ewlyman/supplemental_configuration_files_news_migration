@@ -1,0 +1,12 @@
+uuid: 56200765-cb61-4777-9661-81992173a426
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: T006WNti0OK43BfjYtdNNUq6iro-4AIov6robYpY1JQ
+id: node.az_card
+label: Card
+targetEntityType: node
+cache: true

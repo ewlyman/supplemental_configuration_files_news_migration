@@ -1,0 +1,24 @@
+uuid: db132d1d-c580-4278-b5fb-621337ec5159
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_az_text_area
+    - paragraphs.paragraphs_type.az_text_media
+  module:
+    - text
+_core:
+  default_config_hash: w1A9O3SmGPUheUW7PNzOaUp8xTYS9FsuJM1dlM-aVOs
+id: paragraph.az_text_media.field_az_text_area
+field_name: field_az_text_area
+entity_type: paragraph
+bundle: az_text_media
+label: Body
+description: 'White text will be highlighted in gray (only while editing) to keep the text visible.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

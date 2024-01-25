@@ -1,0 +1,30 @@
+uuid: 083f6240-9b3a-426c-82c3-7dd44f6ec3d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: do_not_include_releases
+label: 'Do not include story on News Releases page'
+bundles:
+  - az_news
+entity_type: node
+global: true
+flag_short: 'Do not include story on News Releases page'
+flag_long: 'If checked, this content will not be included on the News Releases page'
+flag_message: ''
+unflag_short: 'Unflag this item'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: -2
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: false
+  show_on_form: true
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

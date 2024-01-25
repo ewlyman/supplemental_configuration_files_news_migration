@@ -1,0 +1,31 @@
+uuid: 62a24af8-e118-4ee4-b2ed-51c18a06dc1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.az_carousel
+  module:
+    - system
+    - views
+  theme:
+    - az_barrio
+_core:
+  default_config_hash: jBiwHfyEWMFw3LZ9hM4ReQONUXaUa1_oPDWREm6k7zM
+id: views_block__az_carousel_front_carousel_block
+theme: az_barrio
+region: content_featured
+weight: -8
+provider: null
+plugin: 'views_block:az_carousel-front_carousel_block'
+settings:
+  id: 'views_block:az_carousel-front_carousel_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

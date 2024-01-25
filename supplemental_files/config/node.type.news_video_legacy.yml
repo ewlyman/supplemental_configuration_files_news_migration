@@ -1,0 +1,18 @@
+uuid: 52e493c6-3e0f-4982-8c87-9683b308d487
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Video (legacy)'
+type: news_video_legacy
+description: 'Target content type for uanews_video legacy content'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

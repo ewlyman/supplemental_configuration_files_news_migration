@@ -1,0 +1,35 @@
+uuid: 1db543be-53cb-4c04-876b-6cfaae6064ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - exclude_node_title
+id: config_sync.module.exclude_node_title
+snapshotSet: config_sync
+extensionType: module
+extensionName: exclude_node_title
+items:
+  -
+    collection: ''
+    name: exclude_node_title.settings
+    data:
+      nid_list: {  }
+      translation_sync: true
+      search: false
+      type: hidden
+      content_types:
+        az_event: none
+        az_flexible_page: user
+        az_news: none
+        az_person: none
+        az_publication: all
+      content_type_modes:
+        az_event: {  }
+        az_flexible_page:
+          - full
+        az_news: {  }
+        az_person: {  }
+        az_publication:
+          - az_publication_reference
+      _core:
+        default_config_hash: I_9NIvzFoyG4WO6ybRCMgXKzH6YqdMD5EdVM5ygARug

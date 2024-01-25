@@ -1,0 +1,17 @@
+uuid: 3b207279-f988-4a05-8632-c3900c39ddf9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kg2fc48Koi2utbezNd2SbSd0o37bvp9LX7QFhrAInH4
+name: az_medium
+label: 'Medium (760px wide)'
+effects:
+  a8a842a4-6670-4288-8f98-3b161f597ec9:
+    uuid: a8a842a4-6670-4288-8f98-3b161f597ec9
+    id: image_scale
+    weight: 1
+    data:
+      width: 760
+      height: null
+      upscale: true

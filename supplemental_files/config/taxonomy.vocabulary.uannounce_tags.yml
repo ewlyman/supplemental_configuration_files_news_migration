@@ -1,0 +1,8 @@
+uuid: 39ec6f1c-ba8f-4c69-b4e3-25f2bb61c6c5
+langcode: en
+status: true
+dependencies: {  }
+name: 'UAnnounce tags'
+vid: uannounce_tags
+description: 'Tags for UAnnounce'
+weight: 0

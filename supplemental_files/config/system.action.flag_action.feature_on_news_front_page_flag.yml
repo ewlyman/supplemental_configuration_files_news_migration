@@ -1,0 +1,15 @@
+uuid: cc13e797-e138-484a-9337-72f0d81f8d81
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.feature_on_news_front_page
+  module:
+    - flag
+id: flag_action.feature_on_news_front_page_flag
+label: 'Feature on News front page'
+type: node
+plugin: 'flag_action:feature_on_news_front_page_flag'
+configuration:
+  flag_id: feature_on_news_front_page
+  flag_action: flag

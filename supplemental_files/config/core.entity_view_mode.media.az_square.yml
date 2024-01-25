@@ -1,0 +1,12 @@
+uuid: 148b5381-98ac-4833-854d-873dee295f79
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: VWz-NXtiPvMEfhrnyu1_bck_vkFStgpkqhWR8va4hcc
+id: media.az_square
+label: 'Square (220X220px)'
+targetEntityType: media
+cache: true

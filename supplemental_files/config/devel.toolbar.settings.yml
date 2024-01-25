@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: zTZ-Ah_qm7Xg8QMgVAhM97rDE88pxWuwkGrcO6rGK9k
+toolbar_items:
+  - devel.admin_settings_link
+  - devel.cache_clear
+  - devel.container_info.service
+  - devel.menu_rebuild
+  - devel.reinstall
+  - devel.route_info
+  - devel.run_cron

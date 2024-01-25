@@ -1,0 +1,42 @@
+uuid: 89585b3c-79b0-4aef-a905-1fd806f541aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.az_splitscreen.field_az_media
+    - field.field.paragraph.az_splitscreen.field_az_text_area
+    - paragraphs.paragraphs_type.az_splitscreen
+  module:
+    - media_library
+    - media_library_edit
+    - text
+  enforced:
+    module:
+      - az_paragraphs_splitscreen
+_core:
+  default_config_hash: mxIwPNAALPLwD8GrhoVhxs36vJqwRoc3JJ4QELtM36w
+id: paragraph.az_splitscreen.default
+targetEntityType: paragraph
+bundle: az_splitscreen
+mode: default
+content:
+  field_az_media:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+  field_az_text_area:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,19 @@
+uuid: af013d33-ad8c-4db2-a4c3-42280ea3ead7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_event_your_email
+    - node.type.az_event
+id: node.az_event.field_legacy_event_your_email
+field_name: field_legacy_event_your_email
+entity_type: node
+bundle: az_event
+label: 'Your email (legacy)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

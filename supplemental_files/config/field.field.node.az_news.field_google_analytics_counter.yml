@@ -1,0 +1,23 @@
+uuid: eaea051b-cda5-4de5-853b-544e06fec5c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_google_analytics_counter
+    - node.type.az_news
+id: node.az_news.field_google_analytics_counter
+field_name: field_google_analytics_counter
+entity_type: node
+bundle: az_news
+label: 'Google Analytics Counter'
+description: 'This field stores Google Analytics pageviews.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

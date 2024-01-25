@@ -1,0 +1,32 @@
+uuid: 3262e2d7-d88c-4843-82c4-cafe9324536e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.trending_az_news
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - az_barrio
+id: az_barrio_views_block__trending_az_news_block_1
+theme: az_barrio
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:trending_az_news-block_1'
+settings:
+  id: 'views_block:trending_az_news-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping:
+    term_node_tid_depth: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/faculty-staff/employee-news\r\n/employee-news/*"

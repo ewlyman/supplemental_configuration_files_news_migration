@@ -1,0 +1,33 @@
+_core:
+  default_config_hash: nDj_KSoI0Yd7x9z04IzxpEIeAMY0QOainWklSpc7GwE
+credentials_file: ''
+bucket: files-e939725-prod
+region: us-west-2
+use_cname: true
+domain_root: none
+use_customhost: false
+hostname: ''
+domain: cdn.uanews.arizona.edu
+use_path_style_endpoint: false
+disable_version_sync: false
+cache_control_header: 'public, max-age=300'
+encryption: ''
+use_https: true
+ignore_cache: false
+read_only: false
+disable_cert_verify: false
+redirect_styles_ttl: 0
+root_folder: s3fs-news-migration
+public_folder: s3fs-public
+private_folder: s3fs-private
+presigned_urls: ''
+saveas: ''
+torrents: ''
+use_cssjs_host: false
+cssjs_host: ua-news-redesign.lndo.site
+use_credentials_cache: false
+credentials_cache_dir: ''
+keymodule:
+  secret_key_name: ''
+  access_key_name: ''
+disable_shared_config_files: false

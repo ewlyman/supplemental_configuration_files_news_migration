@@ -1,0 +1,23 @@
+uuid: cd8307f9-1cec-4a65-b8be-37bbd2323667
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_link
+    - node.type.news_video_legacy
+  module:
+    - link
+id: node.news_video_legacy.field_az_link
+field_name: field_az_link
+entity_type: node
+bundle: news_video_legacy
+label: 'Link to content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link

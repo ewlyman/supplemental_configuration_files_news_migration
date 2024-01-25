@@ -1,0 +1,29 @@
+uuid: a4cb05bb-eab2-4f8a-ad4d-815b2a4ed793
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_employee_news_cat
+    - node.type.az_news
+    - taxonomy.vocabulary.employee_news_categories
+id: node.az_news.field_custom_employee_news_cat
+field_name: field_custom_employee_news_cat
+entity_type: node
+bundle: az_news
+label: 'Employee News Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      employee_news_categories: employee_news_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

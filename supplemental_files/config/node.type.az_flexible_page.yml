@@ -1,0 +1,20 @@
+uuid: 2fb5d485-42bd-4e30-b6c7-38d35594d3ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: Wuu8id843L2E-oRqJNNgvAY110uQ3y6yURpcpBOBNx8
+name: Page
+type: az_flexible_page
+description: 'Use this content type to add a standard page to your site'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

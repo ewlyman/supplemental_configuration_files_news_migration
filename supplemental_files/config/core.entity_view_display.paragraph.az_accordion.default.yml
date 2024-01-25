@@ -1,0 +1,25 @@
+uuid: 92389532-fb25-4382-bf52-39794ac00a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.az_accordion.field_az_accordion
+    - paragraphs.paragraphs_type.az_accordion
+  module:
+    - az_accordion
+_core:
+  default_config_hash: fhPIfrR4AlkLkKdlYxc7ckLkycE1-TQdzRHJdbwANTc
+id: paragraph.az_accordion.default
+targetEntityType: paragraph
+bundle: az_accordion
+mode: default
+content:
+  field_az_accordion:
+    weight: 0
+    label: hidden
+    settings:
+      foo: bar
+    third_party_settings: {  }
+    type: az_accordion_default
+    region: content
+hidden: {  }

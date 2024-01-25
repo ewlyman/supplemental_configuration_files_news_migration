@@ -1,0 +1,21 @@
+uuid: 53d64270-9e2d-4f04-8862-7d6f086dde49
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - telephone
+_core:
+  default_config_hash: zF7MHqApvKw1yog_60NtMv1xvPwnVjmMS5s2EGIDHHs
+id: paragraph.field_az_phone
+field_name: field_az_phone
+entity_type: paragraph
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

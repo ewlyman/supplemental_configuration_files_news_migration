@@ -1,0 +1,18 @@
+uuid: 685cd945-739c-4ecf-b2ec-3ac5da0310bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - pantheon_advanced_page_cache
+id: config_sync.module.pantheon_advanced_page_cache
+snapshotSet: config_sync
+extensionType: module
+extensionName: pantheon_advanced_page_cache
+items:
+  -
+    collection: ''
+    name: pantheon_advanced_page_cache.settings
+    data:
+      override_list_tags: false
+      _core:
+        default_config_hash: nYV-pR4XH4jgCkcYZZePzg9RYTFXR5YNw-F1iaP6qio

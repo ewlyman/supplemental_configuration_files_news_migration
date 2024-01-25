@@ -1,0 +1,25 @@
+uuid: 8ca1958f-b31e-46ac-a508-733088726d73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_link
+    - node.type.news_press_release_legacy
+  module:
+    - link
+_core:
+  default_config_hash: tMvcnP7jhmPpxNMG6hAzIqYMJu101Dw6tQ-WS8Wa9GU
+id: node.news_press_release_legacy.field_az_link
+field_name: field_az_link
+entity_type: node
+bundle: news_press_release_legacy
+label: 'Link to content'
+description: 'In most cases, leave this field blank. Enter an external URL if you want the news listings for this article to link directly to a news story on another website (e.g. UArizona News or an external publication).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

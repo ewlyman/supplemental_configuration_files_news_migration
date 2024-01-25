@@ -1,0 +1,39 @@
+uuid: f8a1a238-0919-44c4-a8aa-d5050ef42e27
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_legacy_event_campus
+field_name: field_legacy_event_campus
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Main Campus'
+    -
+      value: '2'
+      label: UAHS
+    -
+      value: '3'
+      label: South
+    -
+      value: '4'
+      label: Downtown
+    -
+      value: '5'
+      label: Phoenix
+    -
+      value: '6'
+      label: Virtual
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

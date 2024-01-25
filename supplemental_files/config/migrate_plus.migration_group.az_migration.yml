@@ -1,0 +1,19 @@
+uuid: dc6ae4e9-66f2-49b0-b1c0-6a890d07942d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - az_migration
+      - migrate_drupal
+      - migrate_tools
+_core:
+  default_config_hash: w1TyQzt9rG6Nke0fh9vAosyrcvOzN1aFunZ6CawXVT8
+id: az_migration
+label: 'AZ Quickstart Migrations'
+description: 'Common configuration for simple migrations.'
+source_type: 'Drupal 7 Site'
+module: null
+shared_configuration:
+  source:
+    key: migrate

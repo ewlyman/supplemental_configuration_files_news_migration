@@ -1,0 +1,31 @@
+uuid: f4f04264-7ab6-4c75-9f51-c63f8485e19a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_az_photos
+    - media.type.az_image
+    - paragraphs.paragraphs_type.az_photo_gallery
+_core:
+  default_config_hash: BVZimxvLPHwvrsWClDr2_3JrVeKGUSVoS2aRiYZ0Lww
+id: paragraph.az_photo_gallery.field_az_photos
+field_name: field_az_photos
+entity_type: paragraph
+bundle: az_photo_gallery
+label: Photos
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      az_image: az_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

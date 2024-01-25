@@ -1,0 +1,22 @@
+uuid: ff66f0a2-a024-44e6-be09-b20b11ad6e9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+_core:
+  default_config_hash: hqj6xHj45KO_RoEVd9p5G-azb4slZE-dE9oDFtbAsho
+id: paragraph.field_az_photos
+field_name: field_az_photos
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

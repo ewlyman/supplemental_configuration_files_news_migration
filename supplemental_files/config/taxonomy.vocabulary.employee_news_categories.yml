@@ -1,0 +1,8 @@
+uuid: 3fd6bcee-a3a7-46ca-aac4-24a158c96f3b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Employee News Categories'
+vid: employee_news_categories
+description: 'Categories for UA@Work-LQP News Stories'
+weight: 0

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: sSevCOgyNPS1eFskc_B3x2F2xX0z8S2znZRRu2mSyIQ
+langcode: en
+form_modes:
+  node:
+    to_exclude: {  }
+  user:
+    to_exclude:
+      register: register
+  commerce_order_item:
+    to_exclude:
+      add_to_cart: add_to_cart
+  media:
+    to_exclude: {  }

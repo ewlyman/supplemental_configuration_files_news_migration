@@ -1,0 +1,23 @@
+uuid: c3e04c86-d243-4b01-bcce-982f94a7b1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_press_kit
+    - node.type.az_news
+  module:
+    - link
+id: node.az_news.field_legacy_news_press_kit
+field_name: field_legacy_news_press_kit
+entity_type: node
+bundle: az_news
+label: 'Box URL or other file URL for Electronic Press Kit'
+description: 'Adding a link to this field will make the story appear on the Electronic Press Kits page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

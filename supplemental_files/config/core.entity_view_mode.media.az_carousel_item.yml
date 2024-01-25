@@ -1,0 +1,12 @@
+uuid: 17a6fcdf-ec8a-41b1-b16d-4f87bc64eadf
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: _37Pnei0xSfeDOIfTduxxzA8zcgGdxDiMJ13OXGLSk0
+id: media.az_carousel_item
+label: 'Carousel Item'
+targetEntityType: media
+cache: true

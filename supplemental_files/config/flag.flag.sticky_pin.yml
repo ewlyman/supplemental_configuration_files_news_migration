@@ -1,0 +1,34 @@
+uuid: 78b40e47-ca6f-42b4-8a05-f376a0b222c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sticky_pin
+label: 'Sticky/Pin to top of lists'
+bundles:
+  - az_event
+  - az_news
+  - news_gallery
+  - news_press_release_legacy
+  - news_social_legacy
+entity_type: node
+global: true
+flag_short: 'Sticky/Pin to top of lists'
+flag_long: 'If checked, this content may precede other content in various lists throughout the News website'
+flag_message: ''
+unflag_short: 'Unflag this item'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: -9
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: false
+  show_on_form: true
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

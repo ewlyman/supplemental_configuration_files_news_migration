@@ -1,0 +1,35 @@
+uuid: fbd3949a-59d8-448f-af4c-e8a896ba5e60
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - media
+  enforced:
+    module:
+      - media
+_core:
+  default_config_hash: GNL3E-1paYvxzOfbhml8okYdRiz9ZTFF9gVAITtmUeY
+id: media.field_media_az_image
+field_name: field_media_az_image
+entity_type: media
+type: image
+settings:
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,34 @@
+uuid: b41c827a-7063-4cc7-9875-90cccae41460
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.custom_external_news.field_az_link
+    - field.field.node.custom_external_news.field_az_news_tags
+    - field.field.node.custom_external_news.field_az_published
+    - field.field.node.custom_external_news.field_az_short_title
+    - field.field.node.custom_external_news.field_custom_external_news_org
+    - field.field.node.custom_external_news.field_custom_news_categories
+    - field.field.node.custom_external_news.field_legacy_news_summary
+    - node.type.custom_external_news
+  module:
+    - user
+id: node.custom_external_news.teaser
+targetEntityType: node
+bundle: custom_external_news
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_az_link: true
+  field_az_news_tags: true
+  field_az_published: true
+  field_az_short_title: true
+  field_custom_external_news_org: true
+  field_custom_news_categories: true
+  field_legacy_news_summary: true

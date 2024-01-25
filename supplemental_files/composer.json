@@ -1,0 +1,128 @@
+{
+    "name": "az-digital/az-quickstart-pantheon",
+    "description": "Pantheon-compatible build for AZ Quickstart Sites.",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "repositories": {
+        "az-marketing": {
+            "type": "vcs",
+            "url": "git@github.com:az-marketing/news_migration.git"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "1": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "2": {
+            "type": "path",
+            "url": "upstream"
+        }
+    },
+    "require": {
+        "az-marketing/news_migration": "dev-main",
+        "drupal/address": "^2.0",
+        "drupal/conditional_fields": "^4.0@alpha",
+        "drupal/devel": "^5.0",
+        "drupal/entity_reference_views": "^1.1@beta",
+        "drupal/feeds": "^3.0@beta",
+        "drupal/feeds_para_mapper": "1.x-dev@dev",
+        "drupal/field_token_value": "^3.0",
+        "drupal/field_tools": "^1.0@alpha",
+        "drupal/form_mode_manager": "dev-2.x",
+        "drupal/google_analytics_counter": "^4.0",
+        "drupal/migrate_devel": "^2.2",
+        "drupal/module_filter": "^4.0",
+        "drupal/oembed_providers": "^2.1",
+        "drupal/s3fs": "^3.3",
+        "drupal/structure_sync": "^2.0",
+        "drupal/taxonomy_manager": "^2.0",
+        "drupal/term_merge": "^2.0@beta",
+        "drupal/views_data_export": "^1.4",
+        "internal/upstream-configuration": "*",
+        "mglaman/composer-drupal-lenient": "^1.0",
+        "npm-asset/select2": "^4.0",
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform": {
+            "php": "8.1"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "mglaman/composer-drupal-lenient": true,
+            "oomphinc/composer-installers-extender": true,
+            "zaporylie/composer-drupal-optimizations": true
+        }
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "enable-patching": true,
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": [
+                "type:bower-asset",
+                "type:drupal-library",
+                "type:npm-asset"
+            ],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "allowed-packages": [
+                "pantheon-systems/drupal-integrations",
+                "az-digital/az_quickstart"
+            ],
+            "locations": {
+                "web-root": "./web"
+            },
+            "file-mapping": {
+                "[project-root]/.editorconfig": false,
+                "[project-root]/pantheon.upstream.yml": false,
+                "[project-root]/.gitattributes": false
+            }
+        },
+        "patches": {
+            "az-digital/az_quickstart": {
+                "Closes #2913 Adding byline affiliation to news, as well as a formatter pseudo field to combine byline, and byline affiliation upon display.": "https://patch-diff.githubusercontent.com/raw/az-digital/az_quickstart/pull/2926.diff",
+                "Close #2959 refactor AZParagraphsItem migrate source plugin.":"https://patch-diff.githubusercontent.com/raw/az-digital/az_quickstart/pull/2961.patch",
+                "Close #2962 handle empty values in TextFormatRecognizer.php":"https://patch-diff.githubusercontent.com/raw/az-digital/az_quickstart/pull/2963.diff"
+            },
+            "drupal/form_mode_manager": {
+                "Drupal 10 Compatibility. (3297262)": "https://git.drupalcode.org/project/form_mode_manager/-/merge_requests/8.diff"
+            },
+           "drupal/feeds_para_mapper": {
+                "Call to undefined method error.": "https://www.drupal.org/files/issues/2021-12-16/feeds_para_mapper-error-getFieldDefinition-3244189-4.patch",
+                "Error when adding paragraphs.": "https://www.drupal.org/files/issues/2022-01-20/3103187-14.patch"
+           }
+        },
+        "drupal-lenient": {
+            "allowed-list": ["drupal/form_mode_manager"]
+        }
+    }
+}

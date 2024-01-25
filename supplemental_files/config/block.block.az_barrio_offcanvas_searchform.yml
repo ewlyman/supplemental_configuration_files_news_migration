@@ -1,0 +1,23 @@
+uuid: dd014732-4ff9-4bd9-a3e5-f5a940eb39be
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - az_barrio
+_core:
+  default_config_hash: rtAhqxeYucCLs048RrYMbUvUFvIKu1EC5Swj5diE4-s
+id: az_barrio_offcanvas_searchform
+theme: az_barrio
+region: navigation_offcanvas
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

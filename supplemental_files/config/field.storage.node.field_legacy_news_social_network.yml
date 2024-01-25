@@ -1,0 +1,42 @@
+uuid: 3996ca84-1882-4d06-a6b6-62728ae6ba44
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_legacy_news_social_network
+field_name: field_legacy_news_social_network
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: Facebook
+    -
+      value: '1'
+      label: Twitter
+    -
+      value: '2'
+      label: YouTube
+    -
+      value: '3'
+      label: LinkedIN
+    -
+      value: '4'
+      label: Instagram
+    -
+      value: '5'
+      label: Pinterest
+    -
+      value: '6'
+      label: FourSquare
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

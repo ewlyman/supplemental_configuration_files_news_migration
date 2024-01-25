@@ -1,0 +1,15 @@
+uuid: 8ac451ee-a160-45c7-8cc5-d54d6e88b323
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.feature_event
+  module:
+    - flag
+id: flag_action.feature_event_flag
+label: 'Feature event on calendar page'
+type: node
+plugin: 'flag_action:feature_event_flag'
+configuration:
+  flag_id: feature_event
+  flag_action: flag

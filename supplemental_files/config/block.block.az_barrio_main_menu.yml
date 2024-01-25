@@ -1,0 +1,27 @@
+uuid: 446bac31-3e6a-4e3a-ac56-ee8576e75452
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - az_barrio
+_core:
+  default_config_hash: TyGj8xJhLbAsq8LO1VzWPOfwXecB9jqmTJRzS6xIykE
+id: az_barrio_main_menu
+theme: az_barrio
+region: navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,34 @@
+uuid: 741106bc-7637-4972-8e57-367d67f6561a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: 1tciBRPcEzWUoBDlglwfjr7o6WNKjxz4wufKqhBqU7Y
+id: bootstrap_barrio_sidebar_menu
+theme: bootstrap_barrio
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Sidebar menu'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: active
+  label_link: false
+  label_type: root
+  level: 2
+  depth: 0
+  expand_all_items: false
+  parent: 'main:'
+  suggestion: sidebar
+  expand: false
+visibility: {  }

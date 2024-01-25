@@ -1,0 +1,21 @@
+uuid: 6d721116-694c-495a-a559-b48308217331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_trellis_id
+    - node.type.az_event
+_core:
+  default_config_hash: 5Q8LI-V4xa3d1PtjbHSF6qzpSl7F1BHG0uGpTKafSW0
+id: node.az_event.field_az_trellis_id
+field_name: field_az_trellis_id
+entity_type: node
+bundle: az_event
+label: 'Trellis Event ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,116 @@
+uuid: 81710a9a-680f-4f05-b3a7-88b66a8778c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_paragraphs_html
+id: config_sync.module.az_paragraphs_html
+snapshotSet: config_sync
+extensionType: module
+extensionName: az_paragraphs_html
+items:
+  -
+    collection: ''
+    name: core.entity_form_display.paragraph.az_html.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.paragraph.az_html.field_az_full_html
+          - paragraphs.paragraphs_type.az_html
+        module:
+          - text
+      id: paragraph.az_html.default
+      targetEntityType: paragraph
+      bundle: az_html
+      mode: default
+      content:
+        field_az_full_html:
+          weight: 0
+          settings:
+            rows: 20
+            placeholder: ''
+          third_party_settings: {  }
+          type: text_textarea
+          region: content
+      hidden:
+        created: true
+        status: true
+      _core:
+        default_config_hash: 7xvHjba9JtjEjpD0a8lSinQIECLSpmxYcMorOEvj5oY
+  -
+    collection: ''
+    name: core.entity_view_display.paragraph.az_html.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.paragraph.az_html.field_az_full_html
+          - paragraphs.paragraphs_type.az_html
+        module:
+          - text
+      id: paragraph.az_html.default
+      targetEntityType: paragraph
+      bundle: az_html
+      mode: default
+      content:
+        field_az_full_html:
+          weight: 0
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+          type: text_default
+          region: content
+      hidden: {  }
+      _core:
+        default_config_hash: rmNwiZgydwf3icTmyQuZa31LXXLrcLTpSpfQTyqvkuw
+  -
+    collection: ''
+    name: field.field.paragraph.az_html.field_az_full_html
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.paragraph.field_az_full_html
+          - filter.format.full_html
+          - paragraphs.paragraphs_type.az_html
+        module:
+          - text
+      id: paragraph.az_html.field_az_full_html
+      field_name: field_az_full_html
+      entity_type: paragraph
+      bundle: az_html
+      label: 'Full HTML'
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        allowed_formats:
+          - full_html
+      field_type: text_long
+      _core:
+        default_config_hash: wwYbqwdPBEd8ass4k2cUUMLEXanH7J451KPO4P1Uf58
+  -
+    collection: ''
+    name: paragraphs.paragraphs_type.az_html
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - az_paragraphs
+      id: az_html
+      label: HTML
+      icon_uuid: null
+      icon_default: null
+      description: 'Add markup that can not be added with a text area or embedded media.'
+      behavior_plugins:
+        az_default_paragraph_behavior:
+          enabled: true
+      _core:
+        default_config_hash: 9jXr2wRqRbCT1D4ZMDrHYKHARz_PSGOu-sh-UVPSG14

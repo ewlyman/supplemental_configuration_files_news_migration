@@ -1,0 +1,27 @@
+uuid: 3d021d4e-7140-4a6a-bd70-ac72fa1d8d18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.az_text_background.field_az_text_area
+    - paragraphs.paragraphs_type.az_text_background
+  module:
+    - text
+_core:
+  default_config_hash: 0aqARR_oOqUNDQoc8OBiW5056ib2oZ-BJuvIS-KDXGM
+id: paragraph.az_text_background.default
+targetEntityType: paragraph
+bundle: az_text_background
+mode: default
+content:
+  field_az_text_area:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

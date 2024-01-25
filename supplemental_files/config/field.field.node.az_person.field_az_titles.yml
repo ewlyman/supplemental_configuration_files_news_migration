@@ -1,0 +1,21 @@
+uuid: a9edc61b-6b2e-457e-8b91-5f5c3c096470
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_titles
+    - node.type.az_person
+_core:
+  default_config_hash: vBx1aGMgX9YJ-a3rHjkP-qhEJ1dg2iutXqWg-bCKmzo
+id: node.az_person.field_az_titles
+field_name: field_az_titles
+entity_type: node
+bundle: az_person
+label: 'Job Title(s)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

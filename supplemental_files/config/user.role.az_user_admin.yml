@@ -1,0 +1,20 @@
+uuid: f7f83bce-0ea7-45e8-897f-4ee88a15cb9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - role_delegation
+    - user
+_core:
+  default_config_hash: YB5yHEae5Lcgym8xk_QBVWShr6aRDFBEnoUSHMr6WyE
+id: az_user_admin
+label: 'User administrator'
+weight: 4
+is_admin: false
+permissions:
+  - 'administer users'
+  - 'assign az_content_admin role'
+  - 'assign az_content_editor role'
+  - 'assign az_user_admin role'
+  - 'delete own files'

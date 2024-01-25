@@ -1,0 +1,23 @@
+uuid: d6edd142-ec59-4e42-823a-61fa138f6c10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_prior_nid
+    - node.type.az_event
+id: node.az_event.field_custom_prior_nid
+field_name: field_custom_prior_nid
+entity_type: node
+bundle: az_event
+label: 'Prior NID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

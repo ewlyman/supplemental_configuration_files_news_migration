@@ -1,0 +1,15 @@
+uuid: 969ae107-905f-4d4d-8728-02303e137740
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.feature_event
+  module:
+    - flag
+id: flag_action.feature_event_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:feature_event_unflag'
+configuration:
+  flag_id: feature_event
+  flag_action: unflag

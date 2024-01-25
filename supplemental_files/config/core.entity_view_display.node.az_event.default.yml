@@ -1,0 +1,642 @@
+uuid: f7255877-1211-4ceb-9634-6ba306de2944
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.az_event.feeds_item
+    - field.field.node.az_event.field_az_attachments
+    - field.field.node.az_event.field_az_body
+    - field.field.node.az_event.field_az_contacts
+    - field.field.node.az_event.field_az_event_category
+    - field.field.node.az_event.field_az_event_date
+    - field.field.node.az_event.field_az_featured_image_as_thumb
+    - field.field.node.az_event.field_az_link
+    - field.field.node.az_event.field_az_links
+    - field.field.node.az_event.field_az_location
+    - field.field.node.az_event.field_az_media_thumbnail_image
+    - field.field.node.az_event.field_az_metatag
+    - field.field.node.az_event.field_az_photos
+    - field.field.node.az_event.field_az_short_title
+    - field.field.node.az_event.field_az_subheading
+    - field.field.node.az_event.field_az_summary
+    - field.field.node.az_event.field_az_trellis_id
+    - field.field.node.az_event.field_custom_city
+    - field.field.node.az_event.field_custom_prior_nid
+    - field.field.node.az_event.field_custom_state
+    - field.field.node.az_event.field_custom_street_additional
+    - field.field.node.az_event.field_custom_street_address
+    - field.field.node.az_event.field_legacy_calendar_category
+    - field.field.node.az_event.field_legacy_calendar_tags
+    - field.field.node.az_event.field_legacy_event_audience
+    - field.field.node.az_event.field_legacy_event_audience_size
+    - field.field.node.az_event.field_legacy_event_campus
+    - field.field.node.az_event.field_legacy_event_phone
+    - field.field.node.az_event.field_legacy_event_price
+    - field.field.node.az_event.field_legacy_event_your_email
+    - field.field.node.az_event.field_legacy_event_your_name
+    - field.field.node.az_event.field_legacy_news_summary
+    - node.type.az_event
+  module:
+    - date_ap_style
+    - entity_reference_revisions
+    - field_group
+    - file
+    - link
+    - options
+    - smart_title
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_subtitle_div:
+      children:
+        - field_az_subheading
+      label: 'Subtitle Div'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'lead mb-4'
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_category_div:
+      children:
+        - field_az_event_category
+      label: 'Category Div'
+      parent_name: group_wrapper
+      region: content
+      weight: 11
+      format_type: html_element
+      format_settings:
+        classes: 'clearfix pt-2'
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_when_where_row:
+      children:
+        - group_when_column
+        - group_where_column
+      label: 'When/Where Row'
+      parent_name: group_wrapper
+      region: content
+      weight: 8
+      format_type: html_element
+      format_settings:
+        classes: 'row mb-4'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_contacts_attach_row:
+      children:
+        - group_contacts_column
+        - group_attachments_column
+      label: 'Contacts/Attachments Row'
+      parent_name: group_wrapper
+      region: content
+      weight: 12
+      format_type: html_element
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_when_column:
+      children:
+        - field_az_event_date
+      label: When
+      parent_name: group_when_where_row
+      region: content
+      weight: 13
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        id: ''
+        element: div
+        show_label: true
+        label_element: h2
+        label_element_classes: h3
+        attributes: ''
+        effect: none
+        speed: fast
+    group_where_column:
+      children:
+        - field_az_location
+      label: Where
+      parent_name: group_when_where_row
+      region: content
+      weight: 14
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        id: ''
+        element: div
+        show_label: true
+        label_element: h2
+        label_element_classes: h3
+        attributes: ''
+        effect: none
+        speed: fast
+    group_contacts_column:
+      children:
+        - field_az_contacts
+      label: Contacts
+      parent_name: group_contacts_attach_row
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        id: ''
+        element: div
+        show_label: true
+        label_element: h2
+        label_element_classes: h3
+        attributes: ''
+        effect: none
+        speed: fast
+    group_attachments_column:
+      children:
+        - field_az_attachments
+      label: Attachments
+      parent_name: group_contacts_attach_row
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        id: ''
+        element: div
+        show_label: true
+        label_element: h2
+        label_element_classes: h3
+        attributes: ''
+        effect: none
+        speed: fast
+    group_wrapper:
+      children:
+        - field_az_photos
+        - group_when_where_row
+        - field_az_body
+        - group_category_div
+        - group_contacts_attach_row
+      label: Wrapper
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: mb-5
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_separator:
+      children: {  }
+      label: separator
+      parent_name: ''
+      region: hidden
+      weight: 22
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: hr
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_event_link:
+      children:
+        - field_az_links
+      label: 'Event Link'
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_tags:
+      children:
+        - field_legacy_calendar_tags
+      label: Tags
+      parent_name: group_tag_group
+      region: content
+      weight: 6
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_category:
+      children:
+        - field_legacy_calendar_category
+      label: Category
+      parent_name: group_tag_group
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_tag_group:
+      children:
+        - group_category
+        - group_tags
+      label: 'Tag group'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_loc_price_info:
+      children:
+        - group_location
+        - group_price
+      label: 'loc price info'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_location:
+      children:
+        - field_legacy_event_campus
+      label: Location
+      parent_name: group_loc_price_info
+      region: content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_price:
+      children:
+        - field_legacy_event_price
+      label: Price
+      parent_name: group_loc_price_info
+      region: content
+      weight: 21
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_aud_size:
+      children:
+        - group_audience
+        - group_size
+      label: 'aud size'
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: 'row mb-2'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_audience:
+      children:
+        - field_legacy_event_audience
+      label: Audience
+      parent_name: group_aud_size
+      region: content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_size:
+      children:
+        - field_legacy_event_audience_size
+      label: Size
+      parent_name: group_aud_size
+      region: content
+      weight: 21
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_location_address:
+      children:
+        - field_custom_street_address
+        - field_custom_street_additional
+        - field_custom_city
+        - field_custom_state
+      label: 'Location Address'
+      parent_name: ''
+      region: content
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+  smart_title:
+    enabled: false
+_core:
+  default_config_hash: ILea9bunTePw3oNgTx_BYZGMpvfM0c2FixPGxuVXkuI
+id: node.az_event.default
+targetEntityType: node
+bundle: az_event
+mode: default
+content:
+  field_az_attachments:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_az_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_az_contacts:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_az_event_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_az_event_date:
+    type: daterange_ap_style
+    label: hidden
+    settings:
+      always_display_year: '1'
+      use_today: '1'
+      cap_today: '1'
+      display_time: '1'
+      time_before_date: '1'
+      use_all_day: '1'
+      separator: endash
+      timezone: America/Phoenix
+      display_noon_and_midnight: 0
+      capitalize_noon_and_midnight: 0
+      display_day: null
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_az_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_az_location:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_az_photos:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: az_large
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_az_subheading:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_custom_city:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_custom_state:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_custom_street_additional:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_custom_street_address:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_legacy_calendar_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_legacy_calendar_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_legacy_event_audience:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_legacy_event_audience_size:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_legacy_event_campus:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_legacy_event_price:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  az_event_day: true
+  az_event_month: true
+  feeds_item: true
+  field_az_featured_image_as_thumb: true
+  field_az_link: true
+  field_az_media_thumbnail_image: true
+  field_az_metatag: true
+  field_az_short_title: true
+  field_az_summary: true
+  field_az_trellis_id: true
+  field_custom_prior_nid: true
+  field_legacy_event_phone: true
+  field_legacy_event_your_email: true
+  field_legacy_event_your_name: true
+  field_legacy_news_summary: true
+  links: true
+  smart_title: true

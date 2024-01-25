@@ -1,0 +1,21 @@
+uuid: d8663467-d013-43e6-ada9-5672b675c9df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_byline_affiliation
+    - node.type.az_news
+_core:
+  default_config_hash: w3RcHyjH5cbu44FQUeoqcy6FkFNFRG-Lb2ChorPVQJM
+id: node.az_news.field_az_byline_affiliation
+field_name: field_az_byline_affiliation
+entity_type: node
+bundle: az_news
+label: 'Byline Affiliation'
+description: "Indicates the author's department or organization at the time of writing. Include the specific unit or group within the institution that is most relevant to the article's content."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

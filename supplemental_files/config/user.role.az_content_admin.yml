@@ -1,0 +1,114 @@
+uuid: 898f2765-c107-4860-8cec-6628d6208bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.az_audio
+    - media.type.az_document
+    - media.type.az_image
+    - media.type.az_remote_video
+    - media.type.az_video
+    - node.type.az_carousel_item
+    - node.type.az_event
+    - node.type.az_flexible_page
+    - node.type.az_news
+    - node.type.az_person
+    - taxonomy.vocabulary.az_event_categories
+    - taxonomy.vocabulary.az_news_tags
+    - taxonomy.vocabulary.az_page_categories
+    - taxonomy.vocabulary.az_person_categories
+    - taxonomy.vocabulary.az_person_categories_secondary
+    - taxonomy.vocabulary.tags
+    - workflows.workflow.editorial
+  module:
+    - az_core
+    - az_flexible_page
+    - block
+    - block_class
+    - block_content
+    - block_content_permissions
+    - content_moderation
+    - draggableviews
+    - easy_breadcrumb
+    - file
+    - flag
+    - media
+    - metatag
+    - node
+    - path
+    - redirect
+    - search
+    - shortcut
+    - system
+    - taxonomy
+    - xmlsitemap
+_core:
+  default_config_hash: 7zdeM95fmXiOLOhXJ4aJZ2KMgaIGMFh4mi-B9aOyVFs
+id: az_content_admin
+label: 'Content administrator'
+weight: 3
+is_admin: false
+permissions:
+  - 'access block library'
+  - 'access draggableviews'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'administer block classes'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer blocks'
+  - 'administer easy breadcrumb'
+  - 'administer flaggings'
+  - 'administer flags'
+  - 'administer menu'
+  - 'administer meta tags'
+  - 'administer nodes'
+  - 'administer quickstart configuration'
+  - 'administer redirects'
+  - 'administer shortcuts'
+  - 'administer taxonomy'
+  - 'administer url aliases'
+  - 'administer xmlsitemap'
+  - 'bypass node access'
+  - 'create terms in az_event_categories'
+  - 'create terms in az_news_tags'
+  - 'create terms in az_page_categories'
+  - 'create terms in az_person_categories'
+  - 'create terms in az_person_categories_secondary'
+  - 'create terms in tags'
+  - 'customize shortcut links'
+  - 'delete any az_audio media'
+  - 'delete any az_carousel_item content'
+  - 'delete any az_document media'
+  - 'delete any az_event content'
+  - 'delete any az_flexible_block block content'
+  - 'delete any az_flexible_page content'
+  - 'delete any az_image media'
+  - 'delete any az_news content'
+  - 'delete any az_person content'
+  - 'delete any az_quick_links block content'
+  - 'delete any az_remote_video media'
+  - 'delete any az_video media'
+  - 'delete any file'
+  - 'delete own az_carousel_item content'
+  - 'delete own files'
+  - 'delete terms in az_event_categories'
+  - 'delete terms in az_news_tags'
+  - 'delete terms in az_page_categories'
+  - 'delete terms in az_person_categories'
+  - 'delete terms in az_person_categories_secondary'
+  - 'delete terms in tags'
+  - 'edit own az_audio media'
+  - 'edit terms in az_event_categories'
+  - 'edit terms in az_news_tags'
+  - 'edit terms in az_page_categories'
+  - 'edit terms in az_person_categories'
+  - 'edit terms in az_person_categories_secondary'
+  - 'edit terms in tags'
+  - 'use advanced search'
+  - 'use editorial transition az_publish'
+  - 'use editorial transition az_unpublish'
+  - 'use editorial transition create_new_draft'
+  - 'use marketing campaign page styles'
+  - 'view any unpublished content'
+  - 'view latest version'

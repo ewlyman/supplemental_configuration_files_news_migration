@@ -1,0 +1,380 @@
+uuid: a54a07a1-728e-49bd-bfcd-110e099fc36f
+langcode: en
+status: true
+dependencies:
+  profile:
+    - az_quickstart
+id: config_sync.profile.az_quickstart
+snapshotSet: config_sync
+extensionType: profile
+extensionName: az_quickstart
+items:
+  -
+    collection: ''
+    name: user.role.administrator
+    data:
+      uuid: 9b7d3598-74f6-4598-b403-d3f973ebaf4f
+      langcode: en
+      status: true
+      dependencies: {  }
+      _core:
+        default_config_hash: br97AUA-_kRUKYAMUeTnNGdQH6v-XO1itpIbQQcLLy8
+      id: administrator
+      label: Administrator
+      weight: 6
+      is_admin: true
+      permissions: {  }
+  -
+    collection: ''
+    name: user.role.anonymous
+    data:
+      uuid: 2a8c9a0b-92f3-4899-8740-faf4dcf68a3a
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - exclude_node_title
+          - media
+          - search
+          - system
+      _core:
+        default_config_hash: qdbsWgvCt472zvoIfsubIV6Ki6f8YQ_GqEYMuVAV2jY
+      id: anonymous
+      label: 'Anonymous user'
+      weight: 0
+      is_admin: false
+      permissions:
+        - 'access content'
+        - 'search content'
+        - 'use exclude node title'
+        - 'view media'
+  -
+    collection: ''
+    name: user.role.authenticated
+    data:
+      uuid: f606b837-1691-452a-a5f8-110d24c4d1cf
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - exclude_node_title
+          - file
+          - honeypot
+          - media
+          - search
+          - shortcut
+          - system
+      _core:
+        default_config_hash: hy1MQ5WFktI650R3tcqXRE4ZAZ1OZkF9ASVAgBMrOJI
+      id: authenticated
+      label: 'Authenticated user'
+      weight: 1
+      is_admin: false
+      permissions:
+        - 'access content'
+        - 'access shortcuts'
+        - 'bypass honeypot protection'
+        - 'delete own files'
+        - 'search content'
+        - 'use exclude node title'
+        - 'view media'
+  -
+    collection: ''
+    name: user.role.az_content_admin
+    data:
+      uuid: 898f2765-c107-4860-8cec-6628d6208bdb
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - media.type.az_audio
+          - media.type.az_document
+          - media.type.az_image
+          - media.type.az_remote_video
+          - media.type.az_video
+          - node.type.az_carousel_item
+          - node.type.az_event
+          - node.type.az_flexible_page
+          - node.type.az_news
+          - node.type.az_person
+          - taxonomy.vocabulary.az_event_categories
+          - taxonomy.vocabulary.az_news_tags
+          - taxonomy.vocabulary.az_page_categories
+          - taxonomy.vocabulary.az_person_categories
+          - taxonomy.vocabulary.az_person_categories_secondary
+          - taxonomy.vocabulary.tags
+          - workflows.workflow.editorial
+        module:
+          - az_core
+          - az_flexible_page
+          - block
+          - block_class
+          - block_content
+          - block_content_permissions
+          - content_moderation
+          - draggableviews
+          - easy_breadcrumb
+          - file
+          - flag
+          - media
+          - metatag
+          - node
+          - path
+          - redirect
+          - search
+          - shortcut
+          - system
+          - taxonomy
+          - xmlsitemap
+      _core:
+        default_config_hash: 7zdeM95fmXiOLOhXJ4aJZ2KMgaIGMFh4mi-B9aOyVFs
+      id: az_content_admin
+      label: 'Content administrator'
+      weight: 3
+      is_admin: false
+      permissions:
+        - 'access block library'
+        - 'access draggableviews'
+        - 'access site reports'
+        - 'access taxonomy overview'
+        - 'administer block classes'
+        - 'administer block content'
+        - 'administer block types'
+        - 'administer blocks'
+        - 'administer easy breadcrumb'
+        - 'administer flaggings'
+        - 'administer flags'
+        - 'administer menu'
+        - 'administer meta tags'
+        - 'administer nodes'
+        - 'administer quickstart configuration'
+        - 'administer redirects'
+        - 'administer shortcuts'
+        - 'administer taxonomy'
+        - 'administer url aliases'
+        - 'administer xmlsitemap'
+        - 'bypass node access'
+        - 'create terms in az_event_categories'
+        - 'create terms in az_news_tags'
+        - 'create terms in az_page_categories'
+        - 'create terms in az_person_categories'
+        - 'create terms in az_person_categories_secondary'
+        - 'create terms in tags'
+        - 'customize shortcut links'
+        - 'delete any az_audio media'
+        - 'delete any az_carousel_item content'
+        - 'delete any az_document media'
+        - 'delete any az_event content'
+        - 'delete any az_flexible_block block content'
+        - 'delete any az_flexible_page content'
+        - 'delete any az_image media'
+        - 'delete any az_news content'
+        - 'delete any az_person content'
+        - 'delete any az_quick_links block content'
+        - 'delete any az_remote_video media'
+        - 'delete any az_video media'
+        - 'delete any file'
+        - 'delete own az_carousel_item content'
+        - 'delete own files'
+        - 'delete terms in az_event_categories'
+        - 'delete terms in az_news_tags'
+        - 'delete terms in az_page_categories'
+        - 'delete terms in az_person_categories'
+        - 'delete terms in az_person_categories_secondary'
+        - 'delete terms in tags'
+        - 'edit own az_audio media'
+        - 'edit terms in az_event_categories'
+        - 'edit terms in az_news_tags'
+        - 'edit terms in az_page_categories'
+        - 'edit terms in az_person_categories'
+        - 'edit terms in az_person_categories_secondary'
+        - 'edit terms in tags'
+        - 'use advanced search'
+        - 'use editorial transition az_publish'
+        - 'use editorial transition az_unpublish'
+        - 'use editorial transition create_new_draft'
+        - 'use marketing campaign page styles'
+        - 'view any unpublished content'
+        - 'view latest version'
+  -
+    collection: ''
+    name: user.role.az_content_editor
+    data:
+      uuid: 35b25176-b976-4193-bca9-025359ee5e62
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - filter.format.az_standard
+          - media.type.az_audio
+          - media.type.az_document
+          - media.type.az_image
+          - media.type.az_remote_video
+          - media.type.az_video
+          - node.type.az_carousel_item
+          - node.type.az_event
+          - node.type.az_flexible_page
+          - node.type.az_news
+          - node.type.az_person
+          - workflows.workflow.editorial
+        module:
+          - block_content_permissions
+          - coffee
+          - content_moderation
+          - contextual
+          - draggableviews
+          - environment_indicator
+          - exclude_node_title
+          - file
+          - filter
+          - media
+          - node
+          - paragraphs
+          - path
+          - shortcut
+          - smart_date_recur
+          - system
+          - toolbar
+          - tour
+      _core:
+        default_config_hash: LMg7D0QX7BMcDdzEKkLhV3dC_bybgOYQLpY7gCSlx30
+      id: az_content_editor
+      label: 'Content editor'
+      weight: 2
+      is_admin: false
+      permissions:
+        - 'access administration pages'
+        - 'access coffee'
+        - 'access content overview'
+        - 'access contextual links'
+        - 'access draggableviews'
+        - 'access environment indicator'
+        - 'access files overview'
+        - 'access media overview'
+        - 'access toolbar'
+        - 'access tour'
+        - 'administer nodes'
+        - 'cancel smart date recur instances'
+        - 'create az_audio media'
+        - 'create az_carousel_item content'
+        - 'create az_document media'
+        - 'create az_event content'
+        - 'create az_flexible_block block content'
+        - 'create az_flexible_page content'
+        - 'create az_image media'
+        - 'create az_news content'
+        - 'create az_person content'
+        - 'create az_quick_links block content'
+        - 'create az_remote_video media'
+        - 'create az_video media'
+        - 'create media'
+        - 'create url aliases'
+        - 'delete media'
+        - 'delete own az_audio media'
+        - 'delete own az_carousel_item content'
+        - 'delete own az_document media'
+        - 'delete own az_event content'
+        - 'delete own az_flexible_page content'
+        - 'delete own az_image media'
+        - 'delete own az_news content'
+        - 'delete own az_person content'
+        - 'delete own az_remote_video media'
+        - 'delete own az_video media'
+        - 'delete own files'
+        - 'edit any az_audio media'
+        - 'edit any az_carousel_item content'
+        - 'edit any az_document media'
+        - 'edit any az_event content'
+        - 'edit any az_flexible_page content'
+        - 'edit any az_image media'
+        - 'edit any az_news content'
+        - 'edit any az_person content'
+        - 'edit any az_remote_video media'
+        - 'edit any az_video media'
+        - 'edit behavior plugin settings'
+        - 'edit own az_carousel_item content'
+        - 'edit own az_document media'
+        - 'edit own az_event content'
+        - 'edit own az_flexible_page content'
+        - 'edit own az_image media'
+        - 'edit own az_news content'
+        - 'edit own az_person content'
+        - 'edit own az_remote_video media'
+        - 'edit own az_video media'
+        - 'exclude any node title'
+        - 'exclude own node title'
+        - 'make smart dates recur'
+        - 'reschedule smart date recur instances'
+        - 'revert all revisions'
+        - 'revert az_carousel_item revisions'
+        - 'revert az_event revisions'
+        - 'revert az_flexible_page revisions'
+        - 'revert az_news revisions'
+        - 'revert az_person revisions'
+        - 'switch shortcut sets'
+        - 'update any az_flexible_block block content'
+        - 'update any az_quick_links block content'
+        - 'update media'
+        - 'use editorial transition az_publish'
+        - 'use editorial transition az_unpublish'
+        - 'use editorial transition create_new_draft'
+        - 'use text format az_standard'
+        - 'view all media revisions'
+        - 'view all revisions'
+        - 'view any unpublished content'
+        - 'view az_carousel_item revisions'
+        - 'view az_event revisions'
+        - 'view az_flexible_page revisions'
+        - 'view az_news revisions'
+        - 'view az_person revisions'
+        - 'view latest version'
+        - 'view media'
+        - 'view own unpublished content'
+        - 'view own unpublished media'
+        - 'view the administration theme'
+  -
+    collection: ''
+    name: user.role.az_html_admin
+    data:
+      uuid: a2cce2e6-4d5d-4f43-863b-1991f10227c1
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - filter.format.full_html
+        module:
+          - file
+          - filter
+      _core:
+        default_config_hash: 8cKZ11vq_7dlKK-7-TvlYR8GaxCYP3i6U0YqX3M5hX0
+      id: az_html_admin
+      label: 'HTML administrator'
+      weight: 5
+      is_admin: false
+      permissions:
+        - 'delete own files'
+        - 'use text format full_html'
+  -
+    collection: ''
+    name: user.role.az_user_admin
+    data:
+      uuid: f7f83bce-0ea7-45e8-897f-4ee88a15cb9d
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - role_delegation
+          - user
+      _core:
+        default_config_hash: YB5yHEae5Lcgym8xk_QBVWShr6aRDFBEnoUSHMr6WyE
+      id: az_user_admin
+      label: 'User administrator'
+      weight: 4
+      is_admin: false
+      permissions:
+        - 'administer users'
+        - 'assign az_content_admin role'
+        - 'assign az_content_editor role'
+        - 'assign az_user_admin role'
+        - 'delete own files'

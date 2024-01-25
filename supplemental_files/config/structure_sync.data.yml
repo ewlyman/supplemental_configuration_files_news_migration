@@ -1,0 +1,970 @@
+taxonomies:
+  az_event_categories: {  }
+  az_news_tags:
+    -
+      vid: az_news_tags
+      tid: '21'
+      langcode: und
+      name: Adaptation
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: a41db48a-5066-49df-9447-1ff62d1b1f01
+    -
+      vid: az_news_tags
+      tid: '22'
+      langcode: und
+      name: 'Agriculture & Food'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 04c574d6-43bf-4194-9429-b8ebfafd5bba
+    -
+      vid: az_news_tags
+      tid: '23'
+      langcode: und
+      name: Alumni
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: b2affd36-5368-4e17-9a50-fe5400714d82
+    -
+      vid: az_news_tags
+      tid: '24'
+      langcode: und
+      name: Anthropology
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: 6aabb820-891b-44b6-b418-cfce9580e158
+    -
+      vid: az_news_tags
+      tid: '25'
+      langcode: und
+      name: 'APIDA Heritage Month'
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '0'
+      uuid: 10657318-3044-4e30-9b8e-54f9814f47a1
+    -
+      vid: az_news_tags
+      tid: '26'
+      langcode: und
+      name: 'Arizona Advantage'
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: 92de9eb5-86c1-4169-8844-43ba684067fe
+    -
+      vid: az_news_tags
+      tid: '27'
+      langcode: und
+      name: 'Arizona Online'
+      description__value: null
+      description__format: null
+      weight: '7'
+      parent: '0'
+      uuid: 71378a10-0d04-447d-9c15-19244747f9e8
+    -
+      vid: az_news_tags
+      tid: '28'
+      langcode: und
+      name: Astronomy
+      description__value: null
+      description__format: null
+      weight: '8'
+      parent: '0'
+      uuid: b212233e-f784-466d-a5d1-00c0b96988a4
+    -
+      vid: az_news_tags
+      tid: '29'
+      langcode: und
+      name: BIO5
+      description__value: null
+      description__format: null
+      weight: '9'
+      parent: '0'
+      uuid: 88b2eb13-0420-418e-b8be-0ae2ccda8e44
+    -
+      vid: az_news_tags
+      tid: '30'
+      langcode: und
+      name: 'Biosphere 2'
+      description__value: null
+      description__format: null
+      weight: '10'
+      parent: '0'
+      uuid: d517a0a0-cb9d-4135-a164-60745824b2ee
+    -
+      vid: az_news_tags
+      tid: '31'
+      langcode: und
+      name: 'Black History Month'
+      description__value: null
+      description__format: null
+      weight: '11'
+      parent: '0'
+      uuid: 1463b31a-69e4-4e7c-a269-4ba2f142bdef
+    -
+      vid: az_news_tags
+      tid: '32'
+      langcode: und
+      name: 'Black Holes'
+      description__value: null
+      description__format: null
+      weight: '12'
+      parent: '0'
+      uuid: 079f16f3-d720-4430-a7a2-d8bb3d4aa86d
+    -
+      vid: az_news_tags
+      tid: '33'
+      langcode: und
+      name: 'College of Agriculture and Life Sciences'
+      description__value: null
+      description__format: null
+      weight: '13'
+      parent: '0'
+      uuid: 4eb46cf2-4d56-4a0a-9b94-164f63aa33bb
+    -
+      vid: az_news_tags
+      tid: '34'
+      langcode: und
+      name: 'College of Applied Science and Technology'
+      description__value: null
+      description__format: null
+      weight: '14'
+      parent: '0'
+      uuid: c1583e06-5017-4716-a066-d084d7880a97
+    -
+      vid: az_news_tags
+      tid: '35'
+      langcode: und
+      name: 'College of Architecture, Planning and Landscape Architecture'
+      description__value: null
+      description__format: null
+      weight: '15'
+      parent: '0'
+      uuid: 68f60fac-9cf1-4abd-948d-f012e222293e
+    -
+      vid: az_news_tags
+      tid: '36'
+      langcode: und
+      name: 'College of Education'
+      description__value: null
+      description__format: null
+      weight: '16'
+      parent: '0'
+      uuid: ce617bc4-2227-47c1-85d3-45179fcad714
+    -
+      vid: az_news_tags
+      tid: '37'
+      langcode: und
+      name: 'College of Engineering'
+      description__value: null
+      description__format: null
+      weight: '17'
+      parent: '0'
+      uuid: 5af7ac7b-1c5b-40ec-81d5-331f07f84398
+    -
+      vid: az_news_tags
+      tid: '38'
+      langcode: und
+      name: 'College of Fine Arts'
+      description__value: null
+      description__format: null
+      weight: '18'
+      parent: '0'
+      uuid: 0cce4fd0-1bb3-4eb9-a631-2aac8ee814e0
+    -
+      vid: az_news_tags
+      tid: '39'
+      langcode: und
+      name: 'College of Humanities'
+      description__value: null
+      description__format: null
+      weight: '19'
+      parent: '0'
+      uuid: 26b1b704-6fd2-47f8-bca6-b54ada246234
+    -
+      vid: az_news_tags
+      tid: '40'
+      langcode: und
+      name: 'College of Law'
+      description__value: null
+      description__format: null
+      weight: '20'
+      parent: '0'
+      uuid: 80377bc3-9d78-493f-995a-6d8e5d7fc290
+    -
+      vid: az_news_tags
+      tid: '41'
+      langcode: und
+      name: 'College of Medicine - Phoenix'
+      description__value: null
+      description__format: null
+      weight: '21'
+      parent: '0'
+      uuid: 5e5f0d82-579a-48bc-8fa3-560d1643f4ab
+    -
+      vid: az_news_tags
+      tid: '42'
+      langcode: und
+      name: 'College of Medicine - Tucson'
+      description__value: null
+      description__format: null
+      weight: '22'
+      parent: '0'
+      uuid: bc549437-4747-415a-b856-a56a475e0f33
+    -
+      vid: az_news_tags
+      tid: '43'
+      langcode: und
+      name: 'College of Nursing'
+      description__value: null
+      description__format: null
+      weight: '23'
+      parent: '0'
+      uuid: dab307ea-f29e-4b5c-bdc6-e983b4292634
+    -
+      vid: az_news_tags
+      tid: '44'
+      langcode: und
+      name: 'College of Optical Sciences'
+      description__value: null
+      description__format: null
+      weight: '24'
+      parent: '0'
+      uuid: bb49c9f3-01dd-4fff-a5cf-12807e3d8705
+    -
+      vid: az_news_tags
+      tid: '45'
+      langcode: und
+      name: 'College of Pharmacy'
+      description__value: null
+      description__format: null
+      weight: '25'
+      parent: '0'
+      uuid: bd5d10c2-1b2b-44b5-ae70-207649ce04ce
+    -
+      vid: az_news_tags
+      tid: '46'
+      langcode: und
+      name: 'College of Public Health'
+      description__value: null
+      description__format: null
+      weight: '26'
+      parent: '0'
+      uuid: dc701615-a82c-40a3-bf39-c09ca2f7a1c3
+    -
+      vid: az_news_tags
+      tid: '47'
+      langcode: und
+      name: 'College of Science'
+      description__value: null
+      description__format: null
+      weight: '27'
+      parent: '0'
+      uuid: e8f6f640-3849-4015-9532-dc2a82fbefae
+    -
+      vid: az_news_tags
+      tid: '48'
+      langcode: und
+      name: 'College of Social and Behavioral Sciences'
+      description__value: null
+      description__format: null
+      weight: '28'
+      parent: '0'
+      uuid: e8960ec0-152e-40ba-ada5-367edcab367a
+    -
+      vid: az_news_tags
+      tid: '49'
+      langcode: und
+      name: 'College of Veterinary Medicine'
+      description__value: null
+      description__format: null
+      weight: '29'
+      parent: '0'
+      uuid: a1d089f7-fd49-44e5-8409-0d297c0fddd2
+    -
+      vid: az_news_tags
+      tid: '50'
+      langcode: und
+      name: 'Colleges of Letters, Arts and Sciences'
+      description__value: null
+      description__format: null
+      weight: '30'
+      parent: '0'
+      uuid: 39c8772e-65f6-4d3f-8299-8ff00eda1d25
+    -
+      vid: az_news_tags
+      tid: '51'
+      langcode: und
+      name: Commencement
+      description__value: null
+      description__format: null
+      weight: '31'
+      parent: '0'
+      uuid: b72232c5-334a-49c9-9a1c-d5b9be977576
+    -
+      vid: az_news_tags
+      tid: '52'
+      langcode: und
+      name: Commercialization
+      description__value: null
+      description__format: null
+      weight: '32'
+      parent: '0'
+      uuid: f6b39d78-f6bf-43da-b1f8-844299cf81e2
+    -
+      vid: az_news_tags
+      tid: '53'
+      langcode: und
+      name: 'Community Engagement'
+      description__value: null
+      description__format: null
+      weight: '33'
+      parent: '0'
+      uuid: dc1cde28-e047-4882-828f-c93996ee266a
+    -
+      vid: az_news_tags
+      tid: '54'
+      langcode: und
+      name: Compassion
+      description__value: null
+      description__format: null
+      weight: '34'
+      parent: '0'
+      uuid: bfcd34c9-815c-4255-a910-71706a17f617
+    -
+      vid: az_news_tags
+      tid: '55'
+      langcode: und
+      name: COVID-19
+      description__value: null
+      description__format: null
+      weight: '35'
+      parent: '0'
+      uuid: a835a0a4-35f8-423c-b2c8-b07b7efbb695
+    -
+      vid: az_news_tags
+      tid: '56'
+      langcode: und
+      name: Determination
+      description__value: null
+      description__format: null
+      weight: '36'
+      parent: '0'
+      uuid: d548b0a0-a6b9-4d40-855e-79dbd87c1c8d
+    -
+      vid: az_news_tags
+      tid: '57'
+      langcode: und
+      name: 'Eller College of Management'
+      description__value: null
+      description__format: null
+      weight: '37'
+      parent: '0'
+      uuid: 43d6b6e6-430c-476e-844a-238b0138e017
+    -
+      vid: az_news_tags
+      tid: '58'
+      langcode: und
+      name: Experts
+      description__value: null
+      description__format: null
+      weight: '38'
+      parent: '0'
+      uuid: 59603151-e4bd-4dfc-8f38-53f2df980331
+    -
+      vid: az_news_tags
+      tid: '59'
+      langcode: und
+      name: Exploration
+      description__value: null
+      description__format: null
+      weight: '39'
+      parent: '0'
+      uuid: 9c247c1d-7f19-476c-b1f5-68ee0eb2c2ea
+    -
+      vid: az_news_tags
+      tid: '60'
+      langcode: und
+      name: Foundation
+      description__value: null
+      description__format: null
+      weight: '40'
+      parent: '0'
+      uuid: f631fb8a-8170-4b69-8376-1a146c8a0984
+    -
+      vid: az_news_tags
+      tid: '61'
+      langcode: und
+      name: 'Fourth Industrial Revolution'
+      description__value: null
+      description__format: null
+      weight: '41'
+      parent: '0'
+      uuid: 4b697de3-7d51-45f6-821f-d95dd6e8d56e
+    -
+      vid: az_news_tags
+      tid: '62'
+      langcode: und
+      name: 'Grand Challenges'
+      description__value: null
+      description__format: null
+      weight: '42'
+      parent: '0'
+      uuid: 4126beef-d1b6-49e5-a9c7-cd39f9ee56d9
+    -
+      vid: az_news_tags
+      tid: '63'
+      langcode: und
+      name: 'Guest Column '
+      description__value: null
+      description__format: null
+      weight: '43'
+      parent: '0'
+      uuid: 9e600f50-62d0-4c0e-9f64-603b573a3b06
+    -
+      vid: az_news_tags
+      tid: '64'
+      langcode: und
+      name: 'Hispanic Heritage Month'
+      description__value: null
+      description__format: null
+      weight: '44'
+      parent: '0'
+      uuid: 1ecc954f-11ab-4ae4-ac67-a4445b64160b
+    -
+      vid: az_news_tags
+      tid: '65'
+      langcode: und
+      name: 'Honors College'
+      description__value: null
+      description__format: null
+      weight: '45'
+      parent: '0'
+      uuid: 1b864aec-6b24-4175-8c47-877c76e2e0ef
+    -
+      vid: az_news_tags
+      tid: '66'
+      langcode: und
+      name: Inclusion
+      description__value: null
+      description__format: null
+      weight: '46'
+      parent: '0'
+      uuid: c4c0b10b-02b5-4a39-a533-022e3596b1f6
+    -
+      vid: az_news_tags
+      tid: '67'
+      langcode: und
+      name: 'Institutional Excellence'
+      description__value: null
+      description__format: null
+      weight: '47'
+      parent: '0'
+      uuid: 10b8fc7e-9803-48c5-a639-b102a05a7e9e
+    -
+      vid: az_news_tags
+      tid: '68'
+      langcode: und
+      name: Integrity
+      description__value: null
+      description__format: null
+      weight: '48'
+      parent: '0'
+      uuid: ae712b63-1026-46a4-8fb3-8cc85948d75b
+    -
+      vid: az_news_tags
+      tid: '69'
+      langcode: und
+      name: International
+      description__value: null
+      description__format: null
+      weight: '49'
+      parent: '0'
+      uuid: db3666db-30e6-4a4b-9e2b-319ea2fa8cd3
+    -
+      vid: az_news_tags
+      tid: '70'
+      langcode: und
+      name: 'James Webb Space Telescope'
+      description__value: null
+      description__format: null
+      weight: '50'
+      parent: '0'
+      uuid: 4bb3d187-cae4-41ff-b5fa-3d37628e8f9e
+    -
+      vid: az_news_tags
+      tid: '71'
+      langcode: und
+      name: 'Lunar and Planetary Laboratory'
+      description__value: null
+      description__format: null
+      weight: '51'
+      parent: '0'
+      uuid: 979d9700-f079-4695-bb94-2fcb9bffb258
+    -
+      vid: az_news_tags
+      tid: '72'
+      langcode: und
+      name: Medicine
+      description__value: null
+      description__format: null
+      weight: '52'
+      parent: '0'
+      uuid: 0dd2a4bc-a933-4cf2-a3ef-1a4cf1cd9c8f
+    -
+      vid: az_news_tags
+      tid: '73'
+      langcode: und
+      name: Military
+      description__value: null
+      description__format: null
+      weight: '53'
+      parent: '0'
+      uuid: f8985da4-808a-4be4-862f-2c1bd57e3fec
+    -
+      vid: az_news_tags
+      tid: '74'
+      langcode: und
+      name: Moon
+      description__value: null
+      description__format: null
+      weight: '54'
+      parent: '0'
+      uuid: dd73e0f0-6de9-4f8a-87ec-d178562f5fcb
+    -
+      vid: az_news_tags
+      tid: '75'
+      langcode: und
+      name: 'Native American Advancement, Initiatives & Research'
+      description__value: null
+      description__format: null
+      weight: '55'
+      parent: '0'
+      uuid: e59eb2b3-c3e0-4ae5-872a-f523dd7d6da5
+    -
+      vid: az_news_tags
+      tid: '76'
+      langcode: und
+      name: 'Native American Heritage Month'
+      description__value: null
+      description__format: null
+      weight: '56'
+      parent: '0'
+      uuid: 5591ec27-f680-4123-a509-9dd04bb7d061
+    -
+      vid: az_news_tags
+      tid: '77'
+      langcode: und
+      name: 'New Economy Initiative'
+      description__value: null
+      description__format: null
+      weight: '57'
+      parent: '0'
+      uuid: 545cd0e4-3f05-472a-9b7b-ddf297eb6bfd
+    -
+      vid: az_news_tags
+      tid: '78'
+      langcode: und
+      name: OSIRIS-APEX
+      description__value: null
+      description__format: null
+      weight: '58'
+      parent: '0'
+      uuid: 46146c3a-6a52-45c0-b89f-36b58ca3da06
+    -
+      vid: az_news_tags
+      tid: '79'
+      langcode: und
+      name: OSIRIS-REx
+      description__value: null
+      description__format: null
+      weight: '59'
+      parent: '0'
+      uuid: 11b90c84-d7c7-4214-a84d-f5417ed72aa6
+    -
+      vid: az_news_tags
+      tid: '80'
+      langcode: und
+      name: 'Pride Month'
+      description__value: null
+      description__format: null
+      weight: '60'
+      parent: '0'
+      uuid: 67a8d698-f382-42cc-a4c9-c3ae66808f00
+    -
+      vid: az_news_tags
+      tid: '81'
+      langcode: und
+      name: 'Q&A'
+      description__value: null
+      description__format: null
+      weight: '61'
+      parent: '0'
+      uuid: 2d523d8b-6ccd-4161-933f-02a71a93f73f
+    -
+      vid: az_news_tags
+      tid: '82'
+      langcode: und
+      name: Rankings
+      description__value: null
+      description__format: null
+      weight: '62'
+      parent: '0'
+      uuid: b2fcc84a-26ef-4fbe-a4fc-2e6b3e2af79d
+    -
+      vid: az_news_tags
+      tid: '83'
+      langcode: und
+      name: Research
+      description__value: null
+      description__format: null
+      weight: '63'
+      parent: '0'
+      uuid: 1136ee30-b040-4e91-8d4b-bfe1ee820b4b
+    -
+      vid: az_news_tags
+      tid: '84'
+      langcode: und
+      name: 'Research, Innovation & Impact'
+      description__value: null
+      description__format: null
+      weight: '64'
+      parent: '0'
+      uuid: 6984097f-269b-4e95-8b4a-e2fe6e1a508e
+    -
+      vid: az_news_tags
+      tid: '85'
+      langcode: und
+      name: Robbins
+      description__value: null
+      description__format: null
+      weight: '65'
+      parent: '0'
+      uuid: 59b49cad-6a8c-4560-a463-60c1745e9e9c
+    -
+      vid: az_news_tags
+      tid: '86'
+      langcode: und
+      name: Robotics
+      description__value: null
+      description__format: null
+      weight: '66'
+      parent: '0'
+      uuid: 3fca3fff-8b3c-4969-a027-29d7e0be2e40
+    -
+      vid: az_news_tags
+      tid: '87'
+      langcode: und
+      name: Space
+      description__value: null
+      description__format: null
+      weight: '67'
+      parent: '0'
+      uuid: 3a38b40a-6443-4e9a-bb37-8f0b8340a48e
+    -
+      vid: az_news_tags
+      tid: '88'
+      langcode: und
+      name: STEM
+      description__value: null
+      description__format: null
+      weight: '68'
+      parent: '0'
+      uuid: 6bceaa68-8090-4050-87a5-6e0b7640cf84
+    -
+      vid: az_news_tags
+      tid: '89'
+      langcode: und
+      name: 'Strategic Plan'
+      description__value: null
+      description__format: null
+      weight: '69'
+      parent: '0'
+      uuid: b6b8663f-c30f-4232-bb93-27c6f0bb874e
+    -
+      vid: az_news_tags
+      tid: '90'
+      langcode: und
+      name: Students
+      description__value: null
+      description__format: null
+      weight: '70'
+      parent: '0'
+      uuid: 8a020883-2347-444c-9c1e-18a1efd667a0
+    -
+      vid: az_news_tags
+      tid: '91'
+      langcode: und
+      name: 'Sustainability & the Environment'
+      description__value: null
+      description__format: null
+      weight: '71'
+      parent: '0'
+      uuid: 37ccd6d1-4f45-4c3b-9d01-ec1fa57d1775
+    -
+      vid: az_news_tags
+      tid: '92'
+      langcode: und
+      name: 'Tech Launch Arizona'
+      description__value: null
+      description__format: null
+      weight: '72'
+      parent: '0'
+      uuid: 47ab6e9d-22ec-45b9-bd4e-298187b09647
+    -
+      vid: az_news_tags
+      tid: '93'
+      langcode: und
+      name: TRIF
+      description__value: null
+      description__format: null
+      weight: '73'
+      parent: '0'
+      uuid: 56326298-b6fb-4a62-be01-1972b3321f74
+    -
+      vid: az_news_tags
+      tid: '94'
+      langcode: und
+      name: Water
+      description__value: null
+      description__format: null
+      weight: '74'
+      parent: '0'
+      uuid: 0ef06f2c-3585-47df-b605-1d0293fe317b
+    -
+      vid: az_news_tags
+      tid: '95'
+      langcode: und
+      name: 'Wildcat Journey'
+      description__value: null
+      description__format: null
+      weight: '75'
+      parent: '0'
+      uuid: cd87bfd1-7ac7-4a6b-ae73-f148d89db76a
+    -
+      vid: az_news_tags
+      tid: '96'
+      langcode: und
+      name: "Women's History Month"
+      description__value: null
+      description__format: null
+      weight: '76'
+      parent: '0'
+      uuid: 68fbd2f9-980b-4f4d-a2b9-7891db21bb6a
+  az_page_categories:
+    -
+      vid: az_page_categories
+      tid: '5'
+      langcode: en
+      name: 'AZ News site page'
+      description__value: "<p>A term for pages that are part of the main News website</p>\r\n"
+      description__format: az_standard
+      weight: '0'
+      parent: '0'
+      uuid: 790603d8-8acd-4587-bb52-a47f6be2559a
+    -
+      vid: az_page_categories
+      tid: '4'
+      langcode: en
+      name: 'UA at Work (faculty and staff) page'
+      description__value: "<p>Pages that will be part of the UA@Work (faculty and staff) section.</p>\r\n"
+      description__format: az_standard
+      weight: '1'
+      parent: '0'
+      uuid: 0b831ca4-3b6b-46ec-8bca-b06651306570
+  az_person_categories:
+    -
+      vid: az_person_categories
+      tid: '1'
+      langcode: en
+      name: Communications
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: c22cb74a-9f36-4592-97ee-211a9e821e45
+    -
+      vid: az_person_categories
+      tid: '2'
+      langcode: en
+      name: 'Media Contact'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 573c1f20-8122-4765-9ac4-eb0d9cb68e80
+    -
+      vid: az_person_categories
+      tid: '3'
+      langcode: en
+      name: 'Researcher Contact'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1fdfb2c8-a386-4e42-902b-f45eac2ffefe
+  az_person_categories_secondary: {  }
+  news_story_categories:
+    -
+      vid: news_story_categories
+      tid: '20'
+      langcode: und
+      name: Archive
+      description__value: null
+      description__format: null
+      weight: '13'
+      parent: '0'
+      uuid: 5694a332-8905-4b22-b736-adb669412da6
+    -
+      vid: news_story_categories
+      tid: '8'
+      langcode: und
+      name: 'Arizona & the Southwest'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: a713b16a-a84a-4cf9-bab0-2b718cacc0d3
+    -
+      vid: news_story_categories
+      tid: '9'
+      langcode: und
+      name: 'Arts & Humanities'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: b88e7afa-dd70-40ec-982d-b489ce8eaa19
+    -
+      vid: news_story_categories
+      tid: '10'
+      langcode: und
+      name: Athletics
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: 05cf96de-722e-44b0-b609-6b3d83b2b3d1
+    -
+      vid: news_story_categories
+      tid: '11'
+      langcode: und
+      name: 'Business & Economics'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: 9f4a0f45-a4d2-4948-b5ff-389b5fefe612
+    -
+      vid: news_story_categories
+      tid: '12'
+      langcode: und
+      name: 'Campus Life'
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '0'
+      uuid: 043f105c-0d08-48f6-97ba-8063b23af2f5
+    -
+      vid: news_story_categories
+      tid: '13'
+      langcode: und
+      name: 'Government, Public Policy & Law'
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: 287d01e4-3e58-4a19-b2e8-7690e42b6515
+    -
+      vid: news_story_categories
+      tid: '14'
+      langcode: und
+      name: 'Health & Wellness'
+      description__value: null
+      description__format: null
+      weight: '7'
+      parent: '0'
+      uuid: 4d8509ae-0de3-4797-b7d2-f0bed01fd778
+    -
+      vid: news_story_categories
+      tid: '19'
+      langcode: und
+      name: 'In the News'
+      description__value: null
+      description__format: null
+      weight: '12'
+      parent: '0'
+      uuid: 49a32b15-7e91-43f4-93ee-c130907b228e
+    -
+      vid: news_story_categories
+      tid: '15'
+      langcode: und
+      name: 'Science & Technology'
+      description__value: null
+      description__format: null
+      weight: '8'
+      parent: '0'
+      uuid: 18645cca-9965-41e6-b1fd-f5e5f6d7c39f
+    -
+      vid: news_story_categories
+      tid: '16'
+      langcode: und
+      name: 'Social Sciences '
+      description__value: null
+      description__format: null
+      weight: '9'
+      parent: '0'
+      uuid: acffcb36-e510-469c-8bc8-48bba28c60a6
+    -
+      vid: news_story_categories
+      tid: '17'
+      langcode: und
+      name: Space
+      description__value: null
+      description__format: null
+      weight: '10'
+      parent: '0'
+      uuid: c78d5be0-bba0-4870-83e7-3cb9376b2976
+    -
+      vid: news_story_categories
+      tid: '18'
+      langcode: und
+      name: 'University News'
+      description__value: null
+      description__format: null
+      weight: '11'
+      parent: '0'
+      uuid: 299c1c1f-bd8d-4331-ba19-0ca0ae2ce411
+  news_story_internal_external:
+    -
+      vid: news_story_internal_external
+      tid: '7'
+      langcode: en
+      name: 'AZ News story'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: eb224ca2-025c-4fa4-b6b3-51c46c7a7f08
+    -
+      vid: news_story_internal_external
+      tid: '6'
+      langcode: en
+      name: 'External News story'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 0f5f582b-3c91-4562-aec0-590105d9a00c
+  page_az_news_ua_at_work: {  }
+  tags: {  }

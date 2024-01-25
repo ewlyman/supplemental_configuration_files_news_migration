@@ -1,0 +1,24 @@
+uuid: 2b14c313-ff77-423a-98ac-4ee730ad3eb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_contact
+    - filter.format.az_standard
+    - node.type.az_news
+  module:
+    - text
+id: node.az_news.field_legacy_news_contact
+field_name: field_legacy_news_contact
+entity_type: node
+bundle: az_news
+label: 'Story Contact(s)'
+description: 'This is a legacy field for older stories. When possible use Media Contact(s) or Researcher Contact(s) instead'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - az_standard
+field_type: text_long

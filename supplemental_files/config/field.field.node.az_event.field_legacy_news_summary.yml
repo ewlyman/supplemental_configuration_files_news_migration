@@ -1,0 +1,24 @@
+uuid: 08246647-c8fe-46b4-b2d7-5bb55a43d406
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_summary
+    - filter.format.az_standard
+    - node.type.az_event
+  module:
+    - text
+id: node.az_event.field_legacy_news_summary
+field_name: field_legacy_news_summary
+entity_type: node
+bundle: az_event
+label: 'Summary (legacy)'
+description: 'This is a legacy field for older Story content. Please do not use for creating new content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - az_standard
+field_type: text_long

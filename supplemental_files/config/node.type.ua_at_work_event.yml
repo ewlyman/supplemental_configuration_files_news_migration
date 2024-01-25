@@ -1,0 +1,18 @@
+uuid: a85d8e6a-e738-463d-9fef-bfbc385abd1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'UA at Work Event'
+type: ua_at_work_event
+description: 'Content type for migrating UA@Work events.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

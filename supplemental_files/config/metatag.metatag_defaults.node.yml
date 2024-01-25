@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aAjmSryIOr01od88s_4E5riir38FoAMzIen6yZQVPCc
+id: node
+label: Content
+tags:
+  description: '[node:field_az_summary]'
+  canonical_url: '[node:field_az_link:uri]'
+  title: '[node:title] | [site:name]'

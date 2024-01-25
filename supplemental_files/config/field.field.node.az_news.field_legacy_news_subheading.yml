@@ -1,0 +1,24 @@
+uuid: 6fdea5b1-b5a6-4704-83f7-63de8477ee16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_subheading
+    - filter.format.az_standard
+    - node.type.az_news
+  module:
+    - text
+id: node.az_news.field_legacy_news_subheading
+field_name: field_legacy_news_subheading
+entity_type: node
+bundle: az_news
+label: 'Story Subheading (legacy)'
+description: 'This is a legacy field for older Story content. Please do not use for new content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - az_standard
+field_type: text_long

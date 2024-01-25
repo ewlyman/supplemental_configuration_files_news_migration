@@ -1,0 +1,130 @@
+uuid: 0cbbccec-64ed-4856-b95c-3b6d7daef59c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.az_carousel_item.field_az_carousel_short_summary
+    - field.field.node.az_carousel_item.field_az_link
+    - field.field.node.az_carousel_item.field_az_media_image
+    - node.type.az_carousel_item
+  module:
+    - field_group
+    - link
+    - smart_title
+    - user
+third_party_settings:
+  field_group:
+    group_carousel_item:
+      children:
+        - field_az_media_image
+        - group_slide_details
+      label: 'Carousel Slide'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: 'az-carousel-slide d-flex flex-column justify-content-start'
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_slide_details:
+      children:
+        - smart_title
+        - group_text_size_h4
+        - field_az_link
+      label: 'Slide Details'
+      parent_name: group_carousel_item
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: 'az-carousel-slide-details px-4 py-3 d-flex flex-column justify-content-center'
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_text_size_h4:
+      children:
+        - field_az_carousel_short_summary
+      label: 'Text Size H4'
+      parent_name: group_slide_details
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: 'h4 mt-2 mb-3 text-white'
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+  smart_title:
+    enabled: true
+    settings:
+      smart_title__link: false
+      smart_title__tag: h2
+      smart_title__classes:
+        - h1
+        - my-0
+        - az-carousel-slide-title
+        - text-white
+_core:
+  default_config_hash: Sszwh5l-mpIod0InUTHio94w0wPGY2BqpDTVzPUeF54
+id: node.az_carousel_item.default
+targetEntityType: node
+bundle: az_carousel_item
+mode: default
+content:
+  field_az_carousel_short_summary:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_az_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_az_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: az_carousel_item
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  smart_title:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

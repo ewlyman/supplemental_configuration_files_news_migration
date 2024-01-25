@@ -1,0 +1,23 @@
+uuid: 4079a901-8fdb-4d70-95ed-d00ffac13aba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_az_cards
+    - paragraphs.paragraphs_type.az_cards
+  module:
+    - az_card
+_core:
+  default_config_hash: uO-bGk4SMJ1hUNSI8wdauegm1MEwnfuFgaWZFP6ECxA
+id: paragraph.az_cards.field_az_cards
+field_name: field_az_cards
+entity_type: paragraph
+bundle: az_cards
+label: Cards
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: az_card

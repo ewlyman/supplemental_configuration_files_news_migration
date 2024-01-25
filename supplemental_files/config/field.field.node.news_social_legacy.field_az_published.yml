@@ -1,0 +1,21 @@
+uuid: 77a23520-5212-4a22-a7fa-f51cfb94bbcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_published
+    - node.type.news_social_legacy
+  module:
+    - datetime
+id: node.news_social_legacy.field_az_published
+field_name: field_az_published
+entity_type: node
+bundle: news_social_legacy
+label: 'Date of publication'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,29 @@
+uuid: 248424a9-617c-4f09-8443-e8fbcacca5b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_photos
+    - media.type.az_image
+    - node.type.news_social_legacy
+id: node.news_social_legacy.field_az_photos
+field_name: field_az_photos
+entity_type: node
+bundle: news_social_legacy
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      az_image: az_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

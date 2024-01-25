@@ -1,0 +1,29 @@
+uuid: 6521e091-b26f-45d7-8c78-66a0d475766c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_calendar_tags
+    - node.type.az_event
+    - taxonomy.vocabulary.az_news_tags
+id: node.az_event.field_legacy_calendar_tags
+field_name: field_legacy_calendar_tags
+entity_type: node
+bundle: az_event
+label: 'Suggested calendar tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      az_news_tags: az_news_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

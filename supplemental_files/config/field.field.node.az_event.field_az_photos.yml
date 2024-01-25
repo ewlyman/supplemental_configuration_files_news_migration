@@ -1,0 +1,31 @@
+uuid: 3403430c-53ca-4ea3-b38d-0e5bdc99aee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_photos
+    - media.type.az_image
+    - node.type.az_event
+_core:
+  default_config_hash: t5MHB3q8SeGyuLrRUCjQTP_KV6mQtzI2UrEa2Gn3BSc
+id: node.az_event.field_az_photos
+field_name: field_az_photos
+entity_type: node
+bundle: az_event
+label: 'Event Photos'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      az_image: az_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

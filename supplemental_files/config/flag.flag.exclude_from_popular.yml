@@ -1,0 +1,30 @@
+uuid: 61a67f53-9094-4daf-b132-c1726e2db423
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: exclude_from_popular
+label: 'Exclude from popular blocks'
+bundles:
+  - az_news
+entity_type: node
+global: true
+flag_short: 'Exclude from popular blocks'
+flag_long: 'If checked, this content will not appear in Trending Content or any popularity-based lists'
+flag_message: ''
+unflag_short: 'Unflag this item'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: -6
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: false
+  show_on_form: true
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

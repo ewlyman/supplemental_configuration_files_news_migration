@@ -1,0 +1,18 @@
+uuid: aeaedbed-5579-4020-8507-70c3e149a8d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_az_featured_image_as_thumb
+field_name: field_az_featured_image_as_thumb
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

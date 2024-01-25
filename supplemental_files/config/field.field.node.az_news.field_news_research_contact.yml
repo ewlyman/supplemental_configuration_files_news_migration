@@ -1,0 +1,29 @@
+uuid: 64ea40a8-1240-483e-8ddd-96f8624f8dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_research_contact
+    - node.type.az_news
+    - node.type.az_person
+id: node.az_news.field_news_research_contact
+field_name: field_news_research_contact
+entity_type: node
+bundle: az_news
+label: 'Research Contact(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      az_person: az_person
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: a2cce2e6-4d5d-4f43-863b-1991f10227c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - file
+    - filter
+_core:
+  default_config_hash: 8cKZ11vq_7dlKK-7-TvlYR8GaxCYP3i6U0YqX3M5hX0
+id: az_html_admin
+label: 'HTML administrator'
+weight: 5
+is_admin: false
+permissions:
+  - 'delete own files'
+  - 'use text format full_html'

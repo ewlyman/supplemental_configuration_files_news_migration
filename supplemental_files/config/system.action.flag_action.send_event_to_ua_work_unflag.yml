@@ -1,0 +1,15 @@
+uuid: efe77139-d7de-4604-84ab-a2c2ae94c0de
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.send_event_to_ua_work
+  module:
+    - flag
+id: flag_action.send_event_to_ua_work_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:send_event_to_ua_work_unflag'
+configuration:
+  flag_id: send_event_to_ua_work
+  flag_action: unflag

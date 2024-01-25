@@ -1,0 +1,29 @@
+uuid: cdc4bd7c-a3a4-445d-901c-c442e7e6f734
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_calendar_category
+    - node.type.az_event
+    - taxonomy.vocabulary.az_event_categories
+id: node.az_event.field_legacy_calendar_category
+field_name: field_legacy_calendar_category
+entity_type: node
+bundle: az_event
+label: 'Suggested calendar category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      az_event_categories: az_event_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

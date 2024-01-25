@@ -1,0 +1,10 @@
+uuid: e2a5534e-a007-46b4-8f39-af4b4eb7a8d8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sU61ajn3_Ufzc44U8tFndhSifSe3pneYbxdSS5aGZYo
+id: az-footer-social-media
+label: 'Footer - Social Media'
+description: 'Contains links to social media accounts.'
+locked: false

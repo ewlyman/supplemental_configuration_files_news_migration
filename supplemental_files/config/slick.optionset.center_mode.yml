@@ -1,0 +1,107 @@
+uuid: 9adf5f0c-1ff2-4027-9826-f2d6a3b34d10
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 71E3ZvZuwIh3utsUkxbeIZV6Y9PLk6-lckdbTXg_HiE
+id: center_mode
+name: center_mode
+weight: 0
+label: 'Center Mode'
+group: ''
+skin: ''
+breakpoints: 1
+optimized: false
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    mobileFirst: true
+    asNavFor: ''
+    accessibility: true
+    adaptiveHeight: false
+    autoplay: false
+    pauseOnHover: true
+    pauseOnDotsHover: false
+    pauseOnFocus: true
+    autoplaySpeed: 3000
+    arrows: false
+    prevArrow: Previous
+    nextArrow: Next
+    downArrow: false
+    downArrowTarget: ''
+    downArrowOffset: 0
+    centerMode: true
+    centerPadding: 5%
+    dots: true
+    dotsClass: slick-dots
+    appendDots: $(element)
+    draggable: false
+    fade: false
+    focusOnSelect: true
+    infinite: true
+    initialSlide: 0
+    lazyLoad: ondemand
+    mouseWheel: false
+    randomize: false
+    respondTo: window
+    rtl: false
+    rows: 1
+    slidesPerRow: 1
+    slide: ''
+    slidesToShow: 1
+    slidesToScroll: 1
+    speed: 500
+    swipe: true
+    swipeToSlide: false
+    edgeFriction: 0.35
+    touchMove: true
+    touchThreshold: 5
+    useCSS: true
+    cssEase: ease
+    cssEaseBezier: ''
+    cssEaseOverride: ''
+    useTransform: true
+    easing: linear
+    variableWidth: false
+    vertical: false
+    verticalSwiping: false
+    waitForAnimate: true
+  responsives:
+    responsive:
+      -
+        breakpoint: 1200
+        unslick: false
+        settings:
+          adaptiveHeight: false
+          autoplay: false
+          pauseOnHover: false
+          pauseOnDotsHover: false
+          pauseOnFocus: false
+          autoplaySpeed: 3000
+          arrows: true
+          centerMode: true
+          centerPadding: 10%
+          dots: true
+          draggable: false
+          fade: false
+          focusOnSelect: true
+          infinite: true
+          initialSlide: 0
+          respondTo: window
+          rows: 1
+          slidesPerRow: 1
+          slidesToShow: 1
+          slidesToScroll: 1
+          speed: 500
+          swipe: true
+          swipeToSlide: false
+          edgeFriction: 0.35
+          touchMove: true
+          touchThreshold: 5
+          cssEase: ease
+          cssEaseBezier: ''
+          cssEaseOverride: ''
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: false

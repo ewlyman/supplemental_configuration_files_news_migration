@@ -1,0 +1,93 @@
+uuid: 621dd29a-134e-4b7a-8414-f86508d47321
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.az_event.feeds_item
+    - field.field.node.az_event.field_az_attachments
+    - field.field.node.az_event.field_az_body
+    - field.field.node.az_event.field_az_contacts
+    - field.field.node.az_event.field_az_event_category
+    - field.field.node.az_event.field_az_event_date
+    - field.field.node.az_event.field_az_featured_image_as_thumb
+    - field.field.node.az_event.field_az_link
+    - field.field.node.az_event.field_az_links
+    - field.field.node.az_event.field_az_location
+    - field.field.node.az_event.field_az_media_thumbnail_image
+    - field.field.node.az_event.field_az_metatag
+    - field.field.node.az_event.field_az_photos
+    - field.field.node.az_event.field_az_short_title
+    - field.field.node.az_event.field_az_subheading
+    - field.field.node.az_event.field_az_summary
+    - field.field.node.az_event.field_az_trellis_id
+    - field.field.node.az_event.field_custom_city
+    - field.field.node.az_event.field_custom_prior_nid
+    - field.field.node.az_event.field_custom_state
+    - field.field.node.az_event.field_custom_street_additional
+    - field.field.node.az_event.field_custom_street_address
+    - field.field.node.az_event.field_legacy_calendar_category
+    - field.field.node.az_event.field_legacy_calendar_tags
+    - field.field.node.az_event.field_legacy_event_audience
+    - field.field.node.az_event.field_legacy_event_audience_size
+    - field.field.node.az_event.field_legacy_event_campus
+    - field.field.node.az_event.field_legacy_event_phone
+    - field.field.node.az_event.field_legacy_event_price
+    - field.field.node.az_event.field_legacy_event_your_email
+    - field.field.node.az_event.field_legacy_event_your_name
+    - field.field.node.az_event.field_legacy_news_summary
+    - node.type.az_event
+  module:
+    - smart_title
+    - user
+third_party_settings:
+  smart_title:
+    enabled: false
+_core:
+  default_config_hash: bAz-o3cJfKlYSjMDnvbnez73OwTf3rCBpDfgt2d326E
+id: node.az_event.teaser
+targetEntityType: node
+bundle: az_event
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  az_event_day: true
+  az_event_month: true
+  feeds_item: true
+  field_az_attachments: true
+  field_az_body: true
+  field_az_contacts: true
+  field_az_event_category: true
+  field_az_event_date: true
+  field_az_featured_image_as_thumb: true
+  field_az_link: true
+  field_az_links: true
+  field_az_location: true
+  field_az_media_thumbnail_image: true
+  field_az_metatag: true
+  field_az_photos: true
+  field_az_short_title: true
+  field_az_subheading: true
+  field_az_summary: true
+  field_az_trellis_id: true
+  field_custom_city: true
+  field_custom_prior_nid: true
+  field_custom_state: true
+  field_custom_street_additional: true
+  field_custom_street_address: true
+  field_legacy_calendar_category: true
+  field_legacy_calendar_tags: true
+  field_legacy_event_audience: true
+  field_legacy_event_audience_size: true
+  field_legacy_event_campus: true
+  field_legacy_event_phone: true
+  field_legacy_event_price: true
+  field_legacy_event_your_email: true
+  field_legacy_event_your_name: true
+  field_legacy_news_summary: true
+  smart_title: true

@@ -1,0 +1,21 @@
+uuid: e0e671b4-ded3-42c7-85bd-b7c6e62fcb30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_published
+    - node.type.news_press_release_legacy
+  module:
+    - datetime
+id: node.news_press_release_legacy.field_az_published
+field_name: field_az_published
+entity_type: node
+bundle: news_press_release_legacy
+label: 'Date of publication'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

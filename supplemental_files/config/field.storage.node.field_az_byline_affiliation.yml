@@ -1,0 +1,23 @@
+uuid: a23ffe9a-70ef-4d72-a1ef-a989c0acba9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: y49hVWJ6ySpOL0o0d7TmjOrgtu2WXFi_glNwJD9L1OE
+id: node.field_az_byline_affiliation
+field_name: field_az_byline_affiliation
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

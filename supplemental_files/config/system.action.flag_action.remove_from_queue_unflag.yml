@@ -1,0 +1,15 @@
+uuid: fd2da2d0-0624-4853-84b6-07e382062a1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.remove_from_queue
+  module:
+    - flag
+id: flag_action.remove_from_queue_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:remove_from_queue_unflag'
+configuration:
+  flag_id: remove_from_queue
+  flag_action: unflag

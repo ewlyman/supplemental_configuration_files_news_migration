@@ -1,0 +1,36 @@
+uuid: 77a19a18-32eb-4412-8cf4-fdf60e396b62
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: feature_on_news_front_page
+label: 'Feature on News front page'
+bundles:
+  - az_event
+  - az_news
+  - az_person
+  - news_gallery
+  - news_press_release_legacy
+  - news_social_legacy
+  - news_video_legacy
+entity_type: node
+global: true
+flag_short: 'Feature on News front page'
+flag_long: 'If checked, this content may be included in the Featured Stories or Events section on the homepage'
+flag_message: ''
+unflag_short: 'Unflag this item'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: -10
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: false
+  show_on_form: true
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

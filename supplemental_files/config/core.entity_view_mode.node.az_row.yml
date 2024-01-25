@@ -1,0 +1,12 @@
+uuid: e475e0a0-eb17-408f-a223-1cc759d16229
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JU5yew3UNwVzz3ZWbkj6T7mCfqVKm1ZRCkn4EHGJvR4
+id: node.az_row
+label: Row
+targetEntityType: node
+cache: true

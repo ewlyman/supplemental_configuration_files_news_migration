@@ -1,0 +1,10 @@
+uuid: ef3cf1c2-236e-4f5f-9b7e-a46287c185fb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _ixKKDdylSlJSMhdYpi5ROb4gISTySHbsXrM29q3PL0
+id: az_event_month
+label: 'Event Month'
+locked: false
+pattern: M

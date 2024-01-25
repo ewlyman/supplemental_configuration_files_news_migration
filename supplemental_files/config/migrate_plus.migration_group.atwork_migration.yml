@@ -1,0 +1,28 @@
+uuid: 229a9abc-06cb-429e-9458-8f2affdb4d50
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - news_migration
+      - migrate_drupal
+      - migrate_tools
+_core:
+  default_config_hash: OeN_1WeFbF32GPGfKkBeGCUTt1KLiSdYZXIc4-YmeNU
+id: atwork_migration
+label: 'UArizona At Work Migrations'
+description: 'Common configuration for UA@Work migrations.'
+source_type: 'Drupal 7 Site (uaatwork.arizona.edu)'
+module: null
+shared_configuration:
+  source:
+    key: atwork
+    constants:
+      ENTERPRISE_ATTRIBUTES:
+        - Staff
+        - 'Designated Campus Colleague (DCC)'
+        - 'Research & Teaching Faculty/Postdoc'
+      PATHAUTO_DISABLED_STRING: '0'
+      PATHAUTO_ENABLED_INT: 1
+      OLD_FILES_PATH: atwork.arizona.edu
+      SOURCE_BASE_PATH: sites/default/files

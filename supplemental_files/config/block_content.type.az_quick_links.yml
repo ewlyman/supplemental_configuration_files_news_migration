@@ -1,0 +1,10 @@
+uuid: 30e79d87-aefe-49ca-9767-d1b42bd073c6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RoXDxoV2_Gk_W9VnMHxn7J2jaSIoqnrqGrfHZ4IKfK8
+id: az_quick_links
+label: 'Quick Links'
+revision: 1
+description: 'Add quick links to a site.'

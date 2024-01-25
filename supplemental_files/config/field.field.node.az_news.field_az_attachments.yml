@@ -1,0 +1,29 @@
+uuid: 58f4348a-6f6c-4961-8102-4874dfbda29b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_attachments
+    - node.type.az_news
+  module:
+    - file
+_core:
+  default_config_hash: XIwbRqq_gq2f51CDPDBger8G_MywyGg05rcPtAedXSo
+id: node.az_news.field_az_attachments
+field_name: field_az_attachments
+entity_type: node
+bundle: az_news
+label: Attachments
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: documents
+  file_extensions: pdf
+  max_filesize: '10 MB'
+  description_field: true
+field_type: file

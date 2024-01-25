@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: wvd2D6Imj-XP3lXtDIH4LjzqWGiTPEI0KWcz7eCxxTU
+monitoring_page:
+  enabled: false
+  path: ''
+enterprise_attributes:
+  locked: true

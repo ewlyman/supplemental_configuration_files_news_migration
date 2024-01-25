@@ -1,0 +1,28 @@
+uuid: 372c35d3-684d-4401-9a5f-e12a1687569a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.az_document.field_media_az_document
+    - media.type.az_document
+  module:
+    - file
+_core:
+  default_config_hash: oRzjI09dz-9Q-VA0z_mizbGxuIvqREnPNCZ2eiWL9sc
+id: media.az_document.default
+targetEntityType: media
+bundle: az_document
+mode: default
+content:
+  field_media_az_document:
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

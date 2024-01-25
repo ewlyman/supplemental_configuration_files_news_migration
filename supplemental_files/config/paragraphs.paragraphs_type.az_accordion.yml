@@ -1,0 +1,16 @@
+uuid: e525e54e-8181-40fd-a302-0d967527dbb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_paragraphs
+_core:
+  default_config_hash: hgm6WYNTtZWXftvoIkZZ2mlb73dATLxNb-jyfUTWhmI
+id: az_accordion
+label: Accordion
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  az_default_paragraph_behavior:
+    enabled: true

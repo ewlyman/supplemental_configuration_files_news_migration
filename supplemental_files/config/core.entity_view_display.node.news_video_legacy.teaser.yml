@@ -1,0 +1,36 @@
+uuid: 3b46597f-fd45-4e80-b252-82c93d8229ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_video_legacy.field_az_byline
+    - field.field.node.news_video_legacy.field_az_link
+    - field.field.node.news_video_legacy.field_az_news_tags
+    - field.field.node.news_video_legacy.field_az_photos
+    - field.field.node.news_video_legacy.field_az_short_title
+    - field.field.node.news_video_legacy.field_custom_news_categories
+    - field.field.node.news_video_legacy.field_legacy_news_summary
+    - field.field.node.news_video_legacy.field_legacy_news_video
+    - node.type.news_video_legacy
+  module:
+    - user
+id: node.news_video_legacy.teaser
+targetEntityType: node
+bundle: news_video_legacy
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_az_byline: true
+  field_az_link: true
+  field_az_news_tags: true
+  field_az_photos: true
+  field_az_short_title: true
+  field_custom_news_categories: true
+  field_legacy_news_summary: true
+  field_legacy_news_video: true

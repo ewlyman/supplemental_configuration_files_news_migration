@@ -1,0 +1,12 @@
+uuid: f12c101a-53cd-4d68-8fa7-4e87bd2ffedb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: iv9EiFgRqpayU48cLa1xiJlLFewx1R9MX6k8b_0Gn4I
+id: media.az_thumbnail
+label: 'Thumbnail (100 x 100)'
+targetEntityType: media
+cache: true

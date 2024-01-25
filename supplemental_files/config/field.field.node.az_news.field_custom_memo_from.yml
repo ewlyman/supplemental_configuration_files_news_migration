@@ -1,0 +1,26 @@
+uuid: f6e3709c-9267-4483-b309-132654d4fefa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_memo_from
+    - filter.format.az_standard
+    - filter.format.plain_text
+    - node.type.az_news
+  module:
+    - text
+id: node.az_news.field_custom_memo_from
+field_name: field_custom_memo_from
+entity_type: node
+bundle: az_news
+label: From
+description: 'Add one name and title per line'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - az_standard
+    - plain_text
+field_type: text_long

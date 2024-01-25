@@ -1,0 +1,71 @@
+uuid: 37ef0a38-3c04-4c43-865e-838732e97980
+langcode: en
+status: true
+dependencies:
+  module:
+    - news_migration
+id: config_sync.module.news_migration
+snapshotSet: config_sync
+extensionType: module
+extensionName: news_migration
+items:
+  -
+    collection: ''
+    name: migrate_plus.migration_group.atwork_migration
+    data:
+      id: atwork_migration
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - news_migration
+            - migrate_drupal
+            - migrate_tools
+      label: 'UArizona At Work Migrations'
+      description: 'Common configuration for UA@Work migrations.'
+      source_type: 'Drupal 7 Site (uaatwork.arizona.edu)'
+      module: null
+      shared_configuration:
+        source:
+          key: atwork
+          constants:
+            ENTERPRISE_ATTRIBUTES:
+              - Staff
+              - 'Designated Campus Colleague (DCC)'
+              - 'Research & Teaching Faculty/Postdoc'
+            PATHAUTO_DISABLED_STRING: '0'
+            PATHAUTO_ENABLED_INT: 1
+            OLD_FILES_PATH: atwork.arizona.edu
+            SOURCE_BASE_PATH: sites/default/files
+      _core:
+        default_config_hash: ndMZn9-Z58elFaHSZ_ahiVpiB14keOtq2fVBERErDnw
+  -
+    collection: ''
+    name: migrate_plus.migration_group.news_migration
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - news_migration
+            - migrate_drupal
+            - migrate_tools
+      id: news_migration
+      label: 'UArizona News Migrations'
+      description: 'Common configuration for simple migrations.'
+      source_type: 'Drupal 7 Site (news.arizona.edu)'
+      module: null
+      shared_configuration:
+        source:
+          key: migrate
+          constants:
+            ENTERPRISE_ATTRIBUTES:
+              - 'External Media'
+            PATHAUTO_DISABLED_STRING: '0'
+            PATHAUTO_ENABLED_INT: 1
+            OLD_FILES_PATH: news.arizona.edu
+            SOURCE_BASE_PATH: sites/default/files
+      _core:
+        default_config_hash: 92eA5uEEO5r0XCXXa-DokVNgBy53lH9iCevh2tZbwek

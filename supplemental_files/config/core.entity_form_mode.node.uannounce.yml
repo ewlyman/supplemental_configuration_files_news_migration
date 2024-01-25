@@ -1,0 +1,10 @@
+uuid: e9c6c552-0f6d-421b-bf79-ef35474cf10b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.uannounce
+label: 'UAnnounce Campus Notes'
+targetEntityType: node
+cache: true

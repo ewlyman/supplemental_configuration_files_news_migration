@@ -1,0 +1,22 @@
+uuid: ff0a2d43-827f-4b17-802b-3e1c4ee568e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news_social_legacy
+id: node.news_social_legacy.promote
+field_name: promote
+entity_type: node
+bundle: news_social_legacy
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

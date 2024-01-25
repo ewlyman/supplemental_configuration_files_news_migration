@@ -1,0 +1,114 @@
+uuid: 18cda047-2eda-4c2e-86fc-aa367c2a3fd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ua_at_work_event.body
+    - field.field.node.ua_at_work_event.field_az_event_date
+    - field.field.node.ua_at_work_event.field_az_links
+    - field.field.node.ua_at_work_event.field_az_location
+    - node.type.ua_at_work_event
+  module:
+    - date_ap_style
+    - field_group
+    - link
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_when_column:
+      children:
+        - field_az_event_date
+      label: When
+      parent_name: group_when_where_row
+      region: content
+      weight: 13
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        id: ''
+        element: div
+        show_label: true
+        label_element: h2
+        label_element_classes: h3
+        attributes: ''
+        effect: none
+        speed: fast
+    group_where_column:
+      children:
+        - field_az_location
+      label: Where
+      parent_name: group_when_where_row
+      region: content
+      weight: 14
+      format_type: html_element
+      format_settings:
+        classes: col-md-6
+        id: ''
+        element: div
+        show_label: true
+        label_element: h2
+        label_element_classes: h3
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.ua_at_work_event.default
+targetEntityType: node
+bundle: ua_at_work_event
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_az_event_date:
+    type: daterange_ap_style
+    label: hidden
+    settings:
+      always_display_year: '1'
+      use_today: '1'
+      cap_today: '1'
+      display_time: '1'
+      time_before_date: '1'
+      display_noon_and_midnight: '0'
+      separator: endash
+      timezone: ''
+      use_all_day: '1'
+      capitalize_noon_and_midnight: 0
+      display_day: null
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_az_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_az_location:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,12 @@
+uuid: b2aeaaa6-157c-4370-b518-8f1c64235779
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: rXsECgR6_KhQxt4Nk3yhIezw62WxPrfE3RD2sBTiEHQ
+id: node.az_row_with_background
+label: 'Row with Background'
+targetEntityType: node
+cache: true

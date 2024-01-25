@@ -1,0 +1,36 @@
+uuid: a3d8a66f-3a8f-413e-a550-689a6b33edc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ua_at_work_event.body
+    - field.field.node.ua_at_work_event.field_az_event_date
+    - field.field.node.ua_at_work_event.field_az_links
+    - field.field.node.ua_at_work_event.field_az_location
+    - node.type.ua_at_work_event
+  module:
+    - text
+    - user
+id: node.ua_at_work_event.teaser
+targetEntityType: node
+bundle: ua_at_work_event
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_az_event_date: true
+  field_az_links: true
+  field_az_location: true

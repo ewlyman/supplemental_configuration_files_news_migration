@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: 42d17585-3c67-48d1-86a5-e1495d8c94d3
+name: UANEWS
+mail: noreply@email.arizona.edu
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

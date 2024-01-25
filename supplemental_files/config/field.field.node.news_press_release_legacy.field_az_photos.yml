@@ -1,0 +1,29 @@
+uuid: 6d98097e-e7b4-46a6-9355-87b2d6ccc4dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_photos
+    - media.type.az_image
+    - node.type.news_press_release_legacy
+id: node.news_press_release_legacy.field_az_photos
+field_name: field_az_photos
+entity_type: node
+bundle: news_press_release_legacy
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      az_image: az_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: az_audio
+field_type: entity_reference

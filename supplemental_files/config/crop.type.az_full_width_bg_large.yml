@@ -1,0 +1,14 @@
+uuid: 17e7c5d2-cdd4-4079-9b46-d991fb871e89
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1DGCokBu-HwsUzHV702dW46b0jXn2h_dJ9kgAYj1SZE
+id: az_full_width_bg_large
+label: 'Large full-width background'
+description: "Minimum crop width 1920px, or the image will be scaled up and will possibly be blurry.\t"
+aspect_ratio: ''
+soft_limit_width: 1920
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,84 @@
+uuid: cb005ca5-0c5e-46e8-ab4b-a195813fc46d
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_google_tag
+id: config_sync.module.az_google_tag
+snapshotSet: config_sync
+extensionType: module
+extensionName: az_google_tag
+items:
+  -
+    collection: ''
+    name: google_tag.container.az_comprehensive
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - system
+          - user
+      id: az_comprehensive
+      label: 'AZ Comprehensive'
+      weight: 0
+      tag_container_ids:
+        - GTM-ML2BZB
+      advanced_settings:
+        gtm:
+          data_layer: dataLayer
+          include_classes: false
+          allowlist_classes: |-
+            google
+            nonGooglePixels
+            nonGoogleScripts
+            nonGoogleIframes
+          blocklist_classes: |-
+            customScripts
+            customPixels
+          include_environment: false
+          environment_id: ''
+          environment_token: ''
+      dimensions_metrics: {  }
+      conditions:
+        request_path:
+          id: request_path
+          negate: true
+          pages: |-
+            /admin*
+            batch*
+            block/add/*
+            /block/*/edit
+            file/add
+            file/*/edit
+            /node/add*
+            /node/*/edit
+            /node/*/delete
+            /user/*/edit*
+            /user/*/cancel*
+            taxonomy/term/*/edit
+        response_code:
+          id: response_code
+          negate: true
+          response_codes: |-
+            403
+            404
+        user_role:
+          id: user_role
+          negate: false
+          context_mapping:
+            user: '@user.current_user_context:current_user'
+          roles:
+            anonymous: anonymous
+      events:
+        generate_lead:
+          value: ''
+          currency: ''
+        custom: {  }
+        sign_up:
+          method: CMS
+        search: {  }
+        login:
+          method: CMS
+      _core:
+        default_config_hash: FJbk52XpSB1c-bLDnAv5RPIHJHxgt59R0e5BpQnu3RY

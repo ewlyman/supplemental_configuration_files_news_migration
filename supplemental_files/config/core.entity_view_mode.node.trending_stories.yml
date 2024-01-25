@@ -1,0 +1,10 @@
+uuid: 5f4f096c-0fc9-44b4-8c7b-0c6bbd0f311b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.trending_stories
+label: 'Trending Stories'
+targetEntityType: node
+cache: true

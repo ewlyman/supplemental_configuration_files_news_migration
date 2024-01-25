@@ -1,0 +1,12 @@
+uuid: 976b9b48-d8f1-4166-9b8d-e73bdd8aa4b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 3ftwp6CS4MSUGgkPW0dvsL8nvV7zWKC9nhE5VtwKN5s
+id: node.az_card_alternate
+label: 'Card Alternate'
+targetEntityType: node
+cache: true

@@ -1,0 +1,97 @@
+uuid: 690de287-5647-4799-acd9-992507bca882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_video_legacy.field_az_byline
+    - field.field.node.news_video_legacy.field_az_link
+    - field.field.node.news_video_legacy.field_az_news_tags
+    - field.field.node.news_video_legacy.field_az_photos
+    - field.field.node.news_video_legacy.field_az_short_title
+    - field.field.node.news_video_legacy.field_custom_news_categories
+    - field.field.node.news_video_legacy.field_legacy_news_summary
+    - field.field.node.news_video_legacy.field_legacy_news_video
+    - node.type.news_video_legacy
+  module:
+    - link
+    - text
+    - user
+id: node.news_video_legacy.default
+targetEntityType: node
+bundle: news_video_legacy
+mode: default
+content:
+  field_az_byline:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_az_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_az_news_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_az_photos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_az_short_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_custom_news_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_legacy_news_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_legacy_news_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

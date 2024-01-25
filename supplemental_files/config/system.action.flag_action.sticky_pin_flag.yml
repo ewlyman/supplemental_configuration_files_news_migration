@@ -1,0 +1,15 @@
+uuid: 593a25ca-3f7d-4835-b1b3-7650991ec6a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.sticky_pin
+  module:
+    - flag
+id: flag_action.sticky_pin_flag
+label: 'Sticky/Pin to top of lists'
+type: node
+plugin: 'flag_action:sticky_pin_flag'
+configuration:
+  flag_id: sticky_pin
+  flag_action: flag

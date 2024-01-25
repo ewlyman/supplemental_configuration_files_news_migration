@@ -1,0 +1,23 @@
+uuid: 39b23c57-7d5d-4574-816c-820bad05cee5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 7ukSfhOA6pqv9nXac7UO5pEAac99UbR6vc6c3hBLlL0
+id: node.field_az_degrees
+field_name: field_az_degrees
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: KPj94HsENYX584VmTAwECSOx4X8T2kRKuBrGqBXd-9o
+status: 1
+pattern: '[node:field_az_fname] [node:field_az_lname]'
+escape: false
+dependencies:
+  config:
+    - node.type.az_person

@@ -1,0 +1,12 @@
+uuid: 1214440a-eddd-4d3d-b88e-92e8b6c1a063
+langcode: en
+status: false
+dependencies:
+  module:
+    - feeds
+_core:
+  default_config_hash: cjvrk-ia_M3IEDQit0OC9-_r91M6CO78bG6ZmYrWu94
+id: feeds_feed.full
+label: 'Full feed'
+targetEntityType: feeds_feed
+cache: true

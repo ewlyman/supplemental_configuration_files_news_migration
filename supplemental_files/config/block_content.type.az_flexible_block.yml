@@ -1,0 +1,10 @@
+uuid: 476f7eab-7007-4854-8db2-ccef42934933
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9GmYZBdOj1ECinL1bMpFHiLGEmoNY_IirfLbvHVUPBk
+id: az_flexible_block
+label: 'Flexible Block'
+revision: 1
+description: 'Create a block using Arizona Bootstrap components'

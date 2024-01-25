@@ -1,0 +1,21 @@
+uuid: ce91cde4-34af-44db-9172-f4729b861c98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_lname
+    - node.type.az_person
+_core:
+  default_config_hash: 3oVCGwoxLJf507cohIQvqsVuKN_J2BvcWSveJJo03nI
+id: node.az_person.field_az_lname
+field_name: field_az_lname
+entity_type: node
+bundle: az_person
+label: 'Last Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

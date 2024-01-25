@@ -1,0 +1,31 @@
+uuid: 73ba59d6-dc3a-4a97-be8f-1e3ffb4f2c00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_event_category
+    - node.type.az_event
+    - taxonomy.vocabulary.az_event_categories
+_core:
+  default_config_hash: P2QDpMBNbVBCcszKZ_z2jAUE95TnZKmVsO2oKAKVAGA
+id: node.az_event.field_az_event_category
+field_name: field_az_event_category
+entity_type: node
+bundle: az_event
+label: 'Event Category'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      az_event_categories: az_event_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

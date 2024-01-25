@@ -1,0 +1,31 @@
+uuid: 9681715e-7e4e-4ce3-bbb0-8a2e3dce7f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_main_content
+    - node.type.ua_at_work_page
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: iYmjRh4tLYrGXyWIOz01JhP25Vf82Qg_mJocSzaVnfY
+id: node.ua_at_work_page.field_az_main_content
+field_name: field_az_main_content
+entity_type: node
+bundle: ua_at_work_page
+label: 'Main Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      az_text:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

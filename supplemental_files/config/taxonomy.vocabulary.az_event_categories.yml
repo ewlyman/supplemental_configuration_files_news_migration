@@ -1,0 +1,10 @@
+uuid: 9dcc5d79-9405-4711-9dd9-dcc1eff25ad5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9gRJ8JmfWHgs577aKBs4spsoHrmUGnv3DhjfFZxFQHE
+name: 'Event Categories'
+vid: az_event_categories
+description: 'Taxonomy for categorizing events'
+weight: 0

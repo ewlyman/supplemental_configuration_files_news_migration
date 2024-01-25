@@ -1,0 +1,9 @@
+uuid: 52cd7bf7-be8c-4eb9-b44e-621106e4e010
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AEOci5atOdmdTFKnUPfqYIVDsOZ_5d93cxpSQ6hKt00
+name: az_natural
+label: 'Natural Size'
+effects: {  }

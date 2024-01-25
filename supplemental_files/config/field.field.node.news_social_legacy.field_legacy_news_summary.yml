@@ -1,0 +1,24 @@
+uuid: 960f4fcf-6c1a-44d6-81a4-b8ca7fbbfc9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_summary
+    - filter.format.az_standard
+    - node.type.news_social_legacy
+  module:
+    - text
+id: node.news_social_legacy.field_legacy_news_summary
+field_name: field_legacy_news_summary
+entity_type: node
+bundle: news_social_legacy
+label: 'Summary Description (legacy)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - az_standard
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: b34dc6c8-1b9b-423b-814c-039e49d903ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: YjkcoAdqIvw78QSt3DB5FXDyDhuV5gH7-mSzQBsAArE
+name: 'Carousel item'
+type: az_carousel_item
+description: 'Allows users to create and order carousel items.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

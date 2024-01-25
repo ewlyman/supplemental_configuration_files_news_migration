@@ -1,0 +1,19 @@
+uuid: 35950222-09a2-49cd-bfd3-716c65929bcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_city
+    - node.type.az_event
+id: node.az_event.field_custom_city
+field_name: field_custom_city
+entity_type: node
+bundle: az_event
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

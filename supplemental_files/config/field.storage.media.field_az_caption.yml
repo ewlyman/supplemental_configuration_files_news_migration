@@ -1,0 +1,21 @@
+uuid: 29e085cd-13e8-4694-badc-07161b08d75f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - text
+_core:
+  default_config_hash: qnsU-X66isM_v8xZE3Ucpzz3ekjgtrjuemc4EEexWzE
+id: media.field_az_caption
+field_name: field_az_caption
+entity_type: media
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

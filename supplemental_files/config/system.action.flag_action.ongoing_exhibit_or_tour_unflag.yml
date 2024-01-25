@@ -1,0 +1,15 @@
+uuid: e42ec593-a012-4091-9b90-77d6ccb21ef6
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.ongoing_exhibit_or_tour
+  module:
+    - flag
+id: flag_action.ongoing_exhibit_or_tour_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:ongoing_exhibit_or_tour_unflag'
+configuration:
+  flag_id: ongoing_exhibit_or_tour
+  flag_action: unflag

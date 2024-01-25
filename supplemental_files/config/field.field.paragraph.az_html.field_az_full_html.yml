@@ -1,0 +1,26 @@
+uuid: 01de919f-c548-4c1c-b490-624f3ec9c015
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_az_full_html
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.az_html
+  module:
+    - text
+_core:
+  default_config_hash: CDDDF5w6VOU0cyezHurRxQtWYmScqb_uihVGWwWvjXc
+id: paragraph.az_html.field_az_full_html
+field_name: field_az_full_html
+entity_type: paragraph
+bundle: az_html
+label: 'Full HTML'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

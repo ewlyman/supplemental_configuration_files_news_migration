@@ -1,0 +1,15 @@
+uuid: a88cc4a6-8bb6-4320-aa34-5010801deb46
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.send_event_to_ua_work
+  module:
+    - flag
+id: flag_action.send_event_to_ua_work_flag
+label: 'Send event to UA@Work'
+type: node
+plugin: 'flag_action:send_event_to_ua_work_flag'
+configuration:
+  flag_id: send_event_to_ua_work
+  flag_action: flag

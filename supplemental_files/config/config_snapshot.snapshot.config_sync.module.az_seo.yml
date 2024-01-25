@@ -1,0 +1,35 @@
+uuid: 31099301-4ba2-487f-b2a6-38c1d42afdc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_seo
+id: config_sync.module.az_seo
+snapshotSet: config_sync
+extensionType: module
+extensionName: az_seo
+items:
+  -
+    collection: ''
+    name: field.storage.node.field_az_metatag
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - metatag
+          - node
+      id: node.field_az_metatag
+      field_name: field_az_metatag
+      entity_type: node
+      type: metatag
+      settings: {  }
+      module: metatag
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: e-EP2Mt4oKPI4dcobPHHMbUgQzOd52yp92HQl7qBvDQ

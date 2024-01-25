@@ -1,0 +1,10 @@
+uuid: 0823846d-8864-48e8-a409-64aef4c00aa0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid_attachment
+label: 'Grid Attachment'
+targetEntityType: node
+cache: true

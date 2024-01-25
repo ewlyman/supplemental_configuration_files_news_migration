@@ -1,0 +1,26 @@
+uuid: bd01d5aa-bcf0-47a3-9c8c-ccc81193d659
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_body
+    - filter.format.az_standard
+    - node.type.az_person
+  module:
+    - text
+_core:
+  default_config_hash: q-AQEjHRnd1FKqYC_tsMNaxK8us6pejA3zgUZKSBfoc
+id: node.az_person.field_az_body
+field_name: field_az_body
+entity_type: node
+bundle: az_person
+label: Biography
+description: 'White text will be highlighted in gray (only while editing) to keep the text visible.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - az_standard
+field_type: text_long

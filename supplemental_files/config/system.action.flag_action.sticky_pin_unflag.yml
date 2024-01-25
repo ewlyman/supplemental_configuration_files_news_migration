@@ -1,0 +1,15 @@
+uuid: e8f499f8-9059-4162-bba6-a8c4f2af46ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.sticky_pin
+  module:
+    - flag
+id: flag_action.sticky_pin_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:sticky_pin_unflag'
+configuration:
+  flag_id: sticky_pin
+  flag_action: unflag

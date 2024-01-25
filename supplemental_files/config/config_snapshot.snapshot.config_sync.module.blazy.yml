@@ -1,0 +1,53 @@
+uuid: bbfba331-3fae-4ad2-be9d-0e05e80adbf1
+langcode: en
+status: true
+dependencies:
+  module:
+    - blazy
+id: config_sync.module.blazy
+snapshotSet: config_sync
+extensionType: module
+extensionName: blazy
+items:
+  -
+    collection: ''
+    name: blazy.settings
+    data:
+      admin_css: true
+      lazy_html: false
+      nojs:
+        lazy: '0'
+        polyfill: '0'
+        classlist: '0'
+        promise: '0'
+        raf: '0'
+        webp: '0'
+      fx: ''
+      blur_client: false
+      blur_storage: false
+      blur_minwidth: 0
+      noscript: false
+      one_pixel: true
+      visible_class: false
+      wrapper_class: false
+      deprecated_class: false
+      placeholder: ''
+      unstyled_extensions: ''
+      use_encodedbox: false
+      use_oembed: false
+      use_theme_blazy: true
+      responsive_image: false
+      blazy:
+        loadInvisible: false
+        offset: 100
+        saveViewportOffsetDelay: 50
+        validateDelay: 25
+        container: ''
+      io:
+        unblazy: false
+        rootMargin: 0px
+        threshold: '0'
+        disconnect: false
+      extras: {  }
+      _core:
+        default_config_hash: wbUfC93vA8mWVL7tmS1ctFre-4GC_LUO-S77-BIiZQg

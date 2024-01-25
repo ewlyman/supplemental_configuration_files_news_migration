@@ -1,0 +1,22 @@
+uuid: 0460df91-41e4-4f93-b939-b35b683093fe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: WZUhcDvP69duA9Cr4YY9E3ZyQhJ-wpxftZ3Ry5GY6qs
+id: bootstrap_barrio_local_tasks
+theme: bootstrap_barrio
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

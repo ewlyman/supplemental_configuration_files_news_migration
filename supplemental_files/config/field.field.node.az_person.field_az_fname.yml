@@ -1,0 +1,21 @@
+uuid: dd5219a4-d584-443f-8bac-c7ab2b73954a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_fname
+    - node.type.az_person
+_core:
+  default_config_hash: gzo-TtGSbbmNI5wLSR4iG51PJbOiE0DXZ7cAroM5nk8
+id: node.az_person.field_az_fname
+field_name: field_az_fname
+entity_type: node
+bundle: az_person
+label: 'First Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

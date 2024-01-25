@@ -1,0 +1,23 @@
+uuid: f4207698-0e19-40e6-b9ec-13b3596e954f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_short_title
+    - node.type.news_press_release_legacy
+_core:
+  default_config_hash: NueR-0f1eakzmho883IdnhpRNaDKreNJttqIZxvi-go
+id: node.news_press_release_legacy.field_az_short_title
+field_name: field_az_short_title
+entity_type: node
+bundle: news_press_release_legacy
+label: 'Summary Headline'
+description: '<strong>Suggested character limit:</strong> 30. This field supports tokens.'
+required: false
+translatable: false
+default_value:
+  -
+    value: '[node:title]'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: vEtmy9xHMROVpZ4oZhY4ts_EKVtHK0UGT6cKFWpfNLY
+migrate_d7_protocol: https
+migrate_d7_filebasepath: uaatwork.arizona.edu
+migrate_d7_public_path: sites/default/files
+migrate_d7_private_path: null
+migrate_d7_temporary_path: tmp
+allow_archived_paragraphs: true

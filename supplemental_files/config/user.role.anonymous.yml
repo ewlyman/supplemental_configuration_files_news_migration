@@ -1,0 +1,20 @@
+uuid: 2a8c9a0b-92f3-4899-8740-faf4dcf68a3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - exclude_node_title
+    - media
+    - search
+    - system
+_core:
+  default_config_hash: qdbsWgvCt472zvoIfsubIV6Ki6f8YQ_GqEYMuVAV2jY
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'use exclude node title'
+  - 'view media'

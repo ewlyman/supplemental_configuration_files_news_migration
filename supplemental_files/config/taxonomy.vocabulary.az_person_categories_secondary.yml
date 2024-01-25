@@ -1,0 +1,10 @@
+uuid: af88a33f-1e61-48de-8d6a-bb2d062b57a8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VI-qrinojPB4gPfKDY7xmb-nfjONs5Be79GTUOI2NFg
+name: 'Person Categories (Secondary)'
+vid: az_person_categories_secondary
+description: 'Secondary taxonomy for categorizing people'
+weight: 0

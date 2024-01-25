@@ -1,0 +1,21 @@
+uuid: 3b524fc8-35d6-4363-a8f6-3ed90baa035a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - telephone
+_core:
+  default_config_hash: VMmgXcMQUzpmyMA8b1AHDQiMugXVpV0aWvscC3A7L1Q
+id: node.field_az_phones
+field_name: field_az_phones
+entity_type: node
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

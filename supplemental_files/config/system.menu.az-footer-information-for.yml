@@ -1,0 +1,10 @@
+uuid: b308d4bf-bbbd-43ec-bd48-ee22a2862b4b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nkc-BI8zhvMnVlS9ulDTQXAjH2bCRjza-3IRed7mWX4
+id: az-footer-information-for
+label: 'Footer - Information For'
+description: 'Generally contains institution-level navigation links to audience-based sections of Arizona.edu (e.g. current students, faculty).'
+locked: false

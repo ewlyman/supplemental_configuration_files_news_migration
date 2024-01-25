@@ -1,0 +1,341 @@
+uuid: c95127d7-ec5f-48fd-996b-9476498f2a85
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_paragraphs_text_media
+id: config_sync.module.az_paragraphs_text_media
+snapshotSet: config_sync
+extensionType: module
+extensionName: az_paragraphs_text_media
+items:
+  -
+    collection: ''
+    name: core.entity_form_display.paragraph.az_text_media.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.paragraph.az_text_media.field_az_media
+          - field.field.paragraph.az_text_media.field_az_text_area
+          - field.field.paragraph.az_text_media.field_az_title
+          - paragraphs.paragraphs_type.az_text_media
+        module:
+          - media_library
+          - media_library_edit
+          - text
+      id: paragraph.az_text_media.default
+      targetEntityType: paragraph
+      bundle: az_text_media
+      mode: default
+      content:
+        field_az_media:
+          type: media_library_widget
+          weight: 1
+          settings:
+            media_types: {  }
+          third_party_settings:
+            media_library_edit:
+              show_edit: '1'
+          region: content
+        field_az_text_area:
+          weight: 2
+          settings:
+            rows: 5
+            placeholder: ''
+          third_party_settings: {  }
+          type: text_textarea
+          region: content
+        field_az_title:
+          weight: 0
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+          type: string_textfield
+          region: content
+      hidden:
+        created: true
+        status: true
+      _core:
+        default_config_hash: GzQAo2doV8rilNYP4hmszYP0tRXFC_Xq-GKowcwWt1o
+  -
+    collection: ''
+    name: core.entity_view_display.paragraph.az_text_media.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.paragraph.az_text_media.field_az_media
+          - field.field.paragraph.az_text_media.field_az_text_area
+          - field.field.paragraph.az_text_media.field_az_title
+          - paragraphs.paragraphs_type.az_text_media
+        module:
+          - az_paragraphs
+          - field_group
+          - text
+      third_party_settings:
+        field_group:
+          group_az_container:
+            children:
+              - group_az_full_width_row
+            parent_name: ''
+            weight: 1
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: container
+              show_empty_fields: false
+            label: Container
+          group_az_full_width_row:
+            children:
+              - group_az_column
+            parent_name: group_az_container
+            weight: 20
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: az-full-width-row
+              show_empty_fields: false
+            label: Row
+          group_az_title:
+            children:
+              - field_az_title
+            parent_name: group_az_content_wrapper
+            weight: 21
+            format_type: html_element
+            region: content
+            format_settings:
+              element: h2
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'bold mt-0'
+              show_empty_fields: false
+            label: Title
+          group_az_content:
+            children:
+              - group_az_content_wrapper
+            parent_name: group_az_column
+            weight: 21
+            format_type: html_element
+            region: content
+            format_settings:
+              show_empty_fields: false
+              id: ''
+              classes: ''
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: Content
+          group_az_column:
+            children:
+              - group_az_content
+            parent_name: group_az_full_width_row
+            weight: 20
+            format_type: html_element
+            region: content
+            format_settings:
+              show_empty_fields: false
+              id: ''
+              classes: ''
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: Column
+          group_az_content_wrapper:
+            children:
+              - group_az_title
+              - field_az_text_area
+            parent_name: group_az_content
+            weight: 20
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: az-full-width-column-content-wrapper
+              show_empty_fields: false
+            label: 'Content Wrapper'
+      id: paragraph.az_text_media.default
+      targetEntityType: paragraph
+      bundle: az_text_media
+      mode: default
+      content:
+        field_az_media:
+          type: az_background_media
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: az_full_width_background
+            css_settings:
+              z_index: auto
+              color: transparent
+              x: center
+              'y': center
+              attachment: scroll
+              repeat: no-repeat
+              size: cover
+              selector: '#[paragraph:type:target_id]-[paragraph:id]'
+              important: false
+          third_party_settings: {  }
+        field_az_text_area:
+          weight: 22
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+          type: text_default
+          region: content
+        field_az_title:
+          type: string
+          weight: 21
+          region: content
+          label: hidden
+          settings:
+            link_to_entity: false
+          third_party_settings: {  }
+      hidden: {  }
+      _core:
+        default_config_hash: Ql1tAzlCChgqTN4JpR6fG6S-UN7kQkTdceESx54J9oo
+  -
+    collection: ''
+    name: field.field.paragraph.az_text_media.field_az_media
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.paragraph.field_az_media
+          - media.type.az_image
+          - media.type.az_remote_video
+          - paragraphs.paragraphs_type.az_text_media
+      id: paragraph.az_text_media.field_az_media
+      field_name: field_az_media
+      entity_type: paragraph
+      bundle: az_text_media
+      label: Media
+      description: ''
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        handler: 'default:media'
+        handler_settings:
+          target_bundles:
+            az_image: az_image
+            az_remote_video: az_remote_video
+          sort:
+            field: _none
+            direction: ASC
+          auto_create: false
+      field_type: entity_reference
+      _core:
+        default_config_hash: 4-WBcPF9QBGoP2jtQsjgnt-rKoHgL-5mCx_Dd1QrHbY
+  -
+    collection: ''
+    name: field.field.paragraph.az_text_media.field_az_text_area
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.paragraph.field_az_text_area
+          - paragraphs.paragraphs_type.az_text_media
+        module:
+          - text
+      id: paragraph.az_text_media.field_az_text_area
+      field_name: field_az_text_area
+      entity_type: paragraph
+      bundle: az_text_media
+      label: Body
+      description: 'White text will be highlighted in gray (only while editing) to keep the text visible.'
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        allowed_formats: {  }
+      field_type: text_long
+      _core:
+        default_config_hash: tp3c7x0DTzYMBVfQhOaILKm__D7stboqOPbh_3IjjuI
+  -
+    collection: ''
+    name: field.field.paragraph.az_text_media.field_az_title
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.paragraph.field_az_title
+          - paragraphs.paragraphs_type.az_text_media
+      id: paragraph.az_text_media.field_az_title
+      field_name: field_az_title
+      entity_type: paragraph
+      bundle: az_text_media
+      label: Title
+      description: ''
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings: {  }
+      field_type: string
+      _core:
+        default_config_hash: JxoCNKjLpuemh0pMhtTXvFRjBnPs7OnlSdC8D0x0UJU
+  -
+    collection: ''
+    name: paragraphs.paragraphs_type.az_text_media
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - az_paragraphs
+      id: az_text_media
+      label: 'Text on Media'
+      icon_uuid: null
+      icon_default: null
+      description: ''
+      behavior_plugins:
+        az_text_media_paragraph_behavior:
+          enabled: true
+      _core:
+        default_config_hash: udz4Ls2l1w_z2I2ZyEVZbXJsk1yAnuwlvR7fZPJsMB4

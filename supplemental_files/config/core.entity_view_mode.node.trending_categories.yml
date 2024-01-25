@@ -1,0 +1,10 @@
+uuid: 08530091-303e-443e-b773-6117dd5f1c68
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.trending_categories
+label: 'Trending Categories'
+targetEntityType: node
+cache: true

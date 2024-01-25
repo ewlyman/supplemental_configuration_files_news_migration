@@ -1,0 +1,38 @@
+uuid: 6b114297-05e8-4c18-8eb9-cb0f3f2b51ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.az_background
+    - field.field.media.az_image.field_az_caption
+    - field.field.media.az_image.field_az_credit
+    - field.field.media.az_image.field_media_az_image
+    - image.style.large
+    - media.type.az_image
+  module:
+    - image
+_core:
+  default_config_hash: N6VJAyZgY_u7jgrwwflaScZzIv-P-nTHA-gjbjbWYP4
+id: media.az_image.az_background
+targetEntityType: media
+bundle: az_image
+mode: az_background
+content:
+  field_media_az_image:
+    label: visually_hidden
+    settings:
+      image_style: large
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_az_caption: true
+  field_az_credit: true
+  name: true
+  thumbnail: true
+  uid: true

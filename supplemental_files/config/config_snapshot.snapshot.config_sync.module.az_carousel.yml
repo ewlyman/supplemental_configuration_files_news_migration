@@ -1,0 +1,1219 @@
+uuid: c0bcbd46-764b-4a21-b379-61e5eb321c38
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_carousel
+id: config_sync.module.az_carousel
+snapshotSet: config_sync
+extensionType: module
+extensionName: az_carousel
+items:
+  -
+    collection: ''
+    name: block.block.az_carousel_notification
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - az_carousel
+          - system
+          - user
+        theme:
+          - az_barrio
+      id: az_carousel_notification
+      theme: az_barrio
+      region: content_featured
+      weight: -9
+      provider: null
+      plugin: az_carousel_notice
+      settings:
+        id: az_carousel_notice
+        label: 'Quickstart Carousel Notification Block'
+        label_display: '0'
+        provider: az_carousel
+      visibility:
+        request_path:
+          id: request_path
+          pages: '<front>'
+          negate: false
+        user_role:
+          id: user_role
+          roles:
+            az_content_editor: az_content_editor
+            az_content_admin: az_content_admin
+            administrator: administrator
+          negate: false
+          context_mapping:
+            user: '@user.current_user_context:current_user'
+      _core:
+        default_config_hash: zAi09D5QA-MPJ-5dcxtKws4UmPseK1YtuwNFsT1XVKw
+  -
+    collection: ''
+    name: block.block.views_block__az_carousel_front_carousel_block
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - views.view.az_carousel
+        module:
+          - system
+          - views
+        theme:
+          - az_barrio
+      id: views_block__az_carousel_front_carousel_block
+      theme: az_barrio
+      region: content_featured
+      weight: -8
+      provider: null
+      plugin: 'views_block:az_carousel-front_carousel_block'
+      settings:
+        id: 'views_block:az_carousel-front_carousel_block'
+        label: ''
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: none
+      visibility:
+        request_path:
+          id: request_path
+          pages: '<front>'
+          negate: false
+      _core:
+        default_config_hash: inoK3Hy1TQawTy9LbtJbaf2N_rWevG2EhgFXXbp4560
+  -
+    collection: ''
+    name: core.base_field_override.node.az_carousel_item.promote
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - node.type.az_carousel_item
+      id: node.az_carousel_item.promote
+      field_name: promote
+      entity_type: node
+      bundle: az_carousel_item
+      label: 'Promoted to front page'
+      description: ''
+      required: false
+      translatable: true
+      default_value:
+        -
+          value: 0
+      default_value_callback: ''
+      settings:
+        on_label: 'On'
+        off_label: 'Off'
+      field_type: boolean
+      _core:
+        default_config_hash: m6vSe9ew43zoWOo4rrWoOu2_9M9fhvBTn1LthI_bW5A
+  -
+    collection: ''
+    name: core.entity_form_display.node.az_carousel_item.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.node.az_carousel_item.field_az_carousel_short_summary
+          - field.field.node.az_carousel_item.field_az_link
+          - field.field.node.az_carousel_item.field_az_media_image
+          - node.type.az_carousel_item
+        module:
+          - link_class
+          - media_library
+          - path
+      id: node.az_carousel_item.default
+      targetEntityType: node
+      bundle: az_carousel_item
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 5
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_az_carousel_short_summary:
+          weight: 2
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+          type: string_textfield
+          region: content
+        field_az_link:
+          weight: 3
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            link_class_mode: force_class
+            link_class_force: 'btn btn-outline-white btn-sm'
+            link_class_select: ''
+          third_party_settings: {  }
+          type: link_class_field_widget
+          region: content
+        field_az_media_image:
+          weight: 1
+          settings:
+            media_types: {  }
+          third_party_settings: {  }
+          type: media_library_widget
+          region: content
+        path:
+          type: path
+          weight: 8
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        promote:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 6
+          region: content
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 10
+          region: content
+          third_party_settings: {  }
+        sticky:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 7
+          region: content
+          third_party_settings: {  }
+        title:
+          type: string_textfield
+          weight: 0
+          region: content
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 4
+          settings:
+            match_operator: CONTAINS
+            size: 60
+            placeholder: ''
+            match_limit: 10
+          region: content
+          third_party_settings: {  }
+        url_redirects:
+          weight: 9
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+      hidden: {  }
+      _core:
+        default_config_hash: fsjKAx7NgcQ4YJMz6gBDsExn0NvXnT0Y51epC8VdgQc
+  -
+    collection: ''
+    name: core.entity_view_display.node.az_carousel_item.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.node.az_carousel_item.field_az_carousel_short_summary
+          - field.field.node.az_carousel_item.field_az_link
+          - field.field.node.az_carousel_item.field_az_media_image
+          - node.type.az_carousel_item
+        module:
+          - field_group
+          - link
+          - smart_title
+          - user
+      third_party_settings:
+        field_group:
+          group_carousel_item:
+            children:
+              - field_az_media_image
+              - group_slide_details
+            parent_name: ''
+            weight: 1
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'az-carousel-slide d-flex flex-column justify-content-start'
+            label: 'Carousel Slide'
+          group_slide_details:
+            children:
+              - smart_title
+              - group_text_size_h4
+              - field_az_link
+            parent_name: group_carousel_item
+            weight: 3
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'az-carousel-slide-details px-4 py-3 d-flex flex-column justify-content-center'
+            label: 'Slide Details'
+          group_text_size_h4:
+            children:
+              - field_az_carousel_short_summary
+            parent_name: group_slide_details
+            weight: 2
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'h4 mt-2 mb-3 text-white'
+            label: 'Text Size H4'
+        smart_title:
+          enabled: true
+          settings:
+            smart_title__tag: h2
+            smart_title__classes:
+              - h1
+              - my-0
+              - az-carousel-slide-title
+              - text-white
+            smart_title__link: false
+      id: node.az_carousel_item.default
+      targetEntityType: node
+      bundle: az_carousel_item
+      mode: default
+      content:
+        field_az_carousel_short_summary:
+          weight: 4
+          label: hidden
+          settings:
+            link_to_entity: false
+          third_party_settings: {  }
+          type: string
+          region: content
+        field_az_link:
+          weight: 3
+          label: hidden
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: ''
+            target: ''
+          third_party_settings: {  }
+          type: link
+          region: content
+        field_az_media_image:
+          weight: 2
+          label: hidden
+          settings:
+            view_mode: az_carousel_item
+            link: false
+          third_party_settings: {  }
+          type: entity_reference_entity_view
+          region: content
+        links:
+          weight: 0
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        smart_title:
+          weight: 1
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+      hidden: {  }
+      _core:
+        default_config_hash: gjdp9kFSUET76yFfWYFcZKCOWnW5k6fVZ3S3MXMkQp4
+  -
+    collection: ''
+    name: field.field.node.az_carousel_item.field_az_carousel_short_summary
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.field_az_carousel_short_summary
+          - node.type.az_carousel_item
+      id: node.az_carousel_item.field_az_carousel_short_summary
+      field_name: field_az_carousel_short_summary
+      entity_type: node
+      bundle: az_carousel_item
+      label: 'Short Summary'
+      description: "Optional short summary/details for your carousel slide.<br />\r\n<strong>Maximum of 255 characters.</strong>"
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings: {  }
+      field_type: string
+      _core:
+        default_config_hash: qsQYaSJ5oBuXCyIxdEjCVQUPsbQ_0iYCngVEzw-lWy0
+  -
+    collection: ''
+    name: field.field.node.az_carousel_item.field_az_link
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.field_az_link
+          - node.type.az_carousel_item
+        module:
+          - link
+      id: node.az_carousel_item.field_az_link
+      field_name: field_az_link
+      entity_type: node
+      bundle: az_carousel_item
+      label: 'Call to Action'
+      description: 'Optionally add a link to another page or website for users to learn more.'
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        link_type: 17
+        title: 2
+      field_type: link
+      _core:
+        default_config_hash: 3HhVIoY29ACWyL2fAlROMvBPGc3cHSge_yct45239RM
+  -
+    collection: ''
+    name: field.field.node.az_carousel_item.field_az_media_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.field_az_media_image
+          - media.type.az_image
+          - node.type.az_carousel_item
+      id: node.az_carousel_item.field_az_media_image
+      field_name: field_az_media_image
+      entity_type: node
+      bundle: az_carousel_item
+      label: Image
+      description: 'Minimum dimensions: 1400px (wide) x 500px (tall)'
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        handler: 'default:media'
+        handler_settings:
+          target_bundles:
+            az_image: az_image
+          sort:
+            field: _none
+            direction: ASC
+          auto_create: false
+          auto_create_bundle: ''
+      field_type: entity_reference
+      _core:
+        default_config_hash: DqjqBYde4kLsBoZYM-bK4CqK6MJrh1udKxKbeyfhB1A
+  -
+    collection: ''
+    name: field.storage.node.field_az_carousel_short_summary
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - node
+      id: node.field_az_carousel_short_summary
+      field_name: field_az_carousel_short_summary
+      entity_type: node
+      type: string
+      settings:
+        max_length: 255
+        is_ascii: false
+        case_sensitive: false
+      module: core
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: 5Pk-7tu8GVr5c4w1K0jrvPEeQYMY6dGcHOKmn_-2uRE
+  -
+    collection: ''
+    name: node.type.az_carousel_item
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - menu_ui
+      third_party_settings:
+        menu_ui:
+          available_menus: {  }
+          parent: ''
+      name: 'Carousel item'
+      type: az_carousel_item
+      description: 'Allows users to create and order carousel items.'
+      help: ''
+      new_revision: true
+      preview_mode: 1
+      display_submitted: false
+      _core:
+        default_config_hash: xkPB18atVuZpLd6Bkx9F0F9CtelGsFfLEb5dertOKq8
+  -
+    collection: ''
+    name: slick.optionset.center_mode
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: center_mode
+      name: center_mode
+      weight: 0
+      label: 'Center Mode'
+      group: ''
+      skin: ''
+      breakpoints: 1
+      optimized: false
+      options:
+        options__active_tab: edit-options-settings
+        settings:
+          mobileFirst: true
+          asNavFor: ''
+          accessibility: true
+          adaptiveHeight: false
+          autoplay: false
+          autoplaySpeed: 3000
+          pauseOnHover: true
+          pauseOnDotsHover: false
+          pauseOnFocus: true
+          arrows: false
+          prevArrow: Previous
+          nextArrow: Next
+          downArrow: false
+          downArrowTarget: ''
+          downArrowOffset: 0
+          centerMode: true
+          centerPadding: 5%
+          dots: true
+          dotsClass: slick-dots
+          appendDots: $(element)
+          draggable: false
+          fade: false
+          focusOnSelect: true
+          infinite: true
+          initialSlide: 0
+          lazyLoad: ondemand
+          mouseWheel: false
+          randomize: false
+          respondTo: window
+          rtl: false
+          rows: 1
+          slidesPerRow: 1
+          slide: ''
+          slidesToShow: 1
+          slidesToScroll: 1
+          speed: 500
+          swipe: true
+          swipeToSlide: false
+          edgeFriction: 0.35
+          touchMove: true
+          touchThreshold: 5
+          useCSS: true
+          cssEase: ease
+          cssEaseBezier: ''
+          cssEaseOverride: ''
+          useTransform: true
+          easing: linear
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: true
+        responsives:
+          responsive:
+            -
+              breakpoint: 1200
+              unslick: false
+              settings:
+                adaptiveHeight: false
+                autoplay: false
+                autoplaySpeed: 3000
+                pauseOnHover: false
+                pauseOnDotsHover: false
+                pauseOnFocus: false
+                arrows: true
+                centerMode: true
+                centerPadding: 10%
+                dots: true
+                draggable: false
+                fade: false
+                focusOnSelect: true
+                infinite: true
+                initialSlide: 0
+                respondTo: window
+                rows: 1
+                slidesPerRow: 1
+                slidesToShow: 1
+                slidesToScroll: 1
+                speed: 500
+                swipe: true
+                swipeToSlide: false
+                edgeFriction: 0.35
+                touchMove: true
+                touchThreshold: 5
+                cssEase: ease
+                cssEaseBezier: ''
+                cssEaseOverride: ''
+                variableWidth: false
+                vertical: false
+                verticalSwiping: false
+                waitForAnimate: false
+      _core:
+        default_config_hash: jnzCM03FsmzoAN3TlVO-GYDJEL-NUZ77B8FB5qYd-pc
+  -
+    collection: ''
+    name: views.view.az_carousel
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.node.field_az_carousel_short_summary
+          - node.type.az_carousel_item
+        module:
+          - draggableviews
+          - node
+          - slick_views
+          - user
+      id: az_carousel
+      label: 'AZ Carousel'
+      module: views
+      description: ''
+      tag: ''
+      base_table: node_field_data
+      base_field: nid
+      display:
+        default:
+          display_plugin: default
+          id: default
+          display_title: Master
+          position: 0
+          display_options:
+            access:
+              type: perm
+              options:
+                perm: 'access content'
+            cache:
+              type: tag
+              options: {  }
+            query:
+              type: views_query
+              options:
+                disable_sql_rewrite: false
+                distinct: false
+                replica: false
+                query_comment: ''
+                query_tags: {  }
+            exposed_form:
+              type: basic
+              options:
+                submit_button: Apply
+                reset_button: false
+                reset_button_label: Reset
+                exposed_sorts_label: 'Sort by'
+                expose_sort_order: true
+                sort_asc_label: Asc
+                sort_desc_label: Desc
+            pager:
+              type: some
+              options:
+                items_per_page: 5
+                offset: 0
+            style:
+              type: slick
+              options:
+                vanilla: true
+                optionset: center_mode
+                skin: default
+                layout: ''
+                caption:
+                  title: '0'
+                optionset_thumbnail: ''
+                skin_thumbnail: ''
+                thumbnail_position: ''
+                thumbnail_caption: ''
+                grid: null
+                grid_medium: null
+                grid_small: null
+                visible_items: null
+                preserve_keys: false
+                image: ''
+                thumbnail: ''
+                overlay: ''
+                title: ''
+                link: ''
+                class: ''
+                id: az_front_carousel
+                override: false
+                overridables:
+                  arrows: arrows
+                  dots: dots
+                  draggable: draggable
+                  infinite: infinite
+                  autoplay: '0'
+                  mouseWheel: '0'
+                  randomize: '0'
+                  variableWidth: '0'
+                cache: 0
+                current_view_mode: front_carousel_block
+                thumbnail_effect: ''
+            row:
+              type: 'entity:node'
+              options:
+                relationship: none
+                view_mode: default
+            fields:
+              title:
+                id: title
+                table: node_field_data
+                field: title
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: string
+                settings:
+                  link_to_entity: false
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                plugin_id: field
+            filters:
+              status:
+                value: '1'
+                table: node_field_data
+                field: status
+                plugin_id: boolean
+                entity_type: node
+                entity_field: status
+                id: status
+                expose:
+                  operator: ''
+                  operator_limit_selection: false
+                  operator_list: {  }
+                group: 1
+              type:
+                id: type
+                table: node_field_data
+                field: type
+                value:
+                  az_carousel_item: az_carousel_item
+                entity_type: node
+                entity_field: type
+                plugin_id: bundle
+                expose:
+                  operator_limit_selection: false
+                  operator_list: {  }
+            sorts:
+              weight:
+                id: weight
+                table: draggableviews_structure
+                field: weight
+                relationship: none
+                group_type: group
+                admin_label: ''
+                order: ASC
+                exposed: false
+                expose:
+                  label: ''
+                  field_identifier: weight
+                draggable_views_reference: 'az_reorder:reorder_carousel_items'
+                draggable_views_null_order: after
+                plugin_id: draggable_views_sort_default
+              created:
+                id: created
+                table: node_field_data
+                field: created
+                order: DESC
+                entity_type: node
+                entity_field: created
+                plugin_id: date
+                relationship: none
+                group_type: group
+                admin_label: ''
+                exposed: false
+                expose:
+                  label: ''
+                  field_identifier: created
+                granularity: second
+            title: 'AZ Carousel'
+            header: {  }
+            footer: {  }
+            empty: {  }
+            relationships: {  }
+            arguments: {  }
+            display_extenders: {  }
+            css_class: az-carousel
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+        front_carousel_block:
+          display_plugin: block
+          id: front_carousel_block
+          display_title: 'Carousel Block'
+          position: 1
+          display_options:
+            display_extenders: {  }
+            display_description: ''
+            sorts:
+              weight:
+                id: weight
+                table: draggableviews_structure
+                field: weight
+                relationship: none
+                group_type: group
+                admin_label: ''
+                order: ASC
+                exposed: false
+                expose:
+                  label: ''
+                  field_identifier: weight
+                draggable_views_reference: 'az_carousel:reorder_carousel_items'
+                draggable_views_null_order: after
+                plugin_id: draggable_views_sort_default
+              created:
+                id: created
+                table: node_field_data
+                field: created
+                order: DESC
+                entity_type: node
+                entity_field: created
+                plugin_id: date
+                relationship: none
+                group_type: group
+                admin_label: ''
+                exposed: false
+                expose:
+                  label: ''
+                  field_identifier: created
+                granularity: second
+            defaults:
+              sorts: false
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+        reorder_carousel_items:
+          display_plugin: page
+          id: reorder_carousel_items
+          display_title: 'Reorder Carousel Items'
+          position: 2
+          display_options:
+            display_extenders: {  }
+            path: admin/az-carousel/reorder-carousel-items
+            pager:
+              type: none
+              options:
+                offset: 0
+            defaults:
+              pager: false
+              pager_options: false
+              css_class: false
+              title: false
+              style: false
+              row: false
+              style_options: false
+              fields: false
+              sorts: false
+              cache: false
+            pager_options: null
+            css_class: ''
+            title: 'Reorder Carousel Items'
+            display_description: ''
+            style:
+              type: table
+              options:
+                grouping: {  }
+                row_class: ''
+                default_row_class: false
+                override: false
+                sticky: false
+                caption: ''
+                summary: ''
+                description: ''
+                columns:
+                  title: title
+                info:
+                  title:
+                    sortable: false
+                    default_sort_order: asc
+                    align: ''
+                    separator: ''
+                    empty_column: false
+                    responsive: ''
+                default: '-1'
+                empty_table: false
+            row:
+              type: 'entity:node'
+              options:
+                relationship: none
+                view_mode: default
+            style_options: null
+            fields:
+              title:
+                id: title
+                table: node_field_data
+                field: title
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: string
+                settings:
+                  link_to_entity: false
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                plugin_id: field
+              field_az_carousel_short_summary:
+                id: field_az_carousel_short_summary
+                table: node__field_az_carousel_short_summary
+                field: field_az_carousel_short_summary
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: string
+                settings:
+                  link_to_entity: false
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                plugin_id: field
+              status:
+                id: status
+                table: node_field_data
+                field: status
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: Status
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: boolean
+                settings:
+                  format: custom
+                  format_custom_true: Published
+                  format_custom_false: Unpublished
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                entity_type: node
+                entity_field: status
+                plugin_id: field
+              draggableviews:
+                id: draggableviews
+                table: node_field_data
+                field: draggableviews
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                action_title: Action
+                include_exclude: exclude
+                selected_actions: null
+                entity_type: node
+                entity_field: nid
+                plugin_id: draggable_views_field
+            sorts:
+              weight:
+                id: weight
+                table: draggableviews_structure
+                field: weight
+                relationship: none
+                group_type: group
+                admin_label: ''
+                order: ASC
+                exposed: false
+                expose:
+                  label: ''
+                  field_identifier: weight
+                draggable_views_reference: this
+                draggable_views_null_order: after
+                plugin_id: draggable_views_sort_default
+            cache:
+              type: none
+              options: {  }
+          cache_metadata:
+            max-age: 0
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - 'user.node_grants:view'
+              - user.permissions
+            tags:
+              - 'config:field.storage.node.field_az_carousel_short_summary'
+      _core:
+        default_config_hash: emk5j-1trsxijER5vc_cM17PcPmIEkpneB0epranvJo

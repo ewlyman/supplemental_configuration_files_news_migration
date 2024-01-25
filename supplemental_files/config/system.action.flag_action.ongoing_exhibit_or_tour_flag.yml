@@ -1,0 +1,15 @@
+uuid: 1abc9cdb-8eb4-4b0a-9d19-ff13d984817c
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.ongoing_exhibit_or_tour
+  module:
+    - flag
+id: flag_action.ongoing_exhibit_or_tour_flag
+label: 'This event is an Ongoing Exhibit or Tour'
+type: node
+plugin: 'flag_action:ongoing_exhibit_or_tour_flag'
+configuration:
+  flag_id: ongoing_exhibit_or_tour
+  flag_action: flag

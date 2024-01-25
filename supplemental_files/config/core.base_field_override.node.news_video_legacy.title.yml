@@ -1,0 +1,18 @@
+uuid: 27fe2e4d-56df-4f79-a28d-4a46cb39584e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news_video_legacy
+id: node.news_video_legacy.title
+field_name: title
+entity_type: node
+bundle: news_video_legacy
+label: Headline
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 8d2836ee-8fe2-4748-bc61-c1b1d1137156
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.researcher_media_contacts
+label: 'Researcher & Media Contacts'
+targetEntityType: paragraph
+cache: true

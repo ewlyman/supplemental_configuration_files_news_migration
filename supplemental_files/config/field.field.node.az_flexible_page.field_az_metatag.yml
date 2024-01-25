@@ -1,0 +1,23 @@
+uuid: 13999048-b3e9-4708-a233-d31face37d4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_metatag
+    - node.type.az_flexible_page
+  module:
+    - metatag
+_core:
+  default_config_hash: 4rxYt5KA8ixmtm8MGZbHMTWqVtPBIpUYnJAOzdubTgs
+id: node.az_flexible_page.field_az_metatag
+field_name: field_az_metatag
+entity_type: node
+bundle: az_flexible_page
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

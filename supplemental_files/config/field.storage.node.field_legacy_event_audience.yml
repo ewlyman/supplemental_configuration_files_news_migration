@@ -1,0 +1,42 @@
+uuid: 5f5bddea-2df2-477b-949f-569027e78c0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_legacy_event_audience
+field_name: field_legacy_event_audience
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: All
+      label: All
+    -
+      value: Students
+      label: Students
+    -
+      value: Staff
+      label: Staff
+    -
+      value: Faculty
+      label: Faculty
+    -
+      value: 'UA Community'
+      label: 'UA Community'
+    -
+      value: 'UA Employees'
+      label: 'UA Employees'
+    -
+      value: Alumni
+      label: Alumni
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: dd04d85f-bde6-4260-97d4-8b7c866b39fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - xmlsitemap_engines
+id: config_sync.module.xmlsitemap_engines
+snapshotSet: config_sync
+extensionType: module
+extensionName: xmlsitemap_engines
+items:
+  -
+    collection: ''
+    name: xmlsitemap_engines.settings
+    data:
+      engines:
+        bing: bing
+        google: google
+      custom_urls: ''
+      minimum_lifetime: 86400
+      _core:
+        default_config_hash: JgBInGR_gEYgn1_KIpnIhxrCkTnadNxemqo4q8hkbao

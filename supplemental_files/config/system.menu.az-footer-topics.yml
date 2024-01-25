@@ -1,0 +1,10 @@
+uuid: f16144ee-29a7-46ab-9c91-5e921cbd158d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lDTVWdO2LZ8v2N7Qvhz9JLZVfa79-KVDS6bSupBUHFo
+id: az-footer-topics
+label: 'Footer - Topics'
+description: 'Generally contains institution-level navigation links to topic pages on Arizona.edu.'
+locked: false

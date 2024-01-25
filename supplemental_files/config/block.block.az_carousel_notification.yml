@@ -1,0 +1,37 @@
+uuid: eea28700-71a4-4b0d-a063-546963dc4886
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_carousel
+    - system
+    - user
+  theme:
+    - az_barrio
+_core:
+  default_config_hash: zAi09D5QA-MPJ-5dcxtKws4UmPseK1YtuwNFsT1XVKw
+id: az_carousel_notification
+theme: az_barrio
+region: content_featured
+weight: -9
+provider: null
+plugin: az_carousel_notice
+settings:
+  id: az_carousel_notice
+  label: 'Quickstart Carousel Notification Block'
+  label_display: '0'
+  provider: az_carousel
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      az_content_editor: az_content_editor
+      az_content_admin: az_content_admin
+      administrator: administrator

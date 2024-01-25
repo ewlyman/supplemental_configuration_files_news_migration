@@ -1,0 +1,26 @@
+uuid: 203320a5-3da4-4c5c-9dd5-a7d6182f3831
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_address
+    - filter.format.plain_text
+    - node.type.az_person
+  module:
+    - text
+_core:
+  default_config_hash: kOI3pvV1wP0s-W_nT0q06NS1zaz5OMJxWVHoacUMi_o
+id: node.az_person.field_az_address
+field_name: field_az_address
+entity_type: node
+bundle: az_person
+label: Address(es)
+description: 'Office location(s)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text_long

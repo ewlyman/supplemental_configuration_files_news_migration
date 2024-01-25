@@ -1,0 +1,18 @@
+uuid: e547e1a0-c475-48e9-846e-5202e45a6b09
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.custom_external_news
+id: node.custom_external_news.title
+field_name: title
+entity_type: node
+bundle: custom_external_news
+label: Headline
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

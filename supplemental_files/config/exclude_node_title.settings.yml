@@ -1,0 +1,35 @@
+_core:
+  default_config_hash: SziIAggTRPHGDPrNbtfels5LxY0aH_FAFhtYNByYKLg
+nid_list:
+  - 2
+  - 26
+  - 48
+  - 49
+  - 45
+  - 27
+  - 44
+  - 46
+  - 47
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+translation_sync: true
+search: false
+type: hidden
+content_types:
+  az_event: none
+  az_flexible_page: user
+  az_news: none
+  az_person: none
+  az_publication: all
+content_type_modes:
+  az_event: {  }
+  az_flexible_page:
+    - full
+  az_news: {  }
+  az_person: {  }
+  az_publication:
+    - az_publication_reference

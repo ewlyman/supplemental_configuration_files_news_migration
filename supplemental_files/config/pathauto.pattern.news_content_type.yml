@@ -1,0 +1,24 @@
+uuid: a92ca4bf-69c6-4e4a-950b-0ba7b97d6269
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: tXercPObbF548bXf52GX-b83E-b7zqoBT2hlIY-Nx-k
+id: news_content_type
+label: 'News Content Type'
+type: 'canonical_entities:node'
+pattern: '/[node:field_custom_news_article_type]/[node:title]'
+selection_criteria:
+  80711fa3-2bb2-4c8e-acca-9acdf948be72:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 80711fa3-2bb2-4c8e-acca-9acdf948be72
+    context_mapping:
+      node: node
+    bundles:
+      az_news: az_news
+selection_logic: and
+weight: -5
+relationships: {  }

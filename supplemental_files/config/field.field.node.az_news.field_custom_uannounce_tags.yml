@@ -1,0 +1,29 @@
+uuid: 37621e4d-4c65-4693-87b9-a7bd0a261b53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_uannounce_tags
+    - node.type.az_news
+    - taxonomy.vocabulary.uannounce_tags
+id: node.az_news.field_custom_uannounce_tags
+field_name: field_custom_uannounce_tags
+entity_type: node
+bundle: az_news
+label: 'UAnnounce Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      uannounce_tags: uannounce_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

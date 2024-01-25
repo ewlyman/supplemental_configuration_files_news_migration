@@ -1,0 +1,18 @@
+uuid: 418fad64-1e73-4b7f-add3-8c2449bf1c13
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Press Release (legacy)'
+type: news_press_release_legacy
+description: 'Target content type for Press Release imports'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

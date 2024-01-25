@@ -1,0 +1,32 @@
+uuid: e64f1e58-3a99-4c18-b052-aa280cee5b2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ua_at_work_page.body
+    - field.field.node.ua_at_work_page.field_az_main_content
+    - node.type.ua_at_work_page
+  module:
+    - text
+    - user
+id: node.ua_at_work_page.teaser
+targetEntityType: node
+bundle: ua_at_work_page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_az_main_content: true

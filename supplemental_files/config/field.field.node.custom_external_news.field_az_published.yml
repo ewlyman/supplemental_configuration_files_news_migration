@@ -1,0 +1,26 @@
+uuid: 95f9d75d-70e6-4fcf-b826-10dd0096800d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_published
+    - node.type.custom_external_news
+  module:
+    - datetime
+_core:
+  default_config_hash: 5yHqq99xW0wlORENLOhkO80g2ldpmoREY_nMwMIh5M4
+id: node.custom_external_news.field_az_published
+field_name: field_az_published
+entity_type: node
+bundle: custom_external_news
+label: 'Date of publication'
+description: 'Date when article was published'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,17 @@
+uuid: 0fa834a7-4367-4bcc-8844-f5f466c10c4f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Uay9DhGrbCef0-y52lU_bYcN1NqaoK2Um11cSo3BaOI
+name: az_small
+label: 'Small (360px)'
+effects:
+  a5aee9bc-6dd3-4b48-b04e-027cc8017630:
+    uuid: a5aee9bc-6dd3-4b48-b04e-027cc8017630
+    id: image_scale
+    weight: 1
+    data:
+      width: 360
+      height: null
+      upscale: true

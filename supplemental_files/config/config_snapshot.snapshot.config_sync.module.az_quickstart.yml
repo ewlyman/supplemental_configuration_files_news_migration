@@ -1,0 +1,1595 @@
+uuid: 198f6317-6adc-4b54-9623-cc14d5abd8b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_quickstart
+id: config_sync.module.az_quickstart
+snapshotSet: config_sync
+extensionType: module
+extensionName: az_quickstart
+items:
+  -
+    collection: ''
+    name: automated_cron.settings
+    data:
+      interval: 10800
+      _core:
+        default_config_hash: fUksROt4FfkAU9BV4hV2XvhTBSS2nTNrZS4U7S-tKrs
+  -
+    collection: ''
+    name: block.block.az_barrio_main_menu
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - system.menu.main
+        module:
+          - system
+        theme:
+          - az_barrio
+      id: az_barrio_main_menu
+      theme: az_barrio
+      region: navigation
+      weight: 0
+      provider: null
+      plugin: 'system_menu_block:main'
+      settings:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: 2
+        expand_all_items: true
+      visibility: {  }
+      _core:
+        default_config_hash: o7QqTKJYzUSygGoJ3mGvh70d6lBD7Z3GOlOwBZnBVTo
+  -
+    collection: ''
+    name: block.block.az_utility_links
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - system.menu.az-utility-links
+        module:
+          - system
+        theme:
+          - az_barrio
+      id: az_utility_links
+      theme: az_barrio
+      region: header
+      weight: -6
+      provider: null
+      plugin: 'system_menu_block:az-utility-links'
+      settings:
+        id: 'system_menu_block:az-utility-links'
+        label: 'Utility Links'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: 1
+        expand_all_items: false
+      visibility: {  }
+      _core:
+        default_config_hash: A1MHO1ETiQs3DUm4GIQMzko5sgo213Q_7gu8CRV_WIE
+  -
+    collection: ''
+    name: block_content.type.basic
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: basic
+      label: 'Basic block'
+      revision: 0
+      description: 'A basic block contains a title and a body.'
+      _core:
+        default_config_hash: zglzjmYxi0G0ag9MZ02y0LSJOdpWRwJxyP_OvFojFyo
+  -
+    collection: ''
+    name: core.entity_form_display.block_content.basic.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - block_content.type.basic
+          - field.field.block_content.basic.body
+        module:
+          - text
+      id: block_content.basic.default
+      targetEntityType: block_content
+      bundle: basic
+      mode: default
+      content:
+        body:
+          type: text_textarea_with_summary
+          weight: -4
+          region: content
+          settings:
+            rows: 9
+            summary_rows: 3
+            placeholder: ''
+            show_summary: false
+          third_party_settings: {  }
+        info:
+          type: string_textfield
+          weight: -5
+          region: content
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+      hidden: {  }
+      _core:
+        default_config_hash: jAps3FCxvKecABS_tgExbhCZrBLQB3bNPWw18WjE3ss
+  -
+    collection: ''
+    name: core.entity_form_display.user.user.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.user.user.user_picture
+          - image.style.thumbnail
+        module:
+          - image
+          - path
+          - user
+      id: user.user.default
+      targetEntityType: user
+      bundle: user
+      mode: default
+      content:
+        account:
+          weight: -10
+          region: content
+        language:
+          weight: 0
+          region: content
+        path:
+          type: path
+          weight: 30
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        timezone:
+          weight: 6
+          region: content
+        user_picture:
+          type: image_image
+          settings:
+            progress_indicator: throbber
+            preview_image_style: thumbnail
+          third_party_settings: {  }
+          weight: -1
+          region: content
+      hidden: {  }
+      _core:
+        default_config_hash: bAvPFME8avpiNuwYc7RHkt9yuEJBktbNC54FxIDfCDs
+  -
+    collection: ''
+    name: core.entity_view_display.block_content.basic.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - block_content.type.basic
+          - field.field.block_content.basic.body
+        module:
+          - text
+      id: block_content.basic.default
+      targetEntityType: block_content
+      bundle: basic
+      mode: default
+      content:
+        body:
+          label: hidden
+          type: text_default
+          weight: 0
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+      hidden: {  }
+      _core:
+        default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
+  -
+    collection: ''
+    name: core.entity_view_display.user.user.compact
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.user.compact
+          - field.field.user.user.user_picture
+          - image.style.thumbnail
+        module:
+          - image
+          - user
+      id: user.user.compact
+      targetEntityType: user
+      bundle: user
+      mode: compact
+      content:
+        user_picture:
+          type: image
+          weight: 0
+          region: content
+          settings:
+            image_style: thumbnail
+            image_link: content
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          label: hidden
+      hidden:
+        member_for: true
+      _core:
+        default_config_hash: '-_KuEGL2a1oUVXvQQxwfkE__wtu1yCM39PqLYV5CBm8'
+  -
+    collection: ''
+    name: core.entity_view_display.user.user.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.user.user.user_picture
+          - image.style.thumbnail
+        module:
+          - image
+          - user
+      id: user.user.default
+      targetEntityType: user
+      bundle: user
+      mode: default
+      content:
+        member_for:
+          weight: 5
+          region: content
+        user_picture:
+          type: image
+          weight: 0
+          region: content
+          settings:
+            image_style: thumbnail
+            image_link: content
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          label: hidden
+      hidden: {  }
+      _core:
+        default_config_hash: xIOvO8RQZXv1YYZDQTVegqOct_jF07vOprZypRGt3sg
+  -
+    collection: ''
+    name: easy_breadcrumb.settings
+    data:
+      applies_admin_routes: false
+      include_home_segment: true
+      alternative_title_field: field_breadcrumb_title
+      home_segment_title: Home
+      home_segment_keep: false
+      include_title_segment: true
+      language_path_prefix_as_segment: false
+      use_menu_title_as_fallback: true
+      use_page_title_as_menu_title_fallback: true
+      remove_repeated_segments: true
+      term_hierarchy: false
+      absolute_paths: false
+      hide_single_home_item: false
+      title_from_page_when_available: false
+      capitalizator_mode: ucwords
+      capitalizator_ignored_words:
+        - of
+        - and
+        - or
+        - de
+        - del
+        - 'y'
+        - o
+        - a
+      capitalizator_forced_words: {  }
+      capitalizator_forced_words_first_letter: false
+      capitalizator_forced_words_case_sensitivity: true
+      add_structured_data_json_ld: false
+      use_site_title: false
+      include_invalid_paths: true
+      excluded_paths: ''
+      replaced_titles: ''
+      custom_paths: ''
+      title_segment_as_link: false
+      follow_redirects: true
+      limit_segment_display: false
+      segment_display_limit: 0
+      truncator_mode: false
+      truncator_length: 100
+      truncator_dots: true
+      _core:
+        default_config_hash: CYaWP2CLAMByyI0GHgyjpmIiyyJUnu2Gl0-T8LQpAGY
+  -
+    collection: ''
+    name: editor.editor.basic_html
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - filter.format.basic_html
+        module:
+          - ckeditor5
+      format: basic_html
+      editor: ckeditor5
+      settings:
+        toolbar:
+          items:
+            - bold
+            - italic
+            - '|'
+            - link
+            - '|'
+            - bulletedList
+            - numberedList
+            - '|'
+            - blockQuote
+            - drupalInsertImage
+            - '|'
+            - heading
+            - '|'
+            - sourceEditing
+            - '|'
+            - code
+            - codeBlock
+        plugins:
+          ckeditor5_codeBlock:
+            languages:
+              -
+                label: 'Plain text'
+                language: plaintext
+              -
+                label: C
+                language: c
+              -
+                label: 'C#'
+                language: cs
+              -
+                label: C++
+                language: cpp
+              -
+                label: CSS
+                language: css
+              -
+                label: Diff
+                language: diff
+              -
+                label: HTML
+                language: html
+              -
+                label: Java
+                language: java
+              -
+                label: JavaScript
+                language: javascript
+              -
+                label: PHP
+                language: php
+              -
+                label: Python
+                language: python
+              -
+                label: Ruby
+                language: ruby
+              -
+                label: TypeScript
+                language: typescript
+              -
+                label: XML
+                language: xml
+          ckeditor5_heading:
+            enabled_headings:
+              - heading2
+              - heading3
+              - heading4
+              - heading5
+              - heading6
+          ckeditor5_imageResize:
+            allow_resize: true
+          ckeditor5_list:
+            reversed: false
+            startIndex: true
+          ckeditor5_sourceEditing:
+            allowed_tags:
+              - '<cite>'
+              - '<dl>'
+              - '<dt>'
+              - '<dd>'
+              - '<span>'
+              - '<footer class="blockquote-footer">'
+              - '<a hreflang>'
+              - '<blockquote cite>'
+              - '<ul type>'
+              - '<ol type>'
+              - '<h2 id>'
+              - '<h3 id>'
+              - '<h4 id>'
+              - '<h5 id>'
+              - '<h6 id>'
+          linkit_extension:
+            linkit_enabled: false
+      image_upload:
+        status: true
+        scheme: public
+        directory: inline-images
+        max_size: ''
+        max_dimensions:
+          width: 0
+          height: 0
+      _core:
+        default_config_hash: P9rpxydZc26ykDYFIOoohEAeR3Md_euI0avlro30LyQ
+  -
+    collection: ''
+    name: exclude_node_title.settings
+    data:
+      nid_list: {  }
+      translation_sync: true
+      search: false
+      type: hidden
+      content_types:
+        az_event: none
+        az_flexible_page: user
+        az_news: none
+        az_person: none
+        az_publication: all
+      content_type_modes:
+        az_event: {  }
+        az_flexible_page:
+          - full
+        az_news: {  }
+        az_person: {  }
+        az_publication:
+          - az_publication_reference
+      _core:
+        default_config_hash: I_9NIvzFoyG4WO6ybRCMgXKzH6YqdMD5EdVM5ygARug
+  -
+    collection: ''
+    name: extlink.settings
+    data:
+      extlink_use_external_js_file: false
+      extlink_exclude_admin_routes: false
+      extlink_target: true
+      extlink_target_no_override: true
+      extlink_nofollow: false
+      extlink_noreferrer: false
+      extlink_follow_no_override: false
+      extlink_subdomains: false
+      extlink_alert: false
+      extlink_alert_text: 'This link will take you to an external web site. We are not responsible for their content.'
+      extlink_exclude: '^(?!(https?:\/\/)(arizona.box.com|docs.google.com|dropbox.com|www.dropbox.com|emailarizona-my.sharepoint.com|events.trellis.arizona.edu)).*'
+      extlink_include: /sites/.+/files/.+\.pdf
+      extlink_class: '0'
+      extlink_label: '(link is external)'
+      extlink_img_class: false
+      extlink_css_exclude: ''
+      extlink_css_explicit: ''
+      extlink_mailto_class: '0'
+      extlink_mailto_label: '(link sends email)'
+      extlink_use_font_awesome: false
+      extlink_font_awesome_classes:
+        links: ''
+        mailto: ''
+      extlink_icon_placement: append
+      whitelisted_domains: {  }
+      _core:
+        default_config_hash: gdvB3kOMhL1I53N8-LmtzIOUV3SMcO74BP9Zd6aoWoQ
+  -
+    collection: ''
+    name: field.field.block_content.basic.body
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - block_content.type.basic
+          - field.storage.block_content.body
+        module:
+          - text
+      id: block_content.basic.body
+      field_name: body
+      entity_type: block_content
+      bundle: basic
+      label: Body
+      description: ''
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        display_summary: false
+        required_summary: false
+        allowed_formats: {  }
+      field_type: text_with_summary
+      _core:
+        default_config_hash: j00Gfs9AFqwK4x9RIsISLbPO7vA12psPR4s60wOIwQo
+  -
+    collection: ''
+    name: field.field.user.user.user_picture
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.user.user_picture
+        module:
+          - image
+          - user
+      id: user.user.user_picture
+      field_name: user_picture
+      entity_type: user
+      bundle: user
+      label: Picture
+      description: 'Your virtual face or picture.'
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        file_extensions: 'png gif jpg jpeg'
+        file_directory: 'pictures/[date:custom:Y]-[date:custom:m]'
+        max_filesize: ''
+        alt_field: false
+        title_field: false
+        max_resolution: ''
+        min_resolution: ''
+        default_image:
+          uuid: null
+          alt: ''
+          title: ''
+          width: null
+          height: null
+        alt_field_required: false
+        title_field_required: false
+        handler: 'default:file'
+        handler_settings: {  }
+      field_type: image
+      _core:
+        default_config_hash: Iiq0AttdhgbebJwabSFwQQ1ORn64GoGz0xSZ_eyCJ8A
+  -
+    collection: ''
+    name: field.storage.node.field_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - image
+          - node
+      id: node.field_image
+      field_name: field_image
+      entity_type: node
+      type: image
+      settings:
+        uri_scheme: public
+        default_image:
+          uuid: null
+          alt: ''
+          title: ''
+          width: null
+          height: null
+        target_type: file
+        display_field: false
+        display_default: false
+      module: image
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes:
+        target_id:
+          - target_id
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: SkXIPKZYiIMMtnBmfnxk58RYfbZ8cHSw5NZPY_JByME
+  -
+    collection: ''
+    name: field.storage.node.field_tags
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - node
+          - taxonomy
+      id: node.field_tags
+      field_name: field_tags
+      entity_type: node
+      type: entity_reference
+      settings:
+        target_type: taxonomy_term
+      module: core
+      locked: false
+      cardinality: -1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: WpOE_bs8Bs_HY2ns7n2r__de-xno0-Bxkqep5-MsHAs
+  -
+    collection: ''
+    name: field.storage.user.user_picture
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - image
+          - user
+      id: user.user_picture
+      field_name: user_picture
+      entity_type: user
+      type: image
+      settings:
+        uri_scheme: public
+        default_image:
+          uuid: null
+          alt: ''
+          title: ''
+          width: null
+          height: null
+        target_type: file
+        display_field: false
+        display_default: false
+      module: image
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes:
+        target_id:
+          - target_id
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: 6k-VBFilDLuzgSOT-77CFgHFlcd5D-kqRixtH89EShU
+  -
+    collection: ''
+    name: filter.format.basic_html
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - bootstrap_utilities
+          - editor
+      name: 'Basic HTML'
+      format: basic_html
+      weight: 0
+      filters:
+        filter_html:
+          id: filter_html
+          provider: filter
+          status: true
+          weight: -10
+          settings:
+            allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span> <footer class="blockquote-footer"> <a hreflang href> <blockquote cite> <ul type> <ol type start> <strong> <em> <code class="language-*"> <pre> <li> <img src alt height width data-entity-uuid data-entity-type data-caption data-align>'
+            filter_html_help: false
+            filter_html_nofollow: false
+        filter_align:
+          id: filter_align
+          provider: filter
+          status: true
+          weight: 7
+          settings: {  }
+        filter_caption:
+          id: filter_caption
+          provider: filter
+          status: true
+          weight: 8
+          settings: {  }
+        filter_html_image_secure:
+          id: filter_html_image_secure
+          provider: filter
+          status: true
+          weight: 9
+          settings: {  }
+        editor_file_reference:
+          id: editor_file_reference
+          provider: editor
+          status: true
+          weight: 11
+          settings: {  }
+        bootstrap_utilities_blockquote_filter:
+          id: bootstrap_utilities_blockquote_filter
+          provider: bootstrap_utilities
+          status: true
+          weight: 0
+          settings: {  }
+        bootstrap_utilities_table_filter:
+          id: bootstrap_utilities_table_filter
+          provider: bootstrap_utilities
+          status: false
+          weight: 0
+          settings:
+            table_remove_width_height: '1'
+            table_row_striping: '0'
+            table_bordered: '0'
+            table_row_hover: '0'
+            table_small: '0'
+      _core:
+        default_config_hash: FbqC0LLcjUCGp0KbcxnYixK_y-bcpv4MFhTfg4bSKQw
+  -
+    collection: ''
+    name: filter.format.full_html
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - editor
+          - entity_embed
+          - media
+      name: 'Full HTML'
+      format: full_html
+      weight: 2
+      filters:
+        filter_htmlcorrector:
+          id: filter_htmlcorrector
+          provider: filter
+          status: true
+          weight: 10
+          settings: {  }
+        filter_html:
+          id: filter_html
+          provider: filter
+          status: false
+          weight: -10
+          settings:
+            allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite class="blockquote blockquote-reverse text-right text-center"> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <footer class="blockquote-footer">'
+            filter_html_help: true
+            filter_html_nofollow: false
+        editor_file_reference:
+          id: editor_file_reference
+          provider: editor
+          status: true
+          weight: 0
+          settings: {  }
+        entity_embed:
+          id: entity_embed
+          provider: entity_embed
+          status: true
+          weight: 100
+          settings: {  }
+        filter_align:
+          id: filter_align
+          provider: filter
+          status: true
+          weight: 0
+          settings: {  }
+        filter_caption:
+          id: filter_caption
+          provider: filter
+          status: true
+          weight: 0
+          settings: {  }
+        media_embed:
+          id: media_embed
+          provider: media
+          status: true
+          weight: 100
+          settings:
+            default_view_mode: default
+            allowed_view_modes: {  }
+            allowed_media_types: {  }
+      _core:
+        default_config_hash: M3oaRQER6oBh7b8RMjlcKjZN8JO2F4GVelfPzLncJ7c
+  -
+    collection: ''
+    name: filter.format.restricted_html
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      name: 'Restricted HTML'
+      format: restricted_html
+      weight: 1
+      filters:
+        filter_html:
+          id: filter_html
+          provider: filter
+          status: true
+          weight: -10
+          settings:
+            allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite class="blockquote blockquote-reverse text-right text-center"l> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <footer class="blockquote-footer">'
+            filter_html_help: true
+            filter_html_nofollow: false
+        filter_autop:
+          id: filter_autop
+          provider: filter
+          status: true
+          weight: 0
+          settings: {  }
+        filter_url:
+          id: filter_url
+          provider: filter
+          status: true
+          weight: 0
+          settings:
+            filter_url_length: 72
+      _core:
+        default_config_hash: Oky6ThyiLo-Gab_ZcXolmGDMsusOgNFarFtXsOCks9I
+  -
+    collection: ''
+    name: image.style.max_1300x1300
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - responsive_image
+      name: max_1300x1300
+      label: 'Max 1300x1300'
+      effects:
+        04caae9a-fa3e-4ea6-ae09-9c26aec7d308:
+          uuid: 04caae9a-fa3e-4ea6-ae09-9c26aec7d308
+          id: image_scale
+          weight: 1
+          data:
+            width: 1300
+            height: 1300
+            upscale: false
+      _core:
+        default_config_hash: oEWCuzHsESKl_K4Jyoswikfibm8NXAbaV4jpBbgVvME
+  -
+    collection: ''
+    name: image.style.max_2600x2600
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - responsive_image
+      name: max_2600x2600
+      label: 'Max 2600x2600'
+      effects:
+        9b311dd1-0351-45a1-9500-cd069e4670cb:
+          uuid: 9b311dd1-0351-45a1-9500-cd069e4670cb
+          id: image_scale
+          weight: 3
+          data:
+            width: 2600
+            height: 2600
+            upscale: false
+      _core:
+        default_config_hash: lySECl4_3YCU2UPR0kWbHtS1wSOkuCXkwCG6mDzVPEo
+  -
+    collection: ''
+    name: image.style.max_325x325
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - responsive_image
+      name: max_325x325
+      label: 'Max 325x325'
+      effects:
+        cb842cc8-682f-42a6-bd05-5a1ac726f0d8:
+          uuid: cb842cc8-682f-42a6-bd05-5a1ac726f0d8
+          id: image_scale
+          weight: 1
+          data:
+            width: 325
+            height: 325
+            upscale: false
+      _core:
+        default_config_hash: thLnNB0sP0KQ9-TStVzAAlgqFygAiHMxjJ-vjqclw-Q
+  -
+    collection: ''
+    name: image.style.max_650x650
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - responsive_image
+      name: max_650x650
+      label: 'Max 650x650'
+      effects:
+        949c201a-77f5-48f6-ba00-be91eb1aad47:
+          uuid: 949c201a-77f5-48f6-ba00-be91eb1aad47
+          id: image_scale
+          weight: 1
+          data:
+            width: 650
+            height: 650
+            upscale: false
+      _core:
+        default_config_hash: Ta9v4cvle3IdGzzH0J1AZHNxFWpooYLXrNi7a0H-njE
+  -
+    collection: ''
+    name: node.settings
+    data:
+      use_admin_theme: true
+      _core:
+        default_config_hash: W0cgFPhPJ3gAdqm06-az48BLf5MVcoZVS0HdByoofi0
+  -
+    collection: ''
+    name: pathauto.pattern.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - node
+      id: default
+      label: Default
+      type: 'canonical_entities:node'
+      pattern: '[node:menu-link:parents:join-path]/[node:menu-link]'
+      selection_criteria: {  }
+      selection_logic: and
+      weight: 0
+      relationships: {  }
+      _core:
+        default_config_hash: eXSxPE9BzT8eTpHES2q-LKqtnAUqcWSab6kg98S9XiM
+  -
+    collection: ''
+    name: pathauto.pattern.taxonomy
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - taxonomy
+      id: taxonomy
+      label: Taxonomy
+      type: 'canonical_entities:taxonomy_term'
+      pattern: '[term:vocabulary]/[term:name]'
+      selection_criteria: {  }
+      selection_logic: and
+      weight: 0
+      relationships: {  }
+      _core:
+        default_config_hash: _l6sTx90Pu6E29IeI0bX1OjKthzUVDtKcICOCzMiH6M
+  -
+    collection: ''
+    name: pathauto.pattern.users
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - user
+      id: users
+      label: Users
+      type: 'canonical_entities:user'
+      pattern: 'users/[user:account-name]'
+      selection_criteria: {  }
+      selection_logic: and
+      weight: 0
+      relationships: {  }
+      _core:
+        default_config_hash: ibXBB5aGaft2dtvHmfkGq_ok4_61havf7D_IoR2wnOY
+  -
+    collection: ''
+    name: pathauto.settings
+    data:
+      enabled_entity_types:
+        - user
+      punctuation:
+        hyphen: 1
+      verbose: false
+      separator: '-'
+      max_length: 100
+      max_component_length: 100
+      transliterate: true
+      reduce_ascii: false
+      case: true
+      ignore_words: 'a, an, as, at, before, but, by, for, from, is, in, into, like, of, off, on, onto, per, since, than, the, this, that, to, up, via, with'
+      update_action: 2
+      safe_tokens:
+        - alias
+        - path
+        - join-path
+        - login-url
+        - url
+        - url-brief
+      _core:
+        default_config_hash: SwvLp8snyPEExF41CaJJYdPUVomofLqtXvwciHc4cPg
+  -
+    collection: ''
+    name: system.cron
+    data:
+      threshold:
+        requirements_warning: 172800
+        requirements_error: 1209600
+      logging: 1
+      _core:
+        default_config_hash: 5Pw921y1EPfFN98wykliBBLArm51pC-SmrXeYCe7d0Y
+  -
+    collection: ''
+    name: system.date
+    data:
+      country:
+        default: ''
+      first_day: 0
+      timezone:
+        default: America/Phoenix
+        user:
+          configurable: true
+          warn: false
+          default: 0
+      _core:
+        default_config_hash: fRc8xbZvMt1dVv2chdWSMh8bkLG6uLAYN1Igon0kOn0
+  -
+    collection: ''
+    name: system.image
+    data:
+      toolkit: gd
+      _core:
+        default_config_hash: durWHaKeBaq4d9Wpi4RqwADj1OufDepcnJuhVLmKN24
+  -
+    collection: ''
+    name: system.image.gd
+    data:
+      jpeg_quality: 92
+      _core:
+        default_config_hash: cYq3BL9i29SCrLEys6EY9z-RVl22OSM6wNbxM398H2c
+  -
+    collection: ''
+    name: system.menu.az-footer-information-for
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az-footer-information-for
+      label: 'Footer - Information For'
+      description: 'Generally contains institution-level navigation links to audience-based sections of Arizona.edu (e.g. current students, faculty).'
+      locked: false
+      _core:
+        default_config_hash: KT2idGMbvTZqbrUz6XwY_jiFsIqF9LiRNAeMsbEvl2Y
+  -
+    collection: ''
+    name: system.menu.az-footer-main
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az-footer-main
+      label: 'Footer - Main'
+      description: 'Contains institution-level links that appear in the main footer area'
+      locked: false
+      _core:
+        default_config_hash: y12EDy2bY9hfsUoGsQZT0wZRAMR3GsbfNtGuSRGNFGI
+  -
+    collection: ''
+    name: system.menu.az-footer-resources
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az-footer-resources
+      label: 'Footer - Resources'
+      description: 'Generally contains navigation links institution-level resources.'
+      locked: false
+      _core:
+        default_config_hash: FtsnBpYlk9QlYPjidib55H2o--usuKPDypJgwkVHQIE
+  -
+    collection: ''
+    name: system.menu.az-footer-social-media
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az-footer-social-media
+      label: 'Footer - Social Media'
+      description: 'Contains links to social media accounts.'
+      locked: false
+      _core:
+        default_config_hash: Gl-zNjd8k3UTe7ncJ2wbCX5gFMKvnuNVLM_p51WWj2o
+  -
+    collection: ''
+    name: system.menu.az-footer-topics
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az-footer-topics
+      label: 'Footer - Topics'
+      description: 'Generally contains institution-level navigation links to topic pages on Arizona.edu.'
+      locked: false
+      _core:
+        default_config_hash: ydMLY0vXLYXKhZtf23WtqTSVXECKpi4cJwgY6BHrVhM
+  -
+    collection: ''
+    name: system.menu.az-utility-links
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az-utility-links
+      label: 'Utility Links'
+      description: 'The utility links menu contains secondary navigation links that are not part of the main menu.'
+      locked: false
+      _core:
+        default_config_hash: vpOMKimx4KckdJ7sC-9by4IJpOJHR7wmG07qI7ws8-Q
+  -
+    collection: ''
+    name: system.site
+    data:
+      uuid: ''
+      name: ''
+      mail: ''
+      slogan: ''
+      page:
+        403: ''
+        404: ''
+        front: /node
+      admin_compact_mode: false
+      weight_select_max: 100
+      langcode: en
+      default_langcode: en
+      _core:
+        default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+  -
+    collection: ''
+    name: system.theme
+    data:
+      admin: claro
+      default: az_barrio
+      _core:
+        default_config_hash: UkoDyAL3JyN58V7UPBAh_lshD4bHLanUQqLkO8VrlTw
+  -
+    collection: ''
+    name: taxonomy.vocabulary.tags
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      name: Tags
+      vid: tags
+      description: 'Use tags to group articles on similar topics into categories.'
+      weight: 0
+      _core:
+        default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+  -
+    collection: ''
+    name: user.role.administrator
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: administrator
+      label: Administrator
+      weight: 6
+      is_admin: true
+      permissions: {  }
+      _core:
+        default_config_hash: cPfidlGpiCKIjpO1kH3T7zLjOW25bVLbZZ-FFPOlMPw
+  -
+    collection: ''
+    name: user.role.anonymous
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - exclude_node_title
+          - media
+          - search
+          - system
+      id: anonymous
+      label: 'Anonymous user'
+      weight: 0
+      is_admin: false
+      permissions:
+        - 'access content'
+        - 'search content'
+        - 'use exclude node title'
+        - 'view media'
+      _core:
+        default_config_hash: ZRu1Nh0LJgPVQ7tqs3eDO3KNcbXdNUDde6fAiqGosD8
+  -
+    collection: ''
+    name: user.role.authenticated
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - exclude_node_title
+          - honeypot
+          - media
+          - search
+          - shortcut
+          - system
+      id: authenticated
+      label: 'Authenticated user'
+      weight: 1
+      is_admin: false
+      permissions:
+        - 'access content'
+        - 'access shortcuts'
+        - 'bypass honeypot protection'
+        - 'search content'
+        - 'use exclude node title'
+        - 'view media'
+      _core:
+        default_config_hash: MKBun_4XGqwZGNWIekCdXp0qOpWyt2DucnUTsJhpcrk
+  -
+    collection: ''
+    name: user.role.az_content_admin
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - media.type.az_audio
+          - media.type.az_document
+          - media.type.az_image
+          - media.type.az_remote_video
+          - media.type.az_video
+          - node.type.az_carousel_item
+          - node.type.az_event
+          - node.type.az_flexible_page
+          - node.type.az_news
+          - node.type.az_person
+          - taxonomy.vocabulary.az_event_categories
+          - taxonomy.vocabulary.az_news_tags
+          - taxonomy.vocabulary.az_page_categories
+          - taxonomy.vocabulary.az_person_categories
+          - taxonomy.vocabulary.az_person_categories_secondary
+          - taxonomy.vocabulary.tags
+          - workflows.workflow.editorial
+        module:
+          - az_core
+          - az_flexible_page
+          - block
+          - block_class
+          - block_content_permissions
+          - content_moderation
+          - draggableviews
+          - easy_breadcrumb
+          - file
+          - flag
+          - media
+          - metatag
+          - node
+          - path
+          - redirect
+          - search
+          - shortcut
+          - system
+          - taxonomy
+          - xmlsitemap
+      id: az_content_admin
+      label: 'Content administrator'
+      weight: 3
+      is_admin: false
+      permissions:
+        - 'access draggableviews'
+        - 'access site reports'
+        - 'access taxonomy overview'
+        - 'administer block classes'
+        - 'administer blocks'
+        - 'administer easy breadcrumb'
+        - 'administer flaggings'
+        - 'administer flags'
+        - 'administer menu'
+        - 'administer meta tags'
+        - 'administer nodes'
+        - 'administer quickstart configuration'
+        - 'administer redirects'
+        - 'administer shortcuts'
+        - 'administer taxonomy'
+        - 'administer url aliases'
+        - 'administer xmlsitemap'
+        - 'bypass node access'
+        - 'create terms in az_event_categories'
+        - 'create terms in az_news_tags'
+        - 'create terms in az_page_categories'
+        - 'create terms in az_person_categories'
+        - 'create terms in az_person_categories_secondary'
+        - 'create terms in tags'
+        - 'customize shortcut links'
+        - 'delete any az_audio media'
+        - 'delete any az_carousel_item content'
+        - 'delete any az_document media'
+        - 'delete any az_event content'
+        - 'delete any az_flexible_block block content'
+        - 'delete any az_flexible_page content'
+        - 'delete any az_image media'
+        - 'delete any az_news content'
+        - 'delete any az_person content'
+        - 'delete any az_quick_links block content'
+        - 'delete any az_remote_video media'
+        - 'delete any az_video media'
+        - 'delete any file'
+        - 'delete own az_carousel_item content'
+        - 'delete terms in az_event_categories'
+        - 'delete terms in az_news_tags'
+        - 'delete terms in az_page_categories'
+        - 'delete terms in az_person_categories'
+        - 'delete terms in az_person_categories_secondary'
+        - 'delete terms in tags'
+        - 'edit own az_audio media'
+        - 'edit terms in az_event_categories'
+        - 'edit terms in az_news_tags'
+        - 'edit terms in az_page_categories'
+        - 'edit terms in az_person_categories'
+        - 'edit terms in az_person_categories_secondary'
+        - 'edit terms in tags'
+        - 'use advanced search'
+        - 'use editorial transition az_publish'
+        - 'use editorial transition az_unpublish'
+        - 'use editorial transition create_new_draft'
+        - 'use marketing campaign page styles'
+        - 'view any unpublished content'
+        - 'view latest version'
+      _core:
+        default_config_hash: PoEOCTesNiuQPh2ul0U1TcQvsY1VyImp2_W3gAiYN18
+  -
+    collection: ''
+    name: user.role.az_content_editor
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - filter.format.az_standard
+          - media.type.az_audio
+          - media.type.az_document
+          - media.type.az_image
+          - media.type.az_remote_video
+          - media.type.az_video
+          - node.type.az_carousel_item
+          - node.type.az_event
+          - node.type.az_flexible_page
+          - node.type.az_news
+          - node.type.az_person
+          - workflows.workflow.editorial
+        module:
+          - block_content_permissions
+          - coffee
+          - content_moderation
+          - contextual
+          - draggableviews
+          - environment_indicator
+          - exclude_node_title
+          - file
+          - filter
+          - media
+          - node
+          - paragraphs
+          - path
+          - shortcut
+          - smart_date_recur
+          - system
+          - toolbar
+          - tour
+      id: az_content_editor
+      label: 'Content editor'
+      weight: 2
+      is_admin: false
+      permissions:
+        - 'access administration pages'
+        - 'access coffee'
+        - 'access content overview'
+        - 'access contextual links'
+        - 'access draggableviews'
+        - 'access environment indicator'
+        - 'access files overview'
+        - 'access media overview'
+        - 'access toolbar'
+        - 'access tour'
+        - 'administer nodes'
+        - 'cancel smart date recur instances'
+        - 'create az_audio media'
+        - 'create az_carousel_item content'
+        - 'create az_document media'
+        - 'create az_event content'
+        - 'create az_flexible_block block content'
+        - 'create az_flexible_page content'
+        - 'create az_image media'
+        - 'create az_news content'
+        - 'create az_person content'
+        - 'create az_quick_links block content'
+        - 'create az_remote_video media'
+        - 'create az_video media'
+        - 'create media'
+        - 'create url aliases'
+        - 'delete media'
+        - 'delete own az_audio media'
+        - 'delete own az_carousel_item content'
+        - 'delete own az_document media'
+        - 'delete own az_event content'
+        - 'delete own az_flexible_page content'
+        - 'delete own az_image media'
+        - 'delete own az_news content'
+        - 'delete own az_person content'
+        - 'delete own az_remote_video media'
+        - 'delete own az_video media'
+        - 'delete own files'
+        - 'edit any az_audio media'
+        - 'edit any az_carousel_item content'
+        - 'edit any az_document media'
+        - 'edit any az_event content'
+        - 'edit any az_flexible_page content'
+        - 'edit any az_image media'
+        - 'edit any az_news content'
+        - 'edit any az_person content'
+        - 'edit any az_remote_video media'
+        - 'edit any az_video media'
+        - 'edit behavior plugin settings'
+        - 'edit own az_carousel_item content'
+        - 'edit own az_document media'
+        - 'edit own az_event content'
+        - 'edit own az_flexible_page content'
+        - 'edit own az_image media'
+        - 'edit own az_news content'
+        - 'edit own az_person content'
+        - 'edit own az_remote_video media'
+        - 'edit own az_video media'
+        - 'exclude any node title'
+        - 'exclude own node title'
+        - 'make smart dates recur'
+        - 'reschedule smart date recur instances'
+        - 'revert all revisions'
+        - 'revert az_carousel_item revisions'
+        - 'revert az_event revisions'
+        - 'revert az_flexible_page revisions'
+        - 'revert az_news revisions'
+        - 'revert az_person revisions'
+        - 'switch shortcut sets'
+        - 'update any az_flexible_block block content'
+        - 'update any az_quick_links block content'
+        - 'update media'
+        - 'use editorial transition az_publish'
+        - 'use editorial transition az_unpublish'
+        - 'use editorial transition create_new_draft'
+        - 'use text format az_standard'
+        - 'view all media revisions'
+        - 'view all revisions'
+        - 'view any unpublished content'
+        - 'view az_carousel_item revisions'
+        - 'view az_event revisions'
+        - 'view az_flexible_page revisions'
+        - 'view az_news revisions'
+        - 'view az_person revisions'
+        - 'view latest version'
+        - 'view media'
+        - 'view own unpublished content'
+        - 'view own unpublished media'
+        - 'view the administration theme'
+      _core:
+        default_config_hash: GS9Q1ewnqASghbW2pOhA4si8KINi_V6LtgUefIYi8kU
+  -
+    collection: ''
+    name: user.role.az_html_admin
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - filter.format.full_html
+        module:
+          - filter
+      id: az_html_admin
+      label: 'HTML administrator'
+      weight: 5
+      is_admin: false
+      permissions:
+        - 'use text format full_html'
+      _core:
+        default_config_hash: 3Iynr1QqqJT9vsVRVc3l8j4uTkdwxKYTaz-9Huns7rg
+  -
+    collection: ''
+    name: user.role.az_user_admin
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - role_delegation
+          - user
+      id: az_user_admin
+      label: 'User administrator'
+      weight: 4
+      is_admin: false
+      permissions:
+        - 'administer users'
+        - 'assign az_content_admin role'
+        - 'assign az_content_editor role'
+        - 'assign az_user_admin role'
+      _core:
+        default_config_hash: S7OhuCLbj0nOaCy1oHswGAO_q3CsGzLQwXyf_t-n0nY
+  -
+    collection: ''
+    name: user.settings
+    data:
+      anonymous: Anonymous
+      verify_mail: true
+      notify:
+        cancel_confirm: true
+        password_reset: true
+        status_activated: true
+        status_blocked: false
+        status_canceled: false
+        register_admin_created: true
+        register_no_approval_required: true
+        register_pending_approval: true
+      register: admin_only
+      cancel_method: user_cancel_block
+      password_reset_timeout: 86400
+      password_strength: true
+      langcode: en
+      _core:
+        default_config_hash: XgCB1l1PxU3u87McSc5eUqSPTBtVSyoqbRWbIptrjRg
+  -
+    collection: ''
+    name: workflows.workflow.editorial
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - content_moderation
+      id: editorial
+      label: Editorial
+      type: content_moderation
+      type_settings:
+        states:
+          draft:
+            label: Draft
+            published: false
+            default_revision: false
+            weight: -2
+          published:
+            label: Published
+            published: true
+            default_revision: true
+            weight: 0
+          unpublished:
+            label: Unpublished
+            published: false
+            default_revision: true
+            weight: 1
+        transitions:
+          az_publish:
+            label: Publish
+            from:
+              - draft
+              - published
+              - unpublished
+            to: published
+            weight: 0
+          create_new_draft:
+            label: 'Create New Draft'
+            to: draft
+            weight: -2
+            from:
+              - draft
+              - published
+          az_unpublish:
+            label: Unpublish
+            to: unpublished
+            weight: 1
+            from:
+              - unpublished
+              - published
+              - draft
+        default_moderation_state: draft
+        entity_types: {  }
+      _core:
+        default_config_hash: p4EAX_VyATB3ssd00jHKmdxP4CwPvsiuHul4lvipiGI

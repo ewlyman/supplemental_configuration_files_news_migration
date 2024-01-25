@@ -1,0 +1,219 @@
+uuid: 0f5c1453-0215-4c0a-8934-457e6884f712
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_press_release_legacy.body
+    - field.field.node.news_press_release_legacy.field_az_link
+    - field.field.node.news_press_release_legacy.field_az_news_tags
+    - field.field.node.news_press_release_legacy.field_az_photos
+    - field.field.node.news_press_release_legacy.field_az_published
+    - field.field.node.news_press_release_legacy.field_az_short_title
+    - field.field.node.news_press_release_legacy.field_legacy_news_contact
+    - field.field.node.news_press_release_legacy.field_legacy_news_mediacontact
+    - field.field.node.news_press_release_legacy.field_legacy_news_press_kit
+    - field.field.node.news_press_release_legacy.field_legacy_news_rsrchcontact
+    - field.field.node.news_press_release_legacy.field_legacy_news_summary
+    - node.type.news_press_release_legacy
+  module:
+    - datetime
+    - field_group
+    - link
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_summary:
+      children:
+        - field_az_short_title
+        - field_legacy_news_summary
+        - field_az_photos
+        - field_az_link
+      label: 'Summary fields'
+      region: content
+      parent_name: ''
+      weight: 12
+      format_type: details_sidebar
+      format_settings:
+        classes: 'group-summary field-group-tab'
+        id: ''
+        open: false
+        required_fields: true
+        weight: 0
+        direction: vertical
+id: node.news_press_release_legacy.default
+targetEntityType: node
+bundle: news_press_release_legacy
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_az_link:
+    type: link_default
+    weight: 15
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_az_news_tags:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_az_photos:
+    type: entity_reference_autocomplete
+    weight: -1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_az_published:
+    type: datetime_default
+    weight: 122
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_az_short_title:
+    type: string_textfield
+    weight: -3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_legacy_news_contact:
+    type: text_textarea
+    weight: 25
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_legacy_news_mediacontact:
+    type: paragraphs
+    weight: 23
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_legacy_news_press_kit:
+    type: link_default
+    weight: 28
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_legacy_news_rsrchcontact:
+    type: paragraphs
+    weight: 22
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_legacy_news_summary:
+    type: text_textarea
+    weight: -2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  flag:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: a90b9aea-07a4-44ac-b22a-97bcb0eb1a94
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.trending
+label: Trending
+targetEntityType: node
+cache: true

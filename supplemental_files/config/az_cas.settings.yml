@@ -1,0 +1,4 @@
+_core:
+  default_config_hash: vzEZkbH7L4Tq9qjWE9SqdeOliaJ6AvAKY6Ldf_zguv8
+disable_login_form: true
+disable_password_recovery_link: true

@@ -1,0 +1,56 @@
+uuid: 6d8ee466-a65b-4a5c-8818-a9b20abeb8a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.az_audio.field_media_az_audio_file
+    - media.type.az_audio
+  module:
+    - file
+    - path
+_core:
+  default_config_hash: UR83KtjjePlHMYVwCxptsa0Fw7KwVik0IfHnBe4EP2E
+id: media.az_audio.default
+targetEntityType: media
+bundle: az_audio
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_az_audio_file:
+    type: file_generic
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  name: true
+  replace_file: true

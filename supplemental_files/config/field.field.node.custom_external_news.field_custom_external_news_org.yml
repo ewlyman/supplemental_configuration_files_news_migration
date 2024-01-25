@@ -1,0 +1,19 @@
+uuid: a7872b9a-4afb-4c5e-8984-8a3210853ed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_external_news_org
+    - node.type.custom_external_news
+id: node.custom_external_news.field_custom_external_news_org
+field_name: field_custom_external_news_org
+entity_type: node
+bundle: custom_external_news
+label: 'External News Organization'
+description: 'Enter the name of the external news organization'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

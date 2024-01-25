@@ -1,0 +1,10 @@
+uuid: 80daa9ea-8e79-400b-8e21-319254241ec1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.news_story
+label: 'News Story'
+targetEntityType: node
+cache: true

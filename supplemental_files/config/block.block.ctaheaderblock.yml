@@ -1,0 +1,29 @@
+uuid: 0f76578e-2668-4eaa-b6d9-3e99cb3d4648
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:az_flexible_block:024e0544-c66b-4f71-a928-0e3115d8e239'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - az_barrio
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-lg-9 align-right'
+id: ctaheaderblock
+theme: az_barrio
+region: header_2
+weight: -10
+provider: null
+plugin: 'block_content:024e0544-c66b-4f71-a928-0e3115d8e239'
+settings:
+  id: 'block_content:024e0544-c66b-4f71-a928-0e3115d8e239'
+  label: 'CTA header block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

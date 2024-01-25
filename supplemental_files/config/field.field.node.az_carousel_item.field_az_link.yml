@@ -1,0 +1,25 @@
+uuid: 38aea321-6901-4117-aa1e-cc4059667c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_link
+    - node.type.az_carousel_item
+  module:
+    - link
+_core:
+  default_config_hash: MWyjvlc5mHTQpa7pvqmOAzBIia3Xkh6pU4ezQyJDW_Q
+id: node.az_carousel_item.field_az_link
+field_name: field_az_link
+entity_type: node
+bundle: az_carousel_item
+label: 'Call to Action'
+description: 'Optionally add a link to another page or website for users to learn more.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

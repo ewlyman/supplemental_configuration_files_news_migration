@@ -1,0 +1,16 @@
+uuid: 08bad499-0319-41c8-9a03-66dec2a31fa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: VH52u-ZUEspGpt5KUspI0os2BKMhAkbM_Cvyj02n_5c
+id: taxonomy
+label: Taxonomy
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,10 @@
+uuid: 35e3f408-c533-4bae-962d-5ab9c28580e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.external_stories_card
+label: 'External Stories Card'
+targetEntityType: node
+cache: true

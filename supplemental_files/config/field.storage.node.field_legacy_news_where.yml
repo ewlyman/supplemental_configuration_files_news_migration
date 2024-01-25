@@ -1,0 +1,21 @@
+uuid: 6970dd60-0fad-46e7-b807-e6fc02e1bead
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_legacy_news_where
+field_name: field_legacy_news_where
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

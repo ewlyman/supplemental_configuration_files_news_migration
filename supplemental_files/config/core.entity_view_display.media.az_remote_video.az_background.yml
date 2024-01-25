@@ -1,0 +1,35 @@
+uuid: 69a97dbf-b9fa-4c30-a573-1fcd5a17a67d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.az_background
+    - field.field.media.az_remote_video.field_media_az_image
+    - field.field.media.az_remote_video.field_media_az_oembed_video
+    - media.type.az_remote_video
+  module:
+    - media
+_core:
+  default_config_hash: ZATAxeGkXtJQ0Fb8wge21KJ24cpM0VGEQMy0KGnyBf4
+id: media.az_remote_video.az_background
+targetEntityType: media
+bundle: az_remote_video
+mode: az_background
+content:
+  field_media_az_oembed_video:
+    type: oembed
+    weight: 0
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+      loading:
+        attribute: eager
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_az_image: true
+  name: true
+  thumbnail: true
+  uid: true

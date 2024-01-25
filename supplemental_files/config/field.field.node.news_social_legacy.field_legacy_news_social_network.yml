@@ -1,0 +1,21 @@
+uuid: 7bedf38e-4099-476a-af74-c1f1cfbee2c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_social_network
+    - node.type.news_social_legacy
+  module:
+    - options
+id: node.news_social_legacy.field_legacy_news_social_network
+field_name: field_legacy_news_social_network
+entity_type: node
+bundle: news_social_legacy
+label: 'Social Network'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

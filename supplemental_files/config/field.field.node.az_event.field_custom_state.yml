@@ -1,0 +1,19 @@
+uuid: 5c714783-cd37-4b59-8021-7de9ca223b2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_state
+    - node.type.az_event
+id: node.az_event.field_custom_state
+field_name: field_custom_state
+entity_type: node
+bundle: az_event
+label: State
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

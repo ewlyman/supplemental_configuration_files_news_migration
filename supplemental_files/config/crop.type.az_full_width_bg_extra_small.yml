@@ -1,0 +1,14 @@
+uuid: 14414db4-f4cc-4024-9894-c06afca7b70d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AXA524U_1XSyJkmCJtcN2napMkuMaVg91vooiZUxSQY
+id: az_full_width_bg_extra_small
+label: 'Extra small full-width background'
+description: 'Minimum crop width 575px, or the image will be scaled up and will possibly be blurry.'
+aspect_ratio: ''
+soft_limit_width: 575
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

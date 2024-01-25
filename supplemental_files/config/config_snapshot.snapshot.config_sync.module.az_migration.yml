@@ -1,0 +1,45 @@
+uuid: 78837f5f-ca35-4ab8-b3ea-4810c8b22625
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_migration
+id: config_sync.module.az_migration
+snapshotSet: config_sync
+extensionType: module
+extensionName: az_migration
+items:
+  -
+    collection: ''
+    name: az_migration.settings
+    data:
+      migrate_d7_protocol: https
+      migrate_d7_filebasepath: null
+      migrate_d7_public_path: sites/default/files
+      migrate_d7_private_path: null
+      migrate_d7_temporary_path: tmp
+      allow_archived_paragraphs: false
+      _core:
+        default_config_hash: N7myIHXIeYKpoXbMjBjLKPavZGjAiBPFdzM3EhTgJkE
+  -
+    collection: ''
+    name: migrate_plus.migration_group.az_migration
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - az_migration
+            - migrate_drupal
+            - migrate_tools
+      id: az_migration
+      label: 'AZ Quickstart Migrations'
+      description: 'Common configuration for simple migrations.'
+      source_type: 'Drupal 7 Site'
+      module: null
+      shared_configuration:
+        source:
+          key: migrate
+      _core:
+        default_config_hash: FciTpod1Gm1VO13nHvmI5DSYmZlTeRhtms6p_CCC2Us

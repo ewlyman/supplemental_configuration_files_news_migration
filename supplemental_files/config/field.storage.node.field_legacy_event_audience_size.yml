@@ -1,0 +1,33 @@
+uuid: def6b5e2-ee80-453f-90ed-5a61741a7c24
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_legacy_event_audience_size
+field_name: field_legacy_event_audience_size
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Small (1-50)'
+      label: 'Small (1-50)'
+    -
+      value: 'Medium (51-100)'
+      label: 'Medium (51-100)'
+    -
+      value: 'Large (101-500)'
+      label: 'Large (101-500)'
+    -
+      value: 'Very Large (501+)'
+      label: 'Very Large (501+)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

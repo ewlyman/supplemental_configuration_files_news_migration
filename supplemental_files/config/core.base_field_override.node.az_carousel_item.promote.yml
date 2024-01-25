@@ -1,0 +1,24 @@
+uuid: f50d687e-1750-4b40-b8a8-e2328be670dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.az_carousel_item
+_core:
+  default_config_hash: _7SJyP7pmtttO96fYWznxUSiC4TMP8KLIo3GH73rtVM
+id: node.az_carousel_item.promote
+field_name: promote
+entity_type: node
+bundle: az_carousel_item
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

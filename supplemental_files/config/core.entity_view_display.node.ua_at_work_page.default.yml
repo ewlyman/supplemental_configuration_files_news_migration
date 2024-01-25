@@ -1,0 +1,39 @@
+uuid: 2af150d5-7eeb-4681-8d2b-48329a18d5a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ua_at_work_page.body
+    - field.field.node.ua_at_work_page.field_az_main_content
+    - node.type.ua_at_work_page
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.ua_at_work_page.default
+targetEntityType: node
+bundle: ua_at_work_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_az_main_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

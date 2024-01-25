@@ -1,0 +1,29 @@
+uuid: 8b577c49-b70a-4b9a-99f7-d89ba39ebe8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_editor
+    - node.type.az_news
+id: node.az_news.field_legacy_news_editor
+field_name: field_legacy_news_editor
+entity_type: node
+bundle: az_news
+label: Editor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

@@ -1,0 +1,3559 @@
+uuid: aa4f22dd-7add-4516-8606-f1dfb8eb1c04
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_media
+id: config_sync.module.az_media
+snapshotSet: config_sync
+extensionType: module
+extensionName: az_media
+items:
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_audio.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_audio.field_media_az_audio_file
+          - media.type.az_audio
+        module:
+          - file
+          - path
+      id: media.az_audio.default
+      targetEntityType: media
+      bundle: az_audio
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 10
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_audio_file:
+          weight: 0
+          settings:
+            progress_indicator: throbber
+          third_party_settings: {  }
+          type: file_generic
+          region: content
+        path:
+          type: path
+          weight: 30
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 100
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+        replace_file: true
+      _core:
+        default_config_hash: dla4N07m_2fMxaoVnGU2YrBxliQNmegMG5HuPP41Elk
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_audio.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.az_audio.field_media_az_audio_file
+          - media.type.az_audio
+      id: media.az_audio.media_library
+      targetEntityType: media
+      bundle: az_audio
+      mode: media_library
+      content: {  }
+      hidden:
+        created: true
+        field_media_az_audio_file: true
+        name: true
+        path: true
+        replace_file: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: knelo3YyjFnT_4IP6RxbzpHZvGBcA1g51Nj8fi6FUwo
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_document.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_document.field_media_az_document
+          - media.type.az_document
+        module:
+          - file
+          - path
+      id: media.az_document.default
+      targetEntityType: media
+      bundle: az_document
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 3
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_document:
+          type: file_generic
+          weight: 0
+          region: content
+          settings:
+            progress_indicator: throbber
+          third_party_settings: {  }
+        path:
+          type: path
+          weight: 4
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        replace_file:
+          weight: 1
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          weight: 5
+          region: content
+          settings:
+            display_label: true
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 2
+          region: content
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+      hidden:
+        name: true
+      _core:
+        default_config_hash: wFGkZ2dwogtGwgscxCbe_nrKDfFK6VvjlaIOyMBvGxs
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_document.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.az_document.field_media_az_document
+          - media.type.az_document
+      id: media.az_document.media_library
+      targetEntityType: media
+      bundle: az_document
+      mode: media_library
+      content: {  }
+      hidden:
+        created: true
+        field_media_az_document: true
+        name: true
+        path: true
+        replace_file: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: 1SilKWcWo3dPQTHtkjwYNA0oqLpDqpuUkkgymm1kz7U
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_image.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.thumbnail
+          - media.type.az_image
+        module:
+          - image_widget_crop
+          - path
+          - text
+      id: media.az_image.default
+      targetEntityType: media
+      bundle: az_image
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 2
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_az_caption:
+          weight: 5
+          settings:
+            rows: 5
+            placeholder: ''
+          third_party_settings: {  }
+          type: text_textarea
+          region: content
+        field_az_credit:
+          weight: 26
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+          type: text_textfield
+          region: content
+        field_media_az_image:
+          settings:
+            show_default_crop: true
+            warn_multiple_usages: true
+            preview_image_style: thumbnail
+            crop_preview_image_style: crop_thumbnail
+            crop_list:
+              - az_card_image
+              - az_modal_image
+              - az_full_width_bg_extra_small
+              - az_full_width_bg_large
+              - az_full_width_bg_medium
+              - az_full_width_bg_small
+              - az_large
+              - az_marketing_cloud_30_70_layout
+              - az_marketing_cloud_50_50_layout
+              - az_marketing_cloud_hero_layout
+              - az_square_aspect_ratio
+            progress_indicator: throbber
+            crop_types_required: {  }
+            show_crop_area: false
+          third_party_settings: {  }
+          type: image_widget_crop
+          weight: 0
+          region: content
+        path:
+          type: path
+          weight: 3
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 4
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 1
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+        replace_file: true
+      _core:
+        default_config_hash: 9BRJT-Gi2gy20gNHtKBKqFWdsfuA-QVf5aEn3Bz1i_8
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_image.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.thumbnail
+          - media.type.az_image
+        module:
+          - image_widget_crop
+          - text
+      id: media.az_image.media_library
+      targetEntityType: media
+      bundle: az_image
+      mode: media_library
+      content:
+        field_az_caption:
+          type: text_textarea
+          weight: 1
+          region: content
+          settings:
+            rows: 5
+            placeholder: ''
+          third_party_settings: {  }
+        field_az_credit:
+          type: text_textfield
+          weight: 2
+          region: content
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+        field_media_az_image:
+          type: image_widget_crop
+          weight: 0
+          region: content
+          settings:
+            show_default_crop: true
+            warn_multiple_usages: true
+            preview_image_style: thumbnail
+            crop_preview_image_style: crop_thumbnail
+            crop_list:
+              - az_card_image
+              - az_modal_image
+              - az_full_width_bg_extra_small
+              - az_full_width_bg_large
+              - az_full_width_bg_medium
+              - az_full_width_bg_small
+              - az_large
+              - az_marketing_cloud_30_70_layout
+              - az_marketing_cloud_50_50_layout
+              - az_marketing_cloud_hero_layout
+              - az_square_aspect_ratio
+            progress_indicator: throbber
+            crop_types_required: {  }
+            show_crop_area: false
+          third_party_settings: {  }
+      hidden:
+        created: true
+        name: true
+        path: true
+        replace_file: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: klxw6s6qyXmESH8ndDLRJ0DUPDmx60knoecoytC7HsU
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_remote_video.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - image.style.thumbnail
+          - media.type.az_remote_video
+        module:
+          - image_widget_crop
+          - media
+          - path
+      id: media.az_remote_video.default
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 3
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_image:
+          weight: 1
+          settings:
+            show_default_crop: true
+            warn_multiple_usages: true
+            preview_image_style: thumbnail
+            crop_preview_image_style: crop_thumbnail
+            crop_list:
+              - az_full_width_bg_extra_small
+              - az_full_width_bg_large
+              - az_full_width_bg_medium
+              - az_full_width_bg_small
+            progress_indicator: throbber
+            crop_types_required: {  }
+            show_crop_area: false
+          third_party_settings: {  }
+          type: image_widget_crop
+          region: content
+        field_media_az_oembed_video:
+          type: oembed_textfield
+          weight: 0
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+          region: content
+        path:
+          type: path
+          weight: 4
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 5
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 2
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+      _core:
+        default_config_hash: QwbpRQqroI6b1pk56bgi6y-IrOdjtzRsiLdOItSaf7Y
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_remote_video.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - media.type.az_remote_video
+      id: media.az_remote_video.media_library
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: media_library
+      content: {  }
+      hidden:
+        created: true
+        field_media_az_image: true
+        field_media_az_oembed_video: true
+        name: true
+        path: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: K_LbFN2wVxlVu_JIA7QKIqv4hRoyJDjh-y3Uts2ol7U
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_video.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_video.field_media_az_video_file
+          - media.type.az_video
+        module:
+          - file
+          - path
+      id: media.az_video.default
+      targetEntityType: media
+      bundle: az_video
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 10
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_video_file:
+          weight: 0
+          settings:
+            progress_indicator: throbber
+          third_party_settings: {  }
+          type: file_generic
+          region: content
+        path:
+          type: path
+          weight: 30
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 100
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+        replace_file: true
+      _core:
+        default_config_hash: IVMhh2UHavF3S4C81aVs85QxU8drVHm0PEk3aWEva8M
+  -
+    collection: ''
+    name: core.entity_form_display.media.az_video.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.az_video.field_media_az_video_file
+          - media.type.az_video
+      id: media.az_video.media_library
+      targetEntityType: media
+      bundle: az_video
+      mode: media_library
+      content: {  }
+      hidden:
+        created: true
+        field_media_az_video_file: true
+        name: true
+        path: true
+        replace_file: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: U7Yskpd2Pncd-wba7bBlEik9-Qytfxvf_7N_ZhCRNac
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_audio.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_audio.field_media_az_audio_file
+          - media.type.az_audio
+        module:
+          - file
+      id: media.az_audio.default
+      targetEntityType: media
+      bundle: az_audio
+      mode: default
+      content:
+        field_media_az_audio_file:
+          type: file_audio
+          weight: 0
+          label: visually_hidden
+          settings:
+            controls: true
+            autoplay: false
+            loop: false
+            multiple_file_display_type: tags
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: BZf8Z7sol6BA8bvR2rqorrnJuigvXkXnpzKoRauatV8
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_audio.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.az_audio.field_media_az_audio_file
+          - image.style.thumbnail
+          - media.type.az_audio
+        module:
+          - image
+      id: media.az_audio.media_library
+      targetEntityType: media
+      bundle: az_audio
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: thumbnail
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_az_audio_file: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: dVv8semMnBeWxzOIBHtNNQGWXmXSgfuVRallCI-Wh4I
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_document.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_document.field_media_az_document
+          - media.type.az_document
+        module:
+          - file
+      id: media.az_document.default
+      targetEntityType: media
+      bundle: az_document
+      mode: default
+      content:
+        field_media_az_document:
+          label: visually_hidden
+          settings: {  }
+          third_party_settings: {  }
+          type: file_default
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: sTo-w95eYlkuf0b9HnChlodlecbuLmj_ZAKzLUQL5lk
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_document.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.az_document.field_media_az_document
+          - image.style.thumbnail
+          - media.type.az_document
+        module:
+          - image
+      id: media.az_document.media_library
+      targetEntityType: media
+      bundle: az_document
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: thumbnail
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_az_document: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: zMqieeeN8MLnUxHp7MFXL43wY8Ed09SgF2acOX_VFFQ
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_background
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_background
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.large
+          - media.type.az_image
+        module:
+          - image
+      id: media.az_image.az_background
+      targetEntityType: media
+      bundle: az_image
+      mode: az_background
+      content:
+        field_media_az_image:
+          label: visually_hidden
+          settings:
+            image_style: large
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        field_az_caption: true
+        field_az_credit: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: '-WAqnxRcW2MVOtEA8Dxgeq3uxMK287h2ukMnDGUgRLk'
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_card_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_card_image
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_card_image
+          - media.type.az_image
+        module:
+          - image
+      id: media.az_image.az_card_image
+      targetEntityType: media
+      bundle: az_image
+      mode: az_card_image
+      content:
+        field_media_az_image:
+          label: visually_hidden
+          settings:
+            image_style: az_card_image
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        field_az_caption: true
+        field_az_credit: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: VArZ81msTUtqPdzTjG1bjg1i3a4rxt4ibEGRJd1yCNw
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_carousel_item
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_carousel_item
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_carousel_item
+          - media.type.az_image
+        module:
+          - image
+      id: media.az_image.az_carousel_item
+      targetEntityType: media
+      bundle: az_image
+      mode: az_carousel_item
+      content:
+        field_media_az_image:
+          label: visually_hidden
+          settings:
+            image_style: az_carousel_item
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        field_az_caption: true
+        field_az_credit: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: uBCpaVpGFhDxsRfWuodZEAMoA80V8YDXR_yrR8dNlPI
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_large
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_large
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_large
+          - media.type.az_image
+        module:
+          - field_group
+          - image
+          - text
+      third_party_settings:
+        field_group:
+          group_figure:
+            children:
+              - field_media_az_image
+              - group_fig_caption
+            parent_name: ''
+            weight: 3
+            format_type: html_element
+            region: content
+            format_settings:
+              element: figure
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: 'style="max-width: 1140px;"'
+              effect: none
+              speed: fast
+              id: ''
+              classes: ''
+            label: Figure
+          group_fig_caption:
+            children:
+              - field_az_caption
+              - group_cite
+            parent_name: group_figure
+            weight: 1
+            format_type: html_element
+            region: content
+            format_settings:
+              id: ''
+              classes: figure-caption
+              element: figcaption
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: 'Fig Caption'
+          group_cite:
+            children:
+              - field_az_credit
+            parent_name: group_fig_caption
+            weight: 2
+            format_type: html_element
+            region: content
+            format_settings:
+              element: cite
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: small
+            label: Cite
+      id: media.az_image.az_large
+      targetEntityType: media
+      bundle: az_image
+      mode: az_large
+      content:
+        field_az_caption:
+          type: text_default
+          weight: 1
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_az_credit:
+          type: text_default
+          weight: 2
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_image:
+          label: visually_hidden
+          settings:
+            image_style: az_large
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 0
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: KJtA2uo0fdyCfNv-7kf_tR9-nqmpRpuXIwGv2dQt-zc
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_medium
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_medium
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_medium
+          - media.type.az_image
+        module:
+          - field_group
+          - image
+          - text
+      third_party_settings:
+        field_group:
+          group_figure:
+            children:
+              - field_media_az_image
+              - group_fig_caption
+            parent_name: ''
+            weight: 1
+            format_type: html_element
+            region: content
+            format_settings:
+              element: figure
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: 'style="max-width: 760px;"'
+              effect: none
+              speed: fast
+              id: ''
+              classes: ''
+            label: Figure
+          group_fig_caption:
+            children:
+              - field_az_caption
+              - group_cite
+            parent_name: group_figure
+            weight: 1
+            format_type: html_element
+            region: content
+            format_settings:
+              id: ''
+              classes: figure-caption
+              element: figcaption
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: 'Fig Caption'
+          group_cite:
+            children:
+              - field_az_credit
+            parent_name: group_fig_caption
+            weight: 3
+            format_type: html_element
+            region: content
+            format_settings:
+              element: cite
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: small
+            label: Cite
+      id: media.az_image.az_medium
+      targetEntityType: media
+      bundle: az_image
+      mode: az_medium
+      content:
+        field_az_caption:
+          type: text_default
+          weight: 2
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_az_credit:
+          type: text_default
+          weight: 3
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_image:
+          label: visually_hidden
+          settings:
+            image_style: az_medium
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 0
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: 2ok5IwnEgwhfQT40AAF7S56Gapd6ePDp5XU9Qrl4m9w
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_modal_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_modal_image
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_modal_image
+          - media.type.az_image
+        module:
+          - field_group
+          - image
+      third_party_settings:
+        field_group:
+          group_content:
+            children:
+              - group_row
+            label: Content
+            parent_name: ''
+            region: hidden
+            weight: 7
+            format_type: html_element
+            format_settings:
+              classes: ''
+              id: ''
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+          group_row:
+            children: {  }
+            label: 'Image Row'
+            parent_name: group_content
+            region: hidden
+            weight: 2
+            format_type: html_element
+            format_settings:
+              classes: row
+              id: ''
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+          group_caption:
+            children: {  }
+            label: 'Caption Row'
+            parent_name: ''
+            region: hidden
+            weight: 8
+            format_type: html_element
+            format_settings:
+              classes: row
+              id: ''
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+      id: media.az_image.az_modal_image
+      targetEntityType: media
+      bundle: az_image
+      mode: az_modal_image
+      content:
+        field_media_az_image:
+          type: image
+          label: hidden
+          settings:
+            image_link: ''
+            image_style: az_modal_image
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          weight: 0
+          region: content
+      hidden:
+        created: true
+        field_az_caption: true
+        field_az_credit: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: _lePI9Ga_YzXq_WKza6aUp3vofx-hz70hmX26QwXh_k
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_natural_size
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_natural_size
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_natural
+          - media.type.az_image
+        module:
+          - field_group
+          - image
+          - text
+      third_party_settings:
+        field_group:
+          group_figure:
+            children:
+              - field_media_az_image
+              - group_fig_caption
+            parent_name: group_natural_flex
+            weight: 1
+            format_type: html_element
+            region: content
+            format_settings:
+              element: figure
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: ''
+              show_empty_fields: false
+            label: Figure
+          group_fig_caption:
+            children:
+              - field_az_caption
+              - group_cite
+            parent_name: group_figure
+            weight: 3
+            format_type: html_element
+            region: content
+            format_settings:
+              id: ''
+              classes: figure-caption
+              element: figcaption
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: 'Fig Caption'
+          group_cite:
+            children:
+              - field_az_credit
+            parent_name: group_fig_caption
+            weight: 4
+            format_type: html_element
+            region: content
+            format_settings:
+              element: cite
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: small
+            label: Cite
+          group_natural_flex:
+            children:
+              - group_figure
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              show_empty_fields: false
+              id: ''
+              classes: d-flex
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: 'Natural Flex'
+      id: media.az_image.az_natural_size
+      targetEntityType: media
+      bundle: az_image
+      mode: az_natural_size
+      content:
+        field_az_caption:
+          type: text_default
+          weight: 3
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_az_credit:
+          type: text_default
+          weight: 5
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_image:
+          label: hidden
+          settings:
+            image_style: az_natural
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 2
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: vC1CnwDrKnWb4HwM3tHo8DZf6uKhnlbslTEL1Ur2YaA
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_small
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_small
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_small
+          - media.type.az_image
+        module:
+          - field_group
+          - image
+          - text
+      third_party_settings:
+        field_group:
+          group_figure:
+            children:
+              - field_media_az_image
+              - group_fig_caption
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: figure
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: 'style="max-width: 360px;"'
+              effect: none
+              speed: fast
+              id: ''
+              classes: ''
+            label: Figure
+          group_fig_caption:
+            children:
+              - field_az_caption
+              - group_cite
+            parent_name: group_figure
+            weight: 2
+            format_type: html_element
+            region: content
+            format_settings:
+              id: ''
+              classes: figure-caption
+              element: figcaption
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: 'Fig Caption'
+          group_cite:
+            children:
+              - field_az_credit
+            parent_name: group_fig_caption
+            weight: 3
+            format_type: html_element
+            region: content
+            format_settings:
+              id: ''
+              classes: small
+              element: cite
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: Cite
+      id: media.az_image.az_small
+      targetEntityType: media
+      bundle: az_image
+      mode: az_small
+      content:
+        field_az_caption:
+          type: text_default
+          weight: 2
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_az_credit:
+          type: text_default
+          weight: 1
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_image:
+          label: visually_hidden
+          settings:
+            image_style: az_small
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: dhRLe1NA1JKyWmomvb2Si39G-6IckUSWQf2XkSgMUFQ
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_square
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_square
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_square
+          - media.type.az_image
+        module:
+          - field_group
+          - image
+          - text
+      third_party_settings:
+        field_group:
+          group_figure:
+            children:
+              - field_media_az_image
+              - group_fig
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: figure
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: 'style="max-width: 220px;"'
+              effect: none
+              speed: fast
+              id: ''
+              classes: ''
+            label: Figure
+          group_fig:
+            children:
+              - field_az_caption
+              - group_cite
+            parent_name: group_figure
+            weight: 2
+            format_type: html_element
+            region: content
+            format_settings:
+              element: figcaption
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: figure-caption
+            label: 'Fig Caption'
+          group_cite:
+            children:
+              - field_az_credit
+            parent_name: group_fig
+            weight: 4
+            format_type: html_element
+            region: content
+            format_settings:
+              id: ''
+              classes: small
+              element: cite
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+            label: Cite
+      id: media.az_image.az_square
+      targetEntityType: media
+      bundle: az_image
+      mode: az_square
+      content:
+        field_az_caption:
+          type: text_default
+          weight: 3
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_az_credit:
+          type: text_default
+          weight: 4
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_media_az_image:
+          label: visually_hidden
+          settings:
+            image_style: az_square
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: McLG_cWN4xaeMc4vyYx5w_-LXsqN5DiTU1Yn_Nu0JZU
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.az_thumbnail
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_thumbnail
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.thumbnail
+          - media.type.az_image
+        module:
+          - image
+      id: media.az_image.az_thumbnail
+      targetEntityType: media
+      bundle: az_image
+      mode: az_thumbnail
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: thumbnail
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_az_caption: true
+        field_az_credit: true
+        field_media_az_image: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: 5zn8YdINOEmP7vLwI8ixcdEd4U1ihNIvDZEdM290QhA
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.az_small
+          - media.type.az_image
+        module:
+          - field_group
+          - image
+          - text
+      third_party_settings:
+        field_group:
+          group_figure:
+            children:
+              - field_media_az_image
+              - group_fig_caption
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: figure
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: 'style="max-width: 360px;"'
+              effect: none
+              speed: fast
+              id: ''
+              classes: ''
+            label: Figure
+          group_fig_caption:
+            children:
+              - field_az_caption
+              - group_cite
+            parent_name: group_figure
+            weight: 2
+            format_type: html_element
+            region: content
+            format_settings:
+              element: figcaption
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: figure-caption
+            label: 'Fig Caption'
+          group_content:
+            children:
+              - group_row
+            parent_name: ''
+            weight: 5
+            format_type: html_element
+            region: hidden
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: ''
+            label: Content
+          group_cite:
+            children:
+              - field_az_credit
+            parent_name: group_fig_caption
+            weight: 4
+            format_type: html_element
+            region: content
+            format_settings:
+              element: cite
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: small
+            label: Cite
+          group_row:
+            children: {  }
+            parent_name: group_content
+            weight: 2
+            format_type: html_element
+            region: hidden
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: row
+            label: 'Image Row'
+          group_caption:
+            children: {  }
+            parent_name: ''
+            weight: 6
+            format_type: html_element
+            region: hidden
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: row
+            label: 'Caption Row'
+      id: media.az_image.default
+      targetEntityType: media
+      bundle: az_image
+      mode: default
+      content:
+        field_az_caption:
+          type: text_default
+          weight: 3
+          region: content
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+        field_az_credit:
+          weight: 4
+          label: hidden
+          settings: {  }
+          third_party_settings: {  }
+          type: text_default
+          region: content
+        field_media_az_image:
+          label: visually_hidden
+          settings:
+            image_style: az_small
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+          type: image
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: L9MD_lYBDuJ6ztMVe81AGu-Cqdm2hAL4zex7OyJu_oU
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_image.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.az_image.field_az_caption
+          - field.field.media.az_image.field_az_credit
+          - field.field.media.az_image.field_media_az_image
+          - image.style.medium
+          - media.type.az_image
+        module:
+          - image
+      id: media.az_image.media_library
+      targetEntityType: media
+      bundle: az_image
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: medium
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_az_caption: true
+        field_az_credit: true
+        field_media_az_image: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: YgYqKSne0V99RrIJcn6KzGRvQiV6voEKNphYHQ86I0o
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_remote_video.az_background
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_background
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - media.type.az_remote_video
+        module:
+          - media
+      id: media.az_remote_video.az_background
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: az_background
+      content:
+        field_media_az_oembed_video:
+          type: oembed
+          weight: 0
+          label: hidden
+          settings:
+            max_width: 0
+            max_height: 0
+            loading:
+              attribute: lazy
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        field_media_az_image: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: 0j1roCv4zni7D2EbBH2ugq4-vjHIfUSNKaTCtxCq9IY
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_remote_video.az_large
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_large
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - media.type.az_remote_video
+        module:
+          - field_group
+          - media
+      third_party_settings:
+        field_group:
+          group_16x9:
+            children:
+              - field_media_az_oembed_video
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'embed-responsive embed-responsive-16by9 az-large az-media'
+            label: '16:9 Responsive'
+      id: media.az_remote_video.az_large
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: az_large
+      content:
+        field_media_az_oembed_video:
+          type: oembed
+          weight: 1
+          label: hidden
+          settings:
+            max_width: 0
+            max_height: 0
+            loading:
+              attribute: lazy
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        field_media_az_image: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: g1cHsxFgPiiyi-DfgOp_mf1bJ_valgQ9Pg3I1o0w8eA
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_remote_video.az_medium
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_medium
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - media.type.az_remote_video
+        module:
+          - field_group
+          - media
+      third_party_settings:
+        field_group:
+          group_16x9:
+            children:
+              - field_media_az_oembed_video
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'embed-responsive embed-responsive-16by9 az-medium az-media'
+            label: '16:9 Responsive'
+      id: media.az_remote_video.az_medium
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: az_medium
+      content:
+        field_media_az_oembed_video:
+          type: oembed
+          weight: 1
+          label: hidden
+          settings:
+            max_width: 0
+            max_height: 0
+            loading:
+              attribute: lazy
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        field_media_az_image: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: ZF3gkIHmEhS8bIBomcefx0qFNKtSh83ggZ_7clgqrFg
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_remote_video.az_natural_size
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_natural_size
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - media.type.az_remote_video
+        module:
+          - field_group
+          - media
+      third_party_settings:
+        field_group:
+          group_16x9:
+            children:
+              - field_media_az_oembed_video
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'embed-responsive embed-responsive-16by9 az-natural-size az-media'
+            label: '16:9 Responsive'
+      id: media.az_remote_video.az_natural_size
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: az_natural_size
+      content:
+        field_media_az_oembed_video:
+          type: oembed
+          weight: 1
+          label: hidden
+          settings:
+            max_width: 0
+            max_height: 0
+            loading:
+              attribute: lazy
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        field_media_az_image: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: wtWDosBj2SWteJu3en0F_gkL1TlrrkroDMQv6L0Rx_k
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_remote_video.az_small
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_small
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - media.type.az_remote_video
+        module:
+          - field_group
+          - media
+      third_party_settings:
+        field_group:
+          group_16x9:
+            children:
+              - field_media_az_oembed_video
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'embed-responsive embed-responsive-16by9 az-small az-media'
+            label: '16:9 Responsive'
+      id: media.az_remote_video.az_small
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: az_small
+      content:
+        field_media_az_oembed_video:
+          type: oembed
+          weight: 1
+          label: hidden
+          settings:
+            max_width: 0
+            max_height: 0
+            loading:
+              attribute: lazy
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        field_media_az_image: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: Hprfg1gwDJJoWtd46e90IvBWGEvvrWrwQ8s8H5PyKJA
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_remote_video.az_square
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_square
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - media.type.az_remote_video
+        module:
+          - field_group
+          - media
+      third_party_settings:
+        field_group:
+          group_16x9:
+            children:
+              - field_media_az_oembed_video
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'embed-responsive embed-responsive-4by3 az-square az-media'
+            label: '4:3 Responsive'
+      id: media.az_remote_video.az_square
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: az_square
+      content:
+        field_media_az_oembed_video:
+          type: oembed
+          weight: 1
+          label: hidden
+          settings:
+            max_width: 0
+            max_height: 0
+            loading:
+              attribute: lazy
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        field_media_az_image: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: SdMDwZIoHu9Qt6bA2Ijgd4FtcEhcZX1cTN9XJEycoNM
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_remote_video.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - media.type.az_remote_video
+        module:
+          - field_group
+          - media
+      third_party_settings:
+        field_group:
+          group_16x9:
+            children:
+              - field_media_az_oembed_video
+            parent_name: ''
+            weight: 0
+            format_type: html_element
+            region: content
+            format_settings:
+              element: div
+              show_label: false
+              label_element: h3
+              label_element_classes: ''
+              attributes: ''
+              effect: none
+              speed: fast
+              id: ''
+              classes: 'embed-responsive embed-responsive-16by9 az-default az-media'
+            label: '16:9 Responsive'
+      id: media.az_remote_video.default
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: default
+      content:
+        field_media_az_oembed_video:
+          type: oembed
+          weight: 1
+          label: hidden
+          settings:
+            max_width: 0
+            max_height: 0
+            loading:
+              attribute: lazy
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        field_media_az_image: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: ZHfkno-cMtneX3Fly_8bqVMDcYAnpxgFaEwUbr7zz_8
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_remote_video.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.az_remote_video.field_media_az_image
+          - field.field.media.az_remote_video.field_media_az_oembed_video
+          - image.style.medium
+          - media.type.az_remote_video
+        module:
+          - image
+      id: media.az_remote_video.media_library
+      targetEntityType: media
+      bundle: az_remote_video
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: medium
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_az_image: true
+        field_media_az_oembed_video: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: E-CcFAtF-eWvdyOIja2aJ8-hAWwMa9ctjwmbZ24PxcM
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_video.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.az_video.field_media_az_video_file
+          - media.type.az_video
+        module:
+          - file
+      id: media.az_video.default
+      targetEntityType: media
+      bundle: az_video
+      mode: default
+      content:
+        field_media_az_video_file:
+          type: file_video
+          weight: 0
+          label: visually_hidden
+          settings:
+            muted: false
+            width: 640
+            height: 480
+            controls: true
+            autoplay: false
+            loop: false
+            multiple_file_display_type: tags
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: 9l2-HakpKOfgNJDvc-ZQh65Zuho6I5nf5FJwzohttRc
+  -
+    collection: ''
+    name: core.entity_view_display.media.az_video.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.az_video.field_media_az_video_file
+          - image.style.thumbnail
+          - media.type.az_video
+        module:
+          - image
+      id: media.az_video.media_library
+      targetEntityType: media
+      bundle: az_video
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: thumbnail
+            image_link: ''
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_az_video_file: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: O2_Hff8z75UznAsbRUS_6u0JHjJ8UgB77b7iVmn6Su0
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_background
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_background
+      label: Background
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: sl-2RY1pKiPBSfH8Sv3T0CZBQeFSjHuvid2K2w_kWP4
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_card_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_card_image
+      label: 'Card Image'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: 2eCH3lP4o4klamDNKpeKXZj4e0aJfwj827-2f1iWh4M
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_carousel_item
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_carousel_item
+      label: 'Carousel Item'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: owuLOQNTiW4zA-sKcTWD7cClWZdwkQSItEiRa-g2jhI
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_large
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_large
+      label: 'Large (1140px)'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: EKSyFtjjixkcCbiu1cgFtIx5hQKzR-JEsXVWQ9unxwA
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_medium
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_medium
+      label: 'Medium (760px)'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: l-Fwe6zqyCP4Ma3XMS34-A8mNe-t-AOB7cinyyhVncc
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_modal_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_modal_image
+      label: 'Modal Image'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: 7nOzBjUDCEteQm2xMdV9GVx0UoOJOwAIQF3-zIdvd1Y
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_natural_size
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_natural_size
+      label: 'Natural Size'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: t50CqlDYVfImanr4TAB43Q8Y9smXtuz1iqka_gL7oEw
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_small
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_small
+      label: 'Small (360px)'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: TdIk-BCTfrnHy6BiccIgH3jFS59Fcc6yBacIQgHr7bs
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_square
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_square
+      label: 'Square (220X220px)'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: aoVwAt8p3W0-AJOzf_Zyyp6R8JkL0QigSado5UW7GRg
+  -
+    collection: ''
+    name: core.entity_view_mode.media.az_thumbnail
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.az_thumbnail
+      label: 'Thumbnail (100 x 100)'
+      targetEntityType: media
+      cache: true
+      _core:
+        default_config_hash: hDVyvUEqkB5Gzk2DQT1JDF677ux9L7Z_lqQlxF1bEsU
+  -
+    collection: ''
+    name: crop.type.az_card_image
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_card_image
+      label: 'Card Image'
+      description: 'This cropping style is used where card images are displayed.'
+      aspect_ratio: '4:3'
+      soft_limit_width: 568
+      soft_limit_height: 426
+      hard_limit_width: null
+      hard_limit_height: null
+      _core:
+        default_config_hash: 2P9A-OVKELZRaepYJ7W4Us9cAohbUw23TphhigdIcCM
+  -
+    collection: ''
+    name: crop.type.az_full_width_bg_extra_small
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_full_width_bg_extra_small
+      label: 'Extra small full-width background'
+      description: 'Minimum crop width 575px, or the image will be scaled up and will possibly be blurry.'
+      aspect_ratio: ''
+      soft_limit_width: 575
+      soft_limit_height: null
+      hard_limit_width: null
+      hard_limit_height: null
+      _core:
+        default_config_hash: XiwROPM2QO4ShilLZKOheixBqPX46Uu-R2H3TRxS_SQ
+  -
+    collection: ''
+    name: crop.type.az_full_width_bg_large
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_full_width_bg_large
+      label: 'Large full-width background'
+      description: "Minimum crop width 1920px, or the image will be scaled up and will possibly be blurry.\t"
+      aspect_ratio: ''
+      soft_limit_width: 1920
+      soft_limit_height: null
+      hard_limit_width: null
+      hard_limit_height: null
+      _core:
+        default_config_hash: 39KlYZAzu2bmHhNPNB-pj9BbeEc07rgNxaFrY_ENQr8
+  -
+    collection: ''
+    name: crop.type.az_full_width_bg_medium
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_full_width_bg_medium
+      label: 'Medium full-width background'
+      description: "Minimum crop width  991px, or the image will be scaled up and will possibly be blurry.\t"
+      aspect_ratio: ''
+      soft_limit_width: 991
+      soft_limit_height: null
+      hard_limit_width: null
+      hard_limit_height: null
+      _core:
+        default_config_hash: iMeSvTyznlIS3K_jIFjJZnVnmNW-uX_S0c3l4gwED2U
+  -
+    collection: ''
+    name: crop.type.az_full_width_bg_small
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_full_width_bg_small
+      label: 'Small full-width background'
+      description: "Minimum crop width 767px, or the image will be scaled up and will possibly be blurry.\t"
+      aspect_ratio: ''
+      soft_limit_width: 767
+      soft_limit_height: null
+      hard_limit_width: null
+      hard_limit_height: null
+      _core:
+        default_config_hash: jhdzaaZ9rGJsweBqj8a6_UyvB2dG3aTp4ZIw7S_8LTQ
+  -
+    collection: ''
+    name: crop.type.az_large
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_large
+      label: Large
+      description: 'Large (scale to 1140px wide) '
+      aspect_ratio: ''
+      soft_limit_width: 1000
+      soft_limit_height: null
+      hard_limit_width: 1000
+      hard_limit_height: null
+      _core:
+        default_config_hash: LdiRRxgXqnKlcnUTr03AnNBQTLn71m-SNVUJB8HswB4
+  -
+    collection: ''
+    name: crop.type.az_modal_image
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_modal_image
+      label: 'Modal Image'
+      description: 'Image style used within the Person modal view display.'
+      aspect_ratio: '5:4'
+      soft_limit_width: 568
+      soft_limit_height: 630
+      hard_limit_width: null
+      hard_limit_height: null
+      _core:
+        default_config_hash: g24ngD6mm9uPonIE-IfPL8mL5FjseFCjLRyZGVJKEd8
+  -
+    collection: ''
+    name: crop.type.az_square_aspect_ratio
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      label: 'Square Aspect Ratio'
+      id: az_square_aspect_ratio
+      description: 'Square crop type for use with any square image styles.'
+      aspect_ratio: '1:1'
+      soft_limit_width: null
+      soft_limit_height: null
+      hard_limit_width: null
+      hard_limit_height: null
+      _core:
+        default_config_hash: 6gdl-iIpBserOByhlxnzAIgxl7sbxPLzU-rzSMtro_8
+  -
+    collection: ''
+    name: field.field.media.az_audio.field_media_az_audio_file
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_az_audio_file
+          - media.type.az_audio
+        module:
+          - file
+      id: media.az_audio.field_media_az_audio_file
+      field_name: field_media_az_audio_file
+      entity_type: media
+      bundle: az_audio
+      label: 'Audio file'
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        file_extensions: 'mp3 wav aac'
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        max_filesize: ''
+        description_field: false
+        handler: 'default:file'
+        handler_settings: {  }
+      field_type: file
+      _core:
+        default_config_hash: Whd58Nfpcbg5vC_RKfRyyObhJ2wszKmiPK1N5HPYDPE
+  -
+    collection: ''
+    name: field.field.media.az_document.field_media_az_document
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_az_document
+          - media.type.az_document
+        module:
+          - file
+        enforced:
+          module:
+            - media
+      id: media.az_document.field_media_az_document
+      field_name: field_media_az_document
+      entity_type: media
+      bundle: az_document
+      label: Document
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages'
+        max_filesize: ''
+        handler: 'default:file'
+        handler_settings: {  }
+        description_field: false
+      field_type: file
+      _core:
+        default_config_hash: CNcJb6cJTI1KBh1vhfSDn_fUyT6KgL8prH-syyhsh8k
+  -
+    collection: ''
+    name: field.field.media.az_image.field_az_caption
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_az_caption
+          - filter.format.plain_text
+          - media.type.az_image
+        module:
+          - text
+      id: media.az_image.field_az_caption
+      field_name: field_az_caption
+      entity_type: media
+      bundle: az_image
+      label: Caption
+      description: ''
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        allowed_formats:
+          - plain_text
+      field_type: text_long
+      _core:
+        default_config_hash: w7VRd3FdlI8o2f0_oT3_jYSozmeM50qZn9EODgRwPQM
+  -
+    collection: ''
+    name: field.field.media.az_image.field_az_credit
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_az_credit
+          - filter.format.plain_text
+          - media.type.az_image
+        module:
+          - text
+      id: media.az_image.field_az_credit
+      field_name: field_az_credit
+      entity_type: media
+      bundle: az_image
+      label: 'Image Credit'
+      description: ''
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        allowed_formats:
+          - plain_text
+      field_type: text
+      _core:
+        default_config_hash: yhNiZrU4wlg42U6BWY2Z7YkpoueAJw05hDeY-_P6ZLQ
+  -
+    collection: ''
+    name: field.field.media.az_image.field_media_az_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_az_image
+          - media.type.az_image
+        module:
+          - image
+        enforced:
+          module:
+            - media
+      id: media.az_image.field_media_az_image
+      field_name: field_media_az_image
+      entity_type: media
+      bundle: az_image
+      label: Image
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        alt_field: true
+        alt_field_required: true
+        title_field: false
+        title_field_required: false
+        max_resolution: ''
+        min_resolution: ''
+        default_image:
+          uuid: null
+          alt: ''
+          title: ''
+          width: null
+          height: null
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        file_extensions: 'png gif jpg jpeg'
+        max_filesize: ''
+        handler: 'default:file'
+        handler_settings: {  }
+      field_type: image
+      _core:
+        default_config_hash: M3sjjQ9kRoCcMJQopZe-UZ-P4pQmrfYNXQG1etaF8TY
+  -
+    collection: ''
+    name: field.field.media.az_remote_video.field_media_az_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_az_image
+          - media.type.az_remote_video
+        module:
+          - image
+      id: media.az_remote_video.field_media_az_image
+      field_name: field_media_az_image
+      entity_type: media
+      bundle: az_remote_video
+      label: 'Thumbnail or cover image'
+      description: 'Optionally, override the default thumbnail image from your video hosting provider.'
+      required: false
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        file_extensions: 'png gif jpg jpeg webp'
+        max_filesize: ''
+        max_resolution: ''
+        min_resolution: ''
+        alt_field: true
+        alt_field_required: true
+        title_field: false
+        title_field_required: false
+        default_image:
+          uuid: ''
+          alt: ''
+          title: ''
+          width: null
+          height: null
+        handler: 'default:file'
+        handler_settings: {  }
+      field_type: image
+      _core:
+        default_config_hash: mZBs0lKJf44gE68YBTC_5RW4i-vnuDQvdSmEBQhLp-s
+  -
+    collection: ''
+    name: field.field.media.az_remote_video.field_media_az_oembed_video
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_az_oembed_video
+          - media.type.az_remote_video
+      id: media.az_remote_video.field_media_az_oembed_video
+      field_name: field_media_az_oembed_video
+      entity_type: media
+      bundle: az_remote_video
+      label: 'Video URL'
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings: {  }
+      field_type: string
+      _core:
+        default_config_hash: q26SYV7STRVmyi6a3LMz3IFK9eY8heCNkH8X7nvxMT4
+  -
+    collection: ''
+    name: field.field.media.az_video.field_media_az_video_file
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_az_video_file
+          - media.type.az_video
+        module:
+          - file
+      id: media.az_video.field_media_az_video_file
+      field_name: field_media_az_video_file
+      entity_type: media
+      bundle: az_video
+      label: 'Video file'
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        file_extensions: mp4
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        max_filesize: ''
+        description_field: false
+        handler: 'default:file'
+        handler_settings: {  }
+      field_type: file
+      _core:
+        default_config_hash: _acRDE_90emsoshOfmbLLOd3RcZg_2M3r83PvlcyzW4
+  -
+    collection: ''
+    name: field.storage.media.field_az_caption
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+          - text
+      id: media.field_az_caption
+      field_name: field_az_caption
+      entity_type: media
+      type: text_long
+      settings: {  }
+      module: text
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: gY8DvNnDedUrrbw08RUeURQxyzGBXkPMMqgK_vF7OrE
+  -
+    collection: ''
+    name: field.storage.media.field_az_credit
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+          - text
+      id: media.field_az_credit
+      field_name: field_az_credit
+      entity_type: media
+      type: text
+      settings:
+        max_length: 255
+      module: text
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: 3-PS92ZMVLGhd_DFCRN3PExGzLzJSDSV-pKeFJFM-hY
+  -
+    collection: ''
+    name: field.storage.media.field_media_az_audio_file
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - media
+      id: media.field_media_az_audio_file
+      field_name: field_media_az_audio_file
+      entity_type: media
+      type: file
+      settings:
+        target_type: file
+        display_field: false
+        display_default: false
+        uri_scheme: public
+      module: file
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: mPV9-FEku43NnOLR1GcvTwGZU7cpMqmpK8N_IYuKZ6o
+  -
+    collection: ''
+    name: field.storage.media.field_media_az_document
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - media
+        enforced:
+          module:
+            - media
+      id: media.field_media_az_document
+      field_name: field_media_az_document
+      entity_type: media
+      type: file
+      settings:
+        uri_scheme: public
+        target_type: file
+        display_field: false
+        display_default: false
+      module: file
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: Ys0HIr5ENNXI-sszKIio_AXDrwmzOtH9fUo5FZiMlOY
+  -
+    collection: ''
+    name: field.storage.media.field_media_az_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - image
+          - media
+        enforced:
+          module:
+            - media
+      id: media.field_media_az_image
+      field_name: field_media_az_image
+      entity_type: media
+      type: image
+      settings:
+        default_image:
+          uuid: null
+          alt: ''
+          title: ''
+          width: null
+          height: null
+        target_type: file
+        display_field: false
+        display_default: false
+        uri_scheme: public
+      module: image
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: ciYyO4GNEHoR_3mGwtC7JrfqD7QyuWa1FjlsmvxmIVk
+  -
+    collection: ''
+    name: field.storage.media.field_media_az_oembed_video
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.field_media_az_oembed_video
+      field_name: field_media_az_oembed_video
+      entity_type: media
+      type: string
+      settings:
+        max_length: 255
+        is_ascii: false
+        case_sensitive: false
+      module: core
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: V81vCTUrW9qzxuHpqIo_bzn5kJ73skPrM__Ri-jgqFM
+  -
+    collection: ''
+    name: field.storage.media.field_media_az_video_file
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - media
+      id: media.field_media_az_video_file
+      field_name: field_media_az_video_file
+      entity_type: media
+      type: file
+      settings:
+        target_type: file
+        display_field: false
+        display_default: false
+        uri_scheme: public
+      module: file
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: U3ruf9cT2PYvhRrGmSkfYf9BUJSFO7DmeT9E8vU7bSw
+  -
+    collection: ''
+    name: filter.format.az_standard
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.az_large
+          - core.entity_view_mode.media.az_medium
+          - core.entity_view_mode.media.az_natural_size
+          - core.entity_view_mode.media.az_small
+          - core.entity_view_mode.media.az_square
+        module:
+          - bootstrap_utilities
+          - entity_embed
+          - linkit
+          - media
+      name: Standard
+      format: az_standard
+      weight: -10
+      filters:
+        filter_htmlcorrector:
+          id: filter_htmlcorrector
+          provider: filter
+          status: true
+          weight: -44
+          settings: {  }
+        filter_html:
+          id: filter_html
+          provider: filter
+          status: true
+          weight: -50
+          settings:
+            allowed_html: '<br> <p class> <h1 class name id> <h2 class name id> <h3 class name id> <h4 class name id> <h5 class name id> <h6 class name id> <a class target name id title href data-entity-type data-entity-uuid data-entity-substitution> <span class name id> <ul class type> <blockquote class> <footer class> <table class> <thead class> <abbr> <address> <cite> <dl> <dt> <dd> <div name id class data-*> <img src alt data-entity-type data-entity-uuid> <ol type class start> <li class> <tbody class> <tfoot class> <th class scope rowspan colspan> <td class rowspan colspan> <tr class colspan rowspan> <hr class> <drupal-entity data-entity-type data-embed-button alt title data-align data-caption data-entity-embed-display data-entity-embed-display-settings data-view-mode data-entity-uuid data-langcode> <drupal-media title data-entity-type data-entity-uuid alt data-view-mode data-align> <strong> <em> <code class="language-*"> <pre class="text-align-left text-align-center text-align-right text-align-justify"> <s> <sub> <sup> <caption>'
+            filter_html_help: true
+            filter_html_nofollow: false
+        filter_autop:
+          id: filter_autop
+          provider: filter
+          status: true
+          weight: -42
+          settings: {  }
+        filter_url:
+          id: filter_url
+          provider: filter
+          status: true
+          weight: -46
+          settings:
+            filter_url_length: 72
+        media_embed:
+          id: media_embed
+          provider: media
+          status: true
+          weight: -43
+          settings:
+            default_view_mode: default
+            allowed_view_modes:
+              az_large: az_large
+              az_medium: az_medium
+              az_natural_size: az_natural_size
+              az_small: az_small
+              az_square: az_square
+            allowed_media_types: {  }
+        entity_embed:
+          id: entity_embed
+          provider: entity_embed
+          status: true
+          weight: -41
+          settings: {  }
+        bootstrap_utilities_blockquote_filter:
+          id: bootstrap_utilities_blockquote_filter
+          provider: bootstrap_utilities
+          status: true
+          weight: -49
+          settings: {  }
+        bootstrap_utilities_table_filter:
+          id: bootstrap_utilities_table_filter
+          provider: bootstrap_utilities
+          status: true
+          weight: -48
+          settings:
+            table_remove_width_height: '1'
+            table_row_striping: '0'
+            table_bordered: '0'
+            table_row_hover: '0'
+            table_small: '0'
+        filter_align:
+          id: filter_align
+          provider: filter
+          status: true
+          weight: -47
+          settings: {  }
+        linkit:
+          id: linkit
+          provider: linkit
+          status: true
+          weight: -45
+          settings:
+            title: true
+      _core:
+        default_config_hash: khfHoJlbycyFXl8AN4am38NAFQL8XC9GNAMbyuuy5UI
+  -
+    collection: ''
+    name: image.style.az_card_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - crop.type.az_card_image
+        module:
+          - crop
+      name: az_card_image
+      label: 'Card Image'
+      effects:
+        676b4920-ac86-41a2-8ebc-2ca28b731d74:
+          uuid: 676b4920-ac86-41a2-8ebc-2ca28b731d74
+          id: image_scale_and_crop
+          weight: -9
+          data:
+            width: 568
+            height: 426
+            anchor: center-center
+        452c89d0-8efa-40f5-9a58-2392324431d0:
+          uuid: 452c89d0-8efa-40f5-9a58-2392324431d0
+          id: crop_crop
+          weight: -10
+          data:
+            crop_type: az_card_image
+            automatic_crop_provider: null
+      _core:
+        default_config_hash: mdvJ6o19UNE5hGgKLisg6Z8ZdomCN-frhUqWYQz0BBw
+  -
+    collection: ''
+    name: image.style.az_carousel_item
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      name: az_carousel_item
+      label: 'Carousel Item'
+      effects:
+        fbc7a251-9995-4603-b286-b2864b3f5698:
+          uuid: fbc7a251-9995-4603-b286-b2864b3f5698
+          id: image_scale_and_crop
+          weight: 1
+          data:
+            width: 1400
+            height: 500
+            anchor: center-center
+      _core:
+        default_config_hash: SPvVJkIghTytXEie4JPoEx-hlRmu5EDkPCtEsYUQDG8
+  -
+    collection: ''
+    name: image.style.az_full_width_bg_extra_small
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - crop.type.az_full_width_bg_extra_small
+        module:
+          - crop
+      name: az_full_width_bg_extra_small
+      label: 'Extra small full-width background (Scales width down to 575px)'
+      effects:
+        231e604e-3e5f-48e6-bfac-bca3eef8e970:
+          uuid: 231e604e-3e5f-48e6-bfac-bca3eef8e970
+          id: image_scale
+          weight: -9
+          data:
+            width: 575
+            height: null
+            upscale: false
+        fde27152-fff7-45d9-b127-27eb2e7cdc68:
+          uuid: fde27152-fff7-45d9-b127-27eb2e7cdc68
+          id: crop_crop
+          weight: -10
+          data:
+            crop_type: az_full_width_bg_extra_small
+            automatic_crop_provider: null
+      _core:
+        default_config_hash: PpZYLnVKGFJbGr6P8dxhGxe0lsilNL3DaDIryDabcxk
+  -
+    collection: ''
+    name: image.style.az_full_width_bg_large
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - crop.type.az_full_width_bg_large
+        module:
+          - crop
+      name: az_full_width_bg_large
+      label: 'Large full-width background (Scales width down to 1920px)'
+      effects:
+        97cf4f70-46ce-4581-85e0-d3b996645664:
+          uuid: 97cf4f70-46ce-4581-85e0-d3b996645664
+          id: image_scale
+          weight: -9
+          data:
+            width: 1920
+            height: null
+            upscale: false
+        66917e9a-432f-4922-9236-2936d3d77d5f:
+          uuid: 66917e9a-432f-4922-9236-2936d3d77d5f
+          id: crop_crop
+          weight: -10
+          data:
+            crop_type: az_full_width_bg_large
+            automatic_crop_provider: null
+      _core:
+        default_config_hash: bEHudSq8OVUaMHJIq6Y77tbAdlUd_i-suTgM784w9yQ
+  -
+    collection: ''
+    name: image.style.az_full_width_bg_medium
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - crop.type.az_full_width_bg_medium
+        module:
+          - crop
+      name: az_full_width_bg_medium
+      label: 'Medium full-width background (Scales width down to 991px)'
+      effects:
+        d3f6ebea-23e3-4262-86d0-dc8f50a2cb7d:
+          uuid: d3f6ebea-23e3-4262-86d0-dc8f50a2cb7d
+          id: image_scale
+          weight: -9
+          data:
+            width: 991
+            height: null
+            upscale: false
+        aa88534f-24f8-4f96-8b8f-9e1b28d70da7:
+          uuid: aa88534f-24f8-4f96-8b8f-9e1b28d70da7
+          id: crop_crop
+          weight: -10
+          data:
+            crop_type: az_full_width_bg_medium
+            automatic_crop_provider: null
+      _core:
+        default_config_hash: h773hFWQdNWKaqeGC613dDYC_J7e7zX85kCLdxXWWLk
+  -
+    collection: ''
+    name: image.style.az_full_width_bg_small
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - crop.type.az_full_width_bg_small
+        module:
+          - crop
+      name: az_full_width_bg_small
+      label: 'Small full-width background (Scales width down to 767px)'
+      effects:
+        d2684a44-3a17-44af-9b66-eaae6b3176aa:
+          uuid: d2684a44-3a17-44af-9b66-eaae6b3176aa
+          id: image_scale
+          weight: -9
+          data:
+            width: 767
+            height: null
+            upscale: false
+        0ed91c91-dd3b-4630-98ad-a767a6a52249:
+          uuid: 0ed91c91-dd3b-4630-98ad-a767a6a52249
+          id: crop_crop
+          weight: -10
+          data:
+            crop_type: az_full_width_bg_small
+            automatic_crop_provider: null
+      _core:
+        default_config_hash: mAeF2VPnFdi4oBDvJkkSXFZgkGwcJQx6fJgUyXbooHs
+  -
+    collection: ''
+    name: image.style.az_large
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - crop.type.az_large
+        module:
+          - crop
+      name: az_large
+      label: 'Large (scale to 1140px wide)'
+      effects:
+        f15232eb-5138-483b-a186-521afabe41ae:
+          uuid: f15232eb-5138-483b-a186-521afabe41ae
+          id: crop_crop
+          weight: 1
+          data:
+            crop_type: az_large
+            automatic_crop_provider: null
+        4872c243-7d96-4f0f-95b1-f2f8ecff0bea:
+          uuid: 4872c243-7d96-4f0f-95b1-f2f8ecff0bea
+          id: image_scale
+          weight: 2
+          data:
+            width: 1140
+            height: null
+            upscale: true
+      _core:
+        default_config_hash: YJX4669oifSLq1TkdkYPyeGdUUOfgsB3F8hEnxu-jao
+  -
+    collection: ''
+    name: image.style.az_medium
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      name: az_medium
+      label: 'Medium (760px wide)'
+      effects:
+        a8a842a4-6670-4288-8f98-3b161f597ec9:
+          uuid: a8a842a4-6670-4288-8f98-3b161f597ec9
+          id: image_scale
+          weight: 1
+          data:
+            width: 760
+            height: null
+            upscale: true
+      _core:
+        default_config_hash: UezfEzwIs_6gmpXNw7rx98-VsISyuFFEfYkkZNT7WeQ
+  -
+    collection: ''
+    name: image.style.az_modal_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - crop.type.az_modal_image
+        module:
+          - crop
+      name: az_modal_image
+      label: 'Modal Image'
+      effects:
+        dd4488bc-2648-465f-9a5e-bbe80a1bc548:
+          uuid: dd4488bc-2648-465f-9a5e-bbe80a1bc548
+          id: crop_crop
+          weight: 1
+          data:
+            crop_type: az_modal_image
+            automatic_crop_provider: null
+        1598261e-a2a1-49ee-9858-ad153c6fbe31:
+          uuid: 1598261e-a2a1-49ee-9858-ad153c6fbe31
+          id: image_scale_and_crop
+          weight: 2
+          data:
+            width: 568
+            height: 630
+            anchor: center-center
+      _core:
+        default_config_hash: ZoDfDdsLCGqWEru-gQdOzAUqukCK3E88XX6rDxoq-zg
+  -
+    collection: ''
+    name: image.style.az_natural
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      name: az_natural
+      label: 'Natural Size'
+      effects: {  }
+      _core:
+        default_config_hash: C3QnxSt-vl7IbOWcP_-U3c_nx7NuvkaHvuXqY8bNsdQ
+  -
+    collection: ''
+    name: image.style.az_small
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      name: az_small
+      label: 'Small (360px)'
+      effects:
+        a5aee9bc-6dd3-4b48-b04e-027cc8017630:
+          uuid: a5aee9bc-6dd3-4b48-b04e-027cc8017630
+          id: image_scale
+          weight: 1
+          data:
+            width: 360
+            height: null
+            upscale: true
+      _core:
+        default_config_hash: MGAcXG3FPfb_T2t2XkEcAG8hqzG4JzgwHjDqhKp1I0Q
+  -
+    collection: ''
+    name: image.style.az_square
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - crop.type.az_square_aspect_ratio
+        module:
+          - crop
+      name: az_square
+      label: 'Square (220x220)'
+      effects:
+        d7da3cfa-110e-4af3-ac61-318519f0ae76:
+          uuid: d7da3cfa-110e-4af3-ac61-318519f0ae76
+          id: crop_crop
+          weight: -10
+          data:
+            crop_type: az_square_aspect_ratio
+            automatic_crop_provider: null
+        60965634-5fb1-411c-bb71-4420256a24c7:
+          uuid: 60965634-5fb1-411c-bb71-4420256a24c7
+          id: image_scale_and_crop
+          weight: 3
+          data:
+            width: 220
+            height: 220
+            anchor: center-center
+      _core:
+        default_config_hash: 8GbD9LwZCBhtgfpW315lRmsTh8HteG4bjV8E56O0baA
+  -
+    collection: ''
+    name: media.type.az_audio
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_audio
+      label: Audio
+      description: 'A locally hosted audio file.'
+      source: audio_file
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_az_audio_file
+      field_map:
+        name: name
+      _core:
+        default_config_hash: '-IcX1vy_9l7YeD26YvU9A0Nn_tsb3-kwJRSJ1Ypza80'
+  -
+    collection: ''
+    name: media.type.az_document
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_document
+      label: Document
+      description: 'An uploaded file or document, such as a PDF.'
+      source: file
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_az_document
+      field_map:
+        name: name
+      _core:
+        default_config_hash: UoG_xgcw5i1fTGDbDqMXg0McVK16YtVV-3urEvGaSOI
+  -
+    collection: ''
+    name: media.type.az_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - crop
+      third_party_settings:
+        crop:
+          image_field: field_media_az_image
+      id: az_image
+      label: Image
+      description: 'Use local images for reusable media.'
+      source: image
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_az_image
+      field_map:
+        name: name
+      _core:
+        default_config_hash: wHE_aw7CWGZ2B8dkhp7nNDfeHC8AtXQNI9ESNrfIiqI
+  -
+    collection: ''
+    name: media.type.az_remote_video
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_remote_video
+      label: 'Remote video'
+      description: 'A remotely hosted video from YouTube or Vimeo.'
+      source: 'oembed:video'
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_az_oembed_video
+        thumbnails_directory: 'public://oembed_thumbnails'
+        providers:
+          - YouTube
+          - Vimeo
+      field_map:
+        title: name
+      _core:
+        default_config_hash: 8be2nCgfSGRKTnisVCtMgiOOqepu_IFu8U-5dd9ZyFY
+  -
+    collection: ''
+    name: media.type.az_video
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: az_video
+      label: Video
+      description: 'A locally hosted video file.'
+      source: video_file
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_az_video_file
+      field_map:
+        name: name
+      _core:
+        default_config_hash: Q5RYrh4MMQ87nVR3XMEU2PhVzPFuHETOYn1d_8JoIcw
+  -
+    collection: ''
+    name: responsive_image.styles.az_full_width_background
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - image.style.az_full_width_bg_extra_small
+          - image.style.az_full_width_bg_large
+          - image.style.az_full_width_bg_medium
+          - image.style.az_full_width_bg_small
+        module:
+          - az_media
+      id: az_full_width_background
+      label: 'Full-width background'
+      image_style_mappings:
+        -
+          breakpoint_id: az_media.large
+          multiplier: 1x
+          image_mapping_type: image_style
+          image_mapping: az_full_width_bg_large
+        -
+          breakpoint_id: az_media.medium
+          multiplier: 1x
+          image_mapping_type: image_style
+          image_mapping: az_full_width_bg_medium
+        -
+          breakpoint_id: az_media.small
+          multiplier: 1x
+          image_mapping_type: image_style
+          image_mapping: az_full_width_bg_small
+      breakpoint_group: az_media
+      fallback_image_style: az_full_width_bg_extra_small
+      _core:
+        default_config_hash: xcNjytNGaU3xQsWxXL-o25wN76T2MUSpbOIQGUrMHVs

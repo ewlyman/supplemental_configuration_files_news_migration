@@ -1,0 +1,34 @@
+uuid: c5177e98-4002-44a0-b638-6ccbc194218d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.az_view_reference.field_az_title
+    - field.field.paragraph.az_view_reference.field_az_view_reference
+    - paragraphs.paragraphs_type.az_view_reference
+  module:
+    - viewsreference
+_core:
+  default_config_hash: JEZ2LRH5woWsBush3MZlfiwSAyO0NlnRciEttTqx2EI
+id: paragraph.az_view_reference.default
+targetEntityType: paragraph
+bundle: az_view_reference
+mode: default
+content:
+  field_az_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_az_view_reference:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,29 @@
+uuid: cde2d670-68ba-429d-893e-f50b0b9e5953
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_news_categories
+    - node.type.az_news
+    - taxonomy.vocabulary.news_story_categories
+id: node.az_news.field_custom_news_categories
+field_name: field_custom_news_categories
+entity_type: node
+bundle: az_news
+label: 'Story Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_story_categories: news_story_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

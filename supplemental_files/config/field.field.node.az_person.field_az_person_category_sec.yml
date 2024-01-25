@@ -1,0 +1,31 @@
+uuid: 88f7936c-91f3-4c98-a310-a92be8169400
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_person_category_sec
+    - node.type.az_person
+    - taxonomy.vocabulary.az_person_categories_secondary
+_core:
+  default_config_hash: CpoOQ3pG3bUdJrUhPkNlSDWqtaXn0ZKpRuPFpP2TwUQ
+id: node.az_person.field_az_person_category_sec
+field_name: field_az_person_category_sec
+entity_type: node
+bundle: az_person
+label: 'Category - Secondary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      az_person_categories_secondary: az_person_categories_secondary
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

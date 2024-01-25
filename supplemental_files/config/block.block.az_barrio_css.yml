@@ -1,0 +1,25 @@
+uuid: 13b13d1a-79bf-4114-8783-fa01615414ec
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:az_flexible_block:d3cd6f1a-8018-480d-8db9-4c3f16632d67'
+  module:
+    - block_content
+  theme:
+    - az_barrio
+id: az_barrio_css
+theme: az_barrio
+region: alert
+weight: 0
+provider: null
+plugin: 'block_content:d3cd6f1a-8018-480d-8db9-4c3f16632d67'
+settings:
+  id: 'block_content:d3cd6f1a-8018-480d-8db9-4c3f16632d67'
+  label: CSS
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

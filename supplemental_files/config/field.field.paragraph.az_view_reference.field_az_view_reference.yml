@@ -1,0 +1,61 @@
+uuid: 05bc4373-fc71-4e80-871c-b5613b035454
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_az_view_reference
+    - paragraphs.paragraphs_type.az_view_reference
+  module:
+    - viewsreference
+_core:
+  default_config_hash: YUvtNWPgCLPnUaeW8kJBah12uRSe_Z_0zGzxbZbAzqs
+id: paragraph.az_view_reference.field_az_view_reference
+field_name: field_az_view_reference
+entity_type: paragraph
+bundle: az_view_reference
+label: View
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    default: default
+    block: block
+    page: page
+    attachment: 0
+    feed: 0
+  preselect_views:
+    az_events: az_events
+    az_news: az_news
+    az_news_story: az_news_story
+    az_page_by_category: az_page_by_category
+    az_person: az_person
+    az_external_stories: 0
+    az_reorder: 0
+    block_content: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    media: 0
+    media_library: 0
+    moderated_content: 0
+    redirect: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    limit: limit
+    pager: pager
+    argument: argument
+    offset: offset
+    title: title
+field_type: viewsreference

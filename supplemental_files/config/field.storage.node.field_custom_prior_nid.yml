@@ -1,0 +1,20 @@
+uuid: c7eb2e15-ac7c-44bc-97d2-d664aa20c537
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_custom_prior_nid
+field_name: field_custom_prior_nid
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

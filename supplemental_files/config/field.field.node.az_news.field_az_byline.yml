@@ -1,0 +1,21 @@
+uuid: 8b721205-1d51-4aa4-a450-f9b2ef6b3c70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_byline
+    - node.type.az_news
+_core:
+  default_config_hash: Q5IPVzTimuoka1FP_m3diiTemDPzDMamh53qCzb-rO0
+id: node.az_news.field_az_byline
+field_name: field_az_byline
+entity_type: node
+bundle: az_news
+label: Byline
+description: 'Author of this article'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

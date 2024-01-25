@@ -1,0 +1,14 @@
+uuid: c25d0c67-7974-45d1-9adb-024f102f7c59
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.az_content_admin
+  module:
+    - user
+id: user_add_role_action.az_content_admin
+label: 'Add the Content administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: az_content_admin

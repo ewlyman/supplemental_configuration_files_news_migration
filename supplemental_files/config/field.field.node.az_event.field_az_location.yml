@@ -1,0 +1,25 @@
+uuid: ec88b88f-3296-4cbe-9b9d-62e88c60ab48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_location
+    - node.type.az_event
+  module:
+    - link
+_core:
+  default_config_hash: bfK0zT1FcrUyAPgTiL9ZatNi1B9Tw-p7BACsZM6Ny2M
+id: node.az_event.field_az_location
+field_name: field_az_location
+entity_type: node
+bundle: az_event
+label: Where
+description: "To link to an online map for the location, enter a URL above.<br />\r\nOtherwise, enter <em>&lt;nolink&gt;</em> in the URL field and enter the location name or address in the Link text field.<br />\r\n<strong>Campus Map: </strong> <a href=\"https://map.arizona.edu\" target=\"_blank\">https://map.arizona.edu</a><br />\r\n<strong>Google Maps: </strong> <a href=\"https://maps.google.com\" target=\"_blank\">https://maps.google.com</a>"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

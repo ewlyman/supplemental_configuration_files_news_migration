@@ -1,0 +1,10 @@
+uuid: f78e208b-fb4a-4262-a90b-f6091a88dce3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UGQjFI1tXeGqTI4UNC58P9Uhydao2grt3TZ4VHXkgaE
+name: 'Page Categories'
+vid: az_page_categories
+description: 'Taxonomy for categorizing pages'
+weight: 0

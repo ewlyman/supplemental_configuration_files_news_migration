@@ -1,0 +1,24 @@
+uuid: 25be0bf1-f804-4581-adad-26c8e12968cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_summary
+    - filter.format.az_standard
+    - node.type.custom_external_news
+  module:
+    - text
+id: node.custom_external_news.field_legacy_news_summary
+field_name: field_legacy_news_summary
+entity_type: node
+bundle: custom_external_news
+label: 'Story Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - az_standard
+field_type: text_long

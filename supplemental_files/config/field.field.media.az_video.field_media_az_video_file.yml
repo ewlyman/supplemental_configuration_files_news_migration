@@ -1,0 +1,29 @@
+uuid: 80246da7-c1c4-4e38-8e1a-44c702788c4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_az_video_file
+    - media.type.az_video
+  module:
+    - file
+_core:
+  default_config_hash: JjVU8UG1lACz6h6VDvMa4rPwS6UN66U5mN2xH6zZTm8
+id: media.az_video.field_media_az_video_file
+field_name: field_media_az_video_file
+entity_type: media
+bundle: az_video
+label: 'Video file'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: mp4
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

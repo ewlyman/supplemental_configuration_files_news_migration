@@ -1,0 +1,29 @@
+uuid: 4d72ebaf-feb6-40d3-86dd-6f2d51a49389
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_attachments
+    - node.type.az_person
+  module:
+    - file
+_core:
+  default_config_hash: ykVsfhiOz1QEQkvujwOuwbXsBCRZHtogZy21aQ1HPFo
+id: node.az_person.field_az_attachments
+field_name: field_az_attachments
+entity_type: node
+bundle: az_person
+label: CV/Documents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+field_type: file

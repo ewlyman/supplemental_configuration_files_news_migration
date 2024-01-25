@@ -1,0 +1,17 @@
+uuid: b3742e37-b9f6-411d-a696-a50a811a8a4e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: MIBj5FZTEFad_j9yq8n2fR06UZUzok8aptMbSEJR_qU
+name: az_carousel_item
+label: 'Carousel Item'
+effects:
+  fbc7a251-9995-4603-b286-b2864b3f5698:
+    uuid: fbc7a251-9995-4603-b286-b2864b3f5698
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 500
+      anchor: center-center

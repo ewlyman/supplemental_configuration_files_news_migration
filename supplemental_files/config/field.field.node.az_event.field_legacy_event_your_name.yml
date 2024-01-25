@@ -1,0 +1,19 @@
+uuid: ddfbf6ac-1da7-448a-9220-7b02be6d1529
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_event_your_name
+    - node.type.az_event
+id: node.az_event.field_legacy_event_your_name
+field_name: field_legacy_event_your_name
+entity_type: node
+bundle: az_event
+label: 'Your name (legacy)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

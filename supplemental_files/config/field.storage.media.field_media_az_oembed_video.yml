@@ -1,0 +1,23 @@
+uuid: b5a135e1-70fa-48c5-8379-f8414131241d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: vdvJFLYgOFGlqmJgPmizXB0tiskQB_xwiccPDmjB4sA
+id: media.field_media_az_oembed_video
+field_name: field_media_az_oembed_video
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

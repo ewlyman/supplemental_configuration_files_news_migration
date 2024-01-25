@@ -1,0 +1,26 @@
+uuid: f39c5d7d-11ef-44ab-bb86-dfc13fa4e0ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_az_subheading
+    - filter.format.plain_text
+    - node.type.az_news
+  module:
+    - text
+_core:
+  default_config_hash: g1hfzTTjiq7Viea18OmhdC-gNmDjdJqLu0-PSFRpu60
+id: node.az_news.field_az_subheading
+field_name: field_az_subheading
+entity_type: node
+bundle: az_news
+label: Subheading
+description: 'Add a subhead beneath the article title.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text

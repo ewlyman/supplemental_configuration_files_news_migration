@@ -1,0 +1,31 @@
+uuid: d1db173c-b14f-4ff6-be5d-8f4247d80787
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_news_video
+    - media.type.az_remote_video
+    - media.type.az_video
+    - node.type.news_video_legacy
+id: node.news_video_legacy.field_legacy_news_video
+field_name: field_legacy_news_video
+entity_type: node
+bundle: news_video_legacy
+label: 'Video (legacy)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      az_remote_video: az_remote_video
+      az_video: az_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: az_remote_video
+field_type: entity_reference
